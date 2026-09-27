@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+:root {
+  --aff-bg: #001a2d;
+  --aff-bg2: #06243a;
+  --aff-bg3: #031f33;
+  --aff-accent: #17c99a;
+  --aff-accent-hover: #20d6a4;
+  --aff-accent-soft: #0f3b34;
+  --aff-accent-ink: #00201a;
+  /* Deeper emerald shades used only for filled CTA buttons, so white
+     button text keeps sufficient contrast (~6.5:1 / ~4.6:1 on hover).
+     --aff-accent itself stays untouched everywhere else (links, borders,
+     dots, progress fills, badges). */
+  --aff-cta-bg: #0b6b52;
+  --aff-cta-bg-hover: #0f8567;
+  --aff-cyan: #22b8d6;
+  --aff-text: #f3f6f5;
+  --aff-muted: #8fa7b3;
+  --aff-line: rgba(143, 167, 179, 0.18);
+  --aff-line-strong: rgba(143, 167, 179, 0.35);
+
+  /* Fixed header height, used by its layout spacer and by scroll-padding-top
+     for anchor links. Overwritten with the exact measured pixel value by
+     HeaderFrame once mounted — these are just pre-JS/no-JS fallbacks. */
+  --aff-header-h: 64px;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --aff-header-h: 100px;
+  }
+}
+
+html {
+  scroll-padding-top: var(--aff-header-h);
+}
+
+@theme inline {
+  --color-aff-bg: var(--aff-bg);
+  --color-aff-bg2: var(--aff-bg2);
+  --color-aff-bg3: var(--aff-bg3);
+  --color-aff-accent: var(--aff-accent);
+  --color-aff-accent-hover: var(--aff-accent-hover);
+  --color-aff-accent-soft: var(--aff-accent-soft);
+  --color-aff-accent-ink: var(--aff-accent-ink);
+  --color-aff-cta-bg: var(--aff-cta-bg);
+  --color-aff-cta-bg-hover: var(--aff-cta-bg-hover);
+  --color-aff-cyan: var(--aff-cyan);
+  --color-aff-text: var(--aff-text);
+  --color-aff-muted: var(--aff-muted);
+  --color-aff-line: var(--aff-line);
+  --color-aff-line-strong: var(--aff-line-strong);
+
+  --font-heading: var(--font-plus-jakarta-sans), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+
+  --animate-aff-pulse: aff-pulse 4.5s ease-in-out infinite;
+  --animate-aff-dash: aff-dash 1.4s ease forwards;
+}
+
+@keyframes aff-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes aff-dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+body {
+  background: var(--aff-bg);
+  color: var(--aff-text);
+  font-family: var(--font-body);
+}
+
+a {
+  color: var(--aff-accent);
+}
+
+::selection {
+  background: rgba(23, 201, 154, 0.28);
+  color: var(--aff-text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--aff-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

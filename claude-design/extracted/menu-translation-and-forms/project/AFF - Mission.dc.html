@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/styles.css">
+  <script src="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/_ds_bundle.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--aff-bg:#001A2D;--aff-bg2:#06243A;--aff-accent:#17C99A;--aff-text:#F3F6F5;--aff-muted:#8FA7B3;--aff-line:rgba(143,167,179,0.18);--aff-font-head:'Plus Jakarta Sans',sans-serif;--aff-font-body:'Inter',sans-serif;}
+    body{margin:0;background:var(--aff-bg);} a{color:var(--aff-accent);} a:hover{color:#20D6A4;}
+  </style>
+</helmet>
+<div style="width:1440px;background:var(--aff-bg);font-family:var(--aff-font-body);color:var(--aff-text);">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:28px 120px;">
+    <a href="AFF%20Desktop%201440.dc.html" style="font-family:var(--aff-font-head);font-weight:700;font-size:16px;letter-spacing:0.06em;color:var(--aff-text);text-decoration:none;">AFRICA FOUNDERS FACTORY</a>
+    <nav style="display:flex;gap:36px;">
+      <a href="AFF%20-%20Mission.dc.html" style="color:var(--aff-text);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navMission }}</a>
+      <a href="AFF%20-%20Founders.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navFounders }}</a>
+      <a href="AFF%20-%20Pitch%20Live.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navPitchLive }}</a>
+      <a href="AFF%20-%20Community.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navCommunity }}</a>
+      <a href="AFF%20-%20Resources.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navResources }}</a>
+      <a href="AFF%20-%20About.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navAbout }}</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:22px;">
+      <div style="display:flex;gap:6px;font-size:13px;font-weight:600;">
+        <span onClick="{{ setFr }}" style="cursor:pointer;color:{{ frColor }};">FR</span><span style="color:var(--aff-muted);">/</span><span onClick="{{ setEn }}" style="cursor:pointer;color:{{ enColor }};">EN</span>
+      </div>
+      <a href="AFF%20-%20Join%20the%20Community.dc.html" style="background:var(--aff-accent);color:#00201A;border-radius:8px;padding:11px 20px;font-size:14px;font-weight:600;text-decoration:none;">{{ L.joinCta }}</a>
+    </div>
+  </header>
+  <section style="padding:80px 120px 140px;max-width:900px;margin:0 auto;text-align:center;">
+    <div style="color:var(--aff-accent);font-size:13px;font-weight:600;letter-spacing:0.14em;margin-bottom:22px;">{{ L.eyebrow }}</div>
+    <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:48px;line-height:1.25;margin:0 0 24px;">{{ L.headline1 }}<br>{{ L.headline2 }} <span style="color:var(--aff-accent);">{{ L.headlineAccent }}</span>{{ L.headlineEnd }}</h1>
+    <p style="font-size:18px;line-height:1.7;color:var(--aff-muted);margin:0 0 20px;">{{ L.body1 }}</p>
+    <p style="font-size:18px;line-height:1.7;color:var(--aff-muted);margin:0;">{{ L.body2 }}</p>
+  </section>
+  <footer style="padding:60px 120px;border-top:1px solid var(--aff-line);text-align:center;font-size:13px;color:var(--aff-muted);">AfricaFoundersFactory.com</footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const STRINGS = {
+  en: {
+    navMission:'Mission', navFounders:'Founders', navPitchLive:'Pitch Live', navCommunity:'Community', navResources:'Resources', navAbout:'About', joinCta:'Join the Community',
+    eyebrow:'OUR MISSION', headline1:"Africa doesn't lack ideas.", headline2:'It needs', headlineAccent:'stronger founders', headlineEnd:'.',
+    body1:"Africa Founders Factory is a pan-African community built around one loop: build, pitch, get challenged, improve, connect, grow. There are no paid plans, no consulting packages and no fundraising promises today — only a place where founders can pressure-test their ideas against real people who understand the journey.",
+    body2:"We believe the biggest constraint on African founders isn't a shortage of ideas — it's the lack of structured challenge, storytelling practice and access to experienced people that turns a promising idea into a venture people believe in."
+  },
+  fr: {
+    navMission:'Mission', navFounders:'Fondateurs', navPitchLive:'Pitch Live', navCommunity:'Communauté', navResources:'Ressources', navAbout:'À propos', joinCta:'Rejoindre la communauté',
+    eyebrow:'NOTRE MISSION', headline1:"L'Afrique ne manque pas d'idées.", headline2:'Elle a besoin de', headlineAccent:'fondateurs plus forts', headlineEnd:'.',
+    body1:"Africa Founders Factory est une communauté panafricaine construite autour d'une même boucle : construire, pitcher, se faire challenger, s'améliorer, se connecter, grandir. Il n'y a aujourd'hui ni offre payante, ni prestation de conseil, ni promesse de levée de fonds — seulement un lieu où les fondateurs peuvent tester leurs idées face à des personnes qui comprennent le parcours.",
+    body2:"Nous pensons que la plus grande contrainte des fondateurs africains n'est pas un manque d'idées, mais le manque de challenge structuré, d'entraînement au storytelling et d'accès à des personnes expérimentées qui transforment une idée prometteuse en un projet auquel on croit."
+  }
+};
+class Component extends DCLogic {
+  state = { lang: 'en' };
+  renderVals() {
+    const L = STRINGS[this.state.lang];
+    const isFr = this.state.lang === 'fr';
+    return { L, frColor: isFr ? '#F3F6F5' : 'var(--aff-muted)', enColor: isFr ? 'var(--aff-muted)' : '#F3F6F5',
+      setFr: () => this.setState({ lang: 'fr' }), setEn: () => this.setState({ lang: 'en' }) };
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/styles.css">
+  <script src="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/_ds_bundle.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--aff-bg:#001A2D;--aff-bg2:#06243A;--aff-accent:#17C99A;--aff-text:#F3F6F5;--aff-muted:#8FA7B3;--aff-line:rgba(143,167,179,0.18);--aff-font-head:'Plus Jakarta Sans',sans-serif;--aff-font-body:'Inter',sans-serif;}
+    body{margin:0;background:var(--aff-bg);}
+    input,textarea{outline:none;} input::placeholder,textarea::placeholder{color:var(--aff-muted);}
+  </style>
+</helmet>
+<div style="width:100%;max-width:1440px;margin:0 auto;min-height:900px;background:var(--aff-bg);font-family:var(--aff-font-body);color:var(--aff-text);">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:28px 120px;">
+    <a href="AFF%20Desktop%201440.dc.html" style="font-family:var(--aff-font-head);font-weight:700;font-size:16px;letter-spacing:0.06em;color:var(--aff-text);text-decoration:none;">AFRICA FOUNDERS FACTORY</a>
+    <div style="display:flex;align-items:center;gap:24px;">
+      <div style="display:flex;gap:6px;font-size:13px;font-weight:600;">
+        <span onClick="{{ setFr }}" style="cursor:pointer;color:{{ frColor }};">FR</span><span style="color:var(--aff-muted);">/</span><span onClick="{{ setEn }}" style="cursor:pointer;color:{{ enColor }};">EN</span>
+      </div>
+      <a href="AFF%20Desktop%201440.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14px;font-weight:500;">{{ L.cancel }}</a>
+    </div>
+  </header>
+
+  <sc-if value="{{ isNotSubmitted }}" hint-placeholder-val="{{ true }}">
+    <div style="max-width:640px;margin:0 auto;padding:40px 40px 140px;">
+      <div style="display:flex;gap:8px;margin-bottom:48px;">
+        <sc-for list="{{ stepDots }}" as="d" hint-placeholder-count="5">
+          <div style="flex:1;height:3px;border-radius:2px;background:{{ d.bg }};"></div>
+        </sc-for>
+      </div>
+      <div style="font-size:12px;letter-spacing:0.1em;color:var(--aff-accent);font-weight:600;margin-bottom:12px;">{{ L.stepLabel }} {{ stepNumber }} / 5</div>
+
+      <sc-if value="{{ showStep1 }}" hint-placeholder-val="{{ true }}">
+        <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:32px;margin:0 0 28px;">{{ L.step1Title }}</h1>
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <div><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.founder }}</label>
+            <input value="{{ form.founder }}" onChange="{{ onFounder }}" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input></div>
+          <div><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.startup }}</label>
+            <input value="{{ form.startup }}" onChange="{{ onStartup }}" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input></div>
+          <div style="display:flex;gap:16px;">
+            <div style="flex:1;"><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.country }}</label>
+              <input value="{{ form.country }}" onChange="{{ onCountry }}" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input></div>
+            <div style="flex:1;"><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.sector }}</label>
+              <input value="{{ form.sector }}" onChange="{{ onSector }}" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input></div>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <div style="flex:1;"><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.stage }}</label>
+              <input value="{{ form.stage }}" onChange="{{ onStage }}" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input></div>
+            <div style="flex:1;"><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.website }}</label>
+              <input value="{{ form.website }}" onChange="{{ onWebsite }}" placeholder="https://" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input></div>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ showStep2 }}" hint-placeholder-val="{{ false }}">
+        <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:32px;margin:0 0 28px;">{{ L.step2Title }}</h1>
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <div><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.oneLiner }}</label>
+            <input value="{{ form.oneLiner }}" onChange="{{ onOneLiner }}" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input></div>
+          <div><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.problem }}</label>
+            <textarea value="{{ form.problem }}" onChange="{{ onProblem }}" rows="2" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);resize:vertical;"></textarea></div>
+          <div><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.solution }}</label>
+            <textarea value="{{ form.solution }}" onChange="{{ onSolution }}" rows="2" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);resize:vertical;"></textarea></div>
+          <div><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.traction }}</label>
+            <textarea value="{{ form.traction }}" onChange="{{ onTraction }}" rows="2" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);resize:vertical;"></textarea></div>
+          <div><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.challenge }}</label>
+            <textarea value="{{ form.challenge }}" onChange="{{ onChallenge }}" rows="2" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);resize:vertical;"></textarea></div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ showStep3 }}" hint-placeholder-val="{{ false }}">
+        <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:32px;margin:0 0 10px;">{{ L.step3Title }}</h1>
+        <p style="font-size:14px;color:var(--aff-muted);margin:0 0 28px;">{{ L.step3Sub }}</p>
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <div><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.deck }}</label>
+            <div style="border:1px dashed var(--aff-line);border-radius:8px;padding:20px;color:var(--aff-muted);font-size:14px;">{{ L.deckHint }}</div></div>
+          <div><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.video }}</label>
+            <input value="{{ form.video }}" onChange="{{ onVideo }}" placeholder="https://" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input></div>
+          <div><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.linkedin }}</label>
+            <input value="{{ form.linkedin }}" onChange="{{ onLinkedin }}" placeholder="https://linkedin.com/in/..." style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input></div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ showStep4 }}" hint-placeholder-val="{{ false }}">
+        <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:32px;margin:0 0 12px;">{{ L.step4Title }}</h1>
+        <p style="font-size:15px;color:var(--aff-muted);margin:0 0 24px;">{{ L.step4Sub }}</p>
+        <textarea value="{{ form.question }}" onChange="{{ onQuestion }}" rows="5" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);resize:vertical;"></textarea>
+      </sc-if>
+
+      <sc-if value="{{ showStep5 }}" hint-placeholder-val="{{ false }}">
+        <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:32px;margin:0 0 28px;">{{ L.step5Title }}</h1>
+        <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--aff-line);border-radius:12px;overflow:hidden;">
+          <sc-for list="{{ reviewRows }}" as="row" hint-placeholder-count="6">
+            <div style="display:flex;padding:16px 20px;border-bottom:1px solid var(--aff-line);">
+              <div style="width:180px;flex-shrink:0;font-size:13px;color:var(--aff-muted);font-weight:600;">{{ row.label }}</div>
+              <div style="font-size:14.5px;color:var(--aff-text);">{{ row.value }}</div>
+            </div>
+          </sc-for>
+        </div>
+        <p style="font-size:13px;color:var(--aff-muted);margin:20px 0 0;">{{ L.noGuarantee }}</p>
+      </sc-if>
+
+      <div style="display:flex;justify-content:space-between;margin-top:44px;">
+        <sc-if value="{{ showBack }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ prevStep }}" style="background:transparent;color:var(--aff-text);border:1px solid var(--aff-line);border-radius:8px;padding:13px 24px;font-size:14.5px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);">{{ L.back }}</button>
+        </sc-if>
+        <sc-if value="{{ isFirstStep }}" hint-placeholder-val="{{ true }}"><div></div></sc-if>
+        <sc-if value="{{ showContinue }}" hint-placeholder-val="{{ true }}">
+          <button onClick="{{ nextStep }}" disabled="{{ cantAdvance }}" style="background:var(--aff-accent);color:#00201A;border:none;border-radius:8px;padding:13px 26px;font-size:14.5px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);opacity:{{ continueOpacity }};">{{ L.continueLabel }}</button>
+        </sc-if>
+        <sc-if value="{{ showStep5 }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ submit }}" style="background:var(--aff-accent);color:#00201A;border:none;border-radius:8px;padding:13px 26px;font-size:14.5px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);">{{ L.submitLabel }}</button>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isSubmitted }}" hint-placeholder-val="{{ false }}">
+    <div style="max-width:560px;margin:0 auto;padding:140px 40px;text-align:center;">
+      <div aria-hidden="true" style="width:64px;height:64px;border-radius:50%;border:1px solid var(--aff-accent);display:flex;align-items:center;justify-content:center;margin:0 auto 32px;color:var(--aff-accent);font-size:26px;">&#10003;</div>
+      <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:36px;margin:0 0 18px;">{{ L.successTitle }}</h1>
+      <p style="font-size:16px;line-height:1.6;color:var(--aff-muted);margin:0 0 36px;">{{ L.successBody }}</p>
+      <a href="AFF%20Desktop%201440.dc.html" style="background:var(--aff-accent);color:#00201A;border-radius:8px;padding:14px 26px;font-size:14.5px;font-weight:600;text-decoration:none;">{{ L.backHome }}</a>
+    </div>
+  </sc-if>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const STRINGS = {
+  en: {
+    cancel:'Cancel', stepLabel:'STEP',
+    step1Title:'Your startup, briefly.', step2Title:'The pitch.', step3Title:'Materials.', step3Sub:'All optional — share what you have.',
+    step4Title:'The signature question.', step4Sub:'What is the #1 question you want our experts to challenge you on?', step5Title:'Review + submit.',
+    founder:'Founder name', startup:'Startup name', country:'Country', sector:'Sector', stage:'Stage', website:'Website (optional)',
+    oneLiner:'One-line description', problem:'Problem', solution:'Solution', traction:'Current traction', challenge:'Current biggest challenge',
+    deck:'Pitch deck', deckHint:'Drop a file or attach a link later.', video:'Video pitch URL', linkedin:'LinkedIn',
+    back:'Back', continueLabel:'Continue', submitLabel:'Submit', noGuarantee:'Submitting does not guarantee selection.',
+    successTitle:'Your pitch is in.', successBody:"Submission does not guarantee selection. We'll reach out if your pitch is chosen for an upcoming session.", backHome:'Back to home',
+    reviewLabels: ['Founder', 'Startup', 'Country / Sector', 'One-liner', 'Video pitch', 'Signature question']
+  },
+  fr: {
+    cancel:'Annuler', stepLabel:'ÉTAPE',
+    step1Title:'Votre startup, en bref.', step2Title:'Le pitch.', step3Title:'Documents.', step3Sub:'Tout est optionnel — partagez ce que vous avez.',
+    step4Title:'La question signature.', step4Sub:'Quelle est LA question sur laquelle vous souhaitez être challengé par nos experts ?', step5Title:'Vérifier et envoyer.',
+    founder:'Nom du fondateur', startup:'Nom de la startup', country:'Pays', sector:'Secteur', stage:'Stade', website:'Site web (optionnel)',
+    oneLiner:'Description en une phrase', problem:'Problème', solution:'Solution', traction:'Traction actuelle', challenge:'Principal défi actuel',
+    deck:'Pitch deck', deckHint:'Déposez un fichier ou ajoutez un lien plus tard.', video:'URL de la vidéo pitch', linkedin:'LinkedIn',
+    back:'Retour', continueLabel:'Continuer', submitLabel:'Envoyer', noGuarantee:'Candidater ne garantit pas une sélection.',
+    successTitle:'Votre candidature est envoyée.', successBody:"Candidater ne garantit pas une sélection. Nous vous contacterons si votre pitch est retenu pour une prochaine session.", backHome:"Retour à l'accueil",
+    reviewLabels: ['Fondateur', 'Startup', 'Pays / Secteur', 'Phrase clé', 'Vidéo pitch', 'Question signature']
+  }
+};
+
+class Component extends DCLogic {
+  state = {
+    lang: 'en', step: 1, submitted: false,
+    form: { founder:'', startup:'', country:'', sector:'', stage:'', website:'', oneLiner:'', problem:'', solution:'', traction:'', challenge:'', video:'', linkedin:'', question:'' }
+  };
+  setField(key) { return (e) => this.setState(s => ({ form: { ...s.form, [key]: e.target.value } })); }
+
+  renderVals() {
+    const { step, form, lang } = this.state;
+    const L = STRINGS[lang];
+    const canAdvanceMap = {
+      1: !!form.founder && !!form.startup && !!form.country,
+      2: !!form.oneLiner && !!form.problem,
+      3: true,
+      4: !!form.question
+    };
+    const canAdvance = !!canAdvanceMap[step];
+    const stepDots = [1,2,3,4,5].map(n => ({ bg: n <= step ? 'var(--aff-accent)' : 'rgba(143,167,179,0.2)' }));
+    const dash = '—';
+    const reviewValues = [form.founder, form.startup, `${form.country || dash} / ${form.sector || dash}`, form.oneLiner, form.video, form.question];
+    const reviewRows = L.reviewLabels.map((label, i) => ({ label, value: reviewValues[i] || dash }));
+    const isFr = lang === 'fr';
+    return {
+      step, stepNumber: step, form, L,
+      isSubmitted: this.state.submitted, isNotSubmitted: !this.state.submitted,
+      showStep1: step===1, showStep2: step===2, showStep3: step===3, showStep4: step===4, showStep5: step===5,
+      showBack: step>1, isFirstStep: step===1, showContinue: step<5,
+      canAdvance, cantAdvance: !canAdvance, continueOpacity: canAdvance ? 1 : 0.45,
+      stepDots, reviewRows,
+      frColor: isFr ? '#F3F6F5' : 'var(--aff-muted)', enColor: isFr ? 'var(--aff-muted)' : '#F3F6F5',
+      setFr: () => this.setState({ lang: 'fr' }), setEn: () => this.setState({ lang: 'en' }),
+      onFounder:this.setField('founder'), onStartup:this.setField('startup'), onCountry:this.setField('country'),
+      onSector:this.setField('sector'), onStage:this.setField('stage'), onWebsite:this.setField('website'),
+      onOneLiner:this.setField('oneLiner'), onProblem:this.setField('problem'), onSolution:this.setField('solution'),
+      onTraction:this.setField('traction'), onChallenge:this.setField('challenge'), onVideo:this.setField('video'),
+      onLinkedin:this.setField('linkedin'), onQuestion:this.setField('question'),
+      nextStep: () => { if (canAdvanceMap[this.state.step]) this.setState(s => ({ step: Math.min(5, s.step+1) })); },
+      prevStep: () => this.setState(s => ({ step: Math.max(1, s.step-1) })),
+      submit: () => this.setState({ submitted: true })
+    };
+  }
+}
+
+</script>
+</body>
+</html>

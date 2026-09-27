@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/styles.css">
+  <script src="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/_ds_bundle.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--aff-bg:#001A2D;--aff-bg2:#06243A;--aff-accent:#17C99A;--aff-text:#F3F6F5;--aff-muted:#8FA7B3;--aff-line:rgba(143,167,179,0.18);--aff-font-head:'Plus Jakarta Sans',sans-serif;--aff-font-body:'Inter',sans-serif;}
+    body{margin:0;background:var(--aff-bg);} input{outline:none;} input::placeholder{color:var(--aff-muted);}
+    a{color:var(--aff-accent);}
+  </style>
+</helmet>
+<div style="width:100%;max-width:1440px;margin:0 auto;min-height:800px;background:var(--aff-bg);font-family:var(--aff-font-body);color:var(--aff-text);display:flex;flex-direction:column;">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:28px 120px;">
+    <a href="AFF%20Desktop%201440.dc.html" style="font-family:var(--aff-font-head);font-weight:700;font-size:16px;letter-spacing:0.06em;color:var(--aff-text);text-decoration:none;">AFRICA FOUNDERS FACTORY</a>
+    <div style="display:flex;gap:6px;font-size:13px;font-weight:600;">
+      <span onClick="{{ setFr }}" style="cursor:pointer;color:{{ frColor }};">FR</span><span style="color:var(--aff-muted);">/</span><span onClick="{{ setEn }}" style="cursor:pointer;color:{{ enColor }};">EN</span>
+    </div>
+  </header>
+  <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:60px 20px;">
+    <div style="width:100%;max-width:400px;">
+      <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:30px;margin:0 0 8px;text-align:center;">{{ L.title }}</h1>
+      <p style="font-size:14.5px;color:var(--aff-muted);margin:0 0 36px;text-align:center;">{{ L.subtitle }}</p>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.email }}</label>
+          <input placeholder="you@email.com" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input></div>
+        <div><label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.password }}</label>
+          <input type="password" placeholder="••••••••" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input></div>
+        <a href="#" style="font-size:13px;text-decoration:none;">{{ L.forgot }}</a>
+        <button style="background:var(--aff-accent);color:#00201A;border:none;border-radius:8px;padding:14px;font-size:15px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);margin-top:8px;">{{ L.submit }}</button>
+      </div>
+      <p style="font-size:14px;color:var(--aff-muted);text-align:center;margin:28px 0 0;">{{ L.noAccount }} <a href="AFF%20-%20Join%20the%20Community.dc.html" style="text-decoration:none;">{{ L.joinCta }}</a></p>
+    </div>
+  </div>
+  <footer style="padding:32px 120px;border-top:1px solid var(--aff-line);text-align:center;font-size:13px;color:var(--aff-muted);">AfricaFoundersFactory.com</footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const STRINGS = {
+  en: { title:'Sign in', subtitle:'The Founder Platform is coming soon.', email:'Email', password:'Password', forgot:'Forgot password?', submit:'Sign in', noAccount:'No account yet?', joinCta:'Join the Community' },
+  fr: { title:'Connexion', subtitle:'La plateforme Founder arrive bientôt.', email:'Email', password:'Mot de passe', forgot:'Mot de passe oublié ?', submit:'Se connecter', noAccount:'Pas encore de compte ?', joinCta:'Rejoindre la communauté' }
+};
+class Component extends DCLogic {
+  state = { lang: 'en' };
+  renderVals() {
+    const isFr = this.state.lang === 'fr';
+    return { L: STRINGS[this.state.lang], frColor: isFr ? '#F3F6F5' : 'var(--aff-muted)', enColor: isFr ? 'var(--aff-muted)' : '#F3F6F5',
+      setFr: () => this.setState({ lang: 'fr' }), setEn: () => this.setState({ lang: 'en' }) };
+  }
+}
+
+</script>
+</body>
+</html>

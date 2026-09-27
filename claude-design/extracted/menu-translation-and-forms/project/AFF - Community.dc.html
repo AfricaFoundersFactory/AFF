@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/styles.css">
+  <script src="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/_ds_bundle.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--aff-bg:#001A2D;--aff-bg2:#06243A;--aff-accent:#17C99A;--aff-text:#F3F6F5;--aff-muted:#8FA7B3;--aff-line:rgba(143,167,179,0.18);--aff-font-head:'Plus Jakarta Sans',sans-serif;--aff-font-body:'Inter',sans-serif;}
+    body{margin:0;background:var(--aff-bg);} a{color:var(--aff-accent);} a:hover{color:#20D6A4;}
+  </style>
+</helmet>
+<div style="width:1440px;background:var(--aff-bg);font-family:var(--aff-font-body);color:var(--aff-text);">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:28px 120px;">
+    <a href="AFF%20Desktop%201440.dc.html" style="font-family:var(--aff-font-head);font-weight:700;font-size:16px;letter-spacing:0.06em;color:var(--aff-text);text-decoration:none;">AFRICA FOUNDERS FACTORY</a>
+    <nav style="display:flex;gap:36px;">
+      <a href="AFF%20-%20Mission.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navMission }}</a>
+      <a href="AFF%20-%20Founders.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navFounders }}</a>
+      <a href="AFF%20-%20Pitch%20Live.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navPitchLive }}</a>
+      <a href="AFF%20-%20Community.dc.html" style="color:var(--aff-text);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navCommunity }}</a>
+      <a href="AFF%20-%20Resources.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navResources }}</a>
+      <a href="AFF%20-%20About.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navAbout }}</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:22px;">
+      <div style="display:flex;gap:6px;font-size:13px;font-weight:600;">
+        <span onClick="{{ setFr }}" style="cursor:pointer;color:{{ frColor }};">FR</span><span style="color:var(--aff-muted);">/</span><span onClick="{{ setEn }}" style="cursor:pointer;color:{{ enColor }};">EN</span>
+      </div>
+      <a href="AFF%20-%20Join%20the%20Community.dc.html" style="background:var(--aff-accent);color:#00201A;border-radius:8px;padding:11px 20px;font-size:14px;font-weight:600;text-decoration:none;">{{ L.joinCta }}</a>
+    </div>
+  </header>
+  <section style="padding:80px 120px 48px;max-width:720px;margin:0 auto;text-align:center;">
+    <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:44px;line-height:1.25;margin:0;">{{ L.headline1 }}<br>{{ L.headline2 }}</h1>
+  </section>
+  <section style="padding:0 120px 56px;display:flex;flex-wrap:wrap;justify-content:center;gap:14px;max-width:900px;margin:0 auto;">
+    <sc-for list="{{ chips }}" as="chip" hint-placeholder-count="8">
+      <div style="font-size:13px;font-weight:600;letter-spacing:0.04em;padding:11px 20px;border-radius:100px;border:{{ chip.border }};color:{{ chip.color }};">{{ chip.label }}</div>
+    </sc-for>
+  </section>
+  <section style="padding:0 120px 100px;text-align:center;">
+    <p style="font-size:15px;color:var(--aff-muted);margin:0 0 32px;">{{ L.line }}</p>
+  </section>
+  <section style="padding:0 120px 140px;display:flex;justify-content:center;">
+    <div style="width:100%;max-width:1200px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--aff-line);border:1px solid var(--aff-line);">
+      <sc-for list="{{ pathways }}" as="p" hint-placeholder-count="4">
+        <div style="background:var(--aff-bg);padding:40px;">
+          <h3 style="font-family:var(--aff-font-head);font-weight:600;font-size:24px;margin:0 0 12px;">{{ p.title }}</h3>
+          <p style="font-size:14.5px;color:var(--aff-muted);margin:0 0 16px;">{{ p.desc }}</p>
+          <a href="AFF%20-%20Join%20the%20Community.dc.html" style="font-size:13px;font-weight:600;">{{ L.startCta }} &#8594;</a>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+  <footer style="padding:60px 120px;border-top:1px solid var(--aff-line);text-align:center;font-size:13px;color:var(--aff-muted);">AfricaFoundersFactory.com</footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const STRINGS = {
+  en: { navMission:'Mission', navFounders:'Founders', navPitchLive:'Pitch Live', navCommunity:'Community', navResources:'Resources', navAbout:'About', joinCta:'Join the Community',
+    headline1:'Build alongside people', headline2:'who understand the journey.',
+    line:'This is the ecosystem we are building.', startCta:'Start' },
+  fr: { navMission:'Mission', navFounders:'Fondateurs', navPitchLive:'Pitch Live', navCommunity:'Communauté', navResources:'Ressources', navAbout:'À propos', joinCta:'Rejoindre la communauté',
+    headline1:'Avancez avec ceux', headline2:'qui comprennent le parcours.',
+    line:"C'est l'écosystème que nous construisons.", startCta:'Commencer' }
+};
+const CHIPS = {
+  en: [ {label:'FOUNDERS'},{label:'ASPIRING FOUNDERS'},{label:'EXPERTS'},{label:'MENTORS'},{label:'OPERATORS'},{label:'AFRICAN DIASPORA'},{label:'ECOSYSTEM PARTNERS'},{label:'INVESTORS (FUTURE)', future:true} ],
+  fr: [ {label:'FONDATEURS'},{label:'ASPIRANTS FONDATEURS'},{label:'EXPERTS'},{label:'MENTORS'},{label:'OPÉRATEURS'},{label:'DIASPORA AFRICAINE'},{label:'PARTENAIRES ÉCOSYSTÈME'},{label:'INVESTISSEURS (À VENIR)', future:true} ]
+};
+const PATHWAYS = {
+  en: [
+    { title:'I HAVE AN IDEA', desc:'Turn your intuition into a structured entrepreneurial hypothesis.' },
+    { title:"I'M BUILDING", desc:"Challenge what you've built and identify what needs to improve." },
+    { title:'I HAVE EXPERIENCE', desc:'Share practical experience with the next generation of African founders.' },
+    { title:'I SUPPORT ENTREPRENEURS', desc:'Connect your organization to an emerging founder ecosystem.' }
+  ],
+  fr: [
+    { title:'J\u2019AI UNE IDÉE', desc:'Transformez votre intuition en projet entrepreneurial structuré.' },
+    { title:'JE CONSTRUIS', desc:'Challengez ce que vous avez construit et identifiez vos prochaines priorités.' },
+    { title:'J\u2019AI DE L\u2019EXPÉRIENCE', desc:'Partagez votre expérience avec la prochaine génération de fondateurs africains.' },
+    { title:"J'ACCOMPAGNE DES ENTREPRENEURS", desc:'Connectez votre organisation à un écosystème entrepreneurial en construction.' }
+  ]
+};
+class Component extends DCLogic {
+  state = { lang: 'en' };
+  renderVals() {
+    const lang = this.state.lang; const isFr = lang === 'fr'; const muted = 'var(--aff-muted)';
+    const chips = CHIPS[lang].map(c => ({ label:c.label, border: c.future ? '1px dashed rgba(143,167,179,0.35)' : '1px solid var(--aff-line)', color: c.future ? muted : '#F3F6F5' }));
+    return { L: STRINGS[lang], chips, pathways: PATHWAYS[lang],
+      frColor: isFr ? '#F3F6F5' : muted, enColor: isFr ? muted : '#F3F6F5',
+      setFr: () => this.setState({ lang: 'fr' }), setEn: () => this.setState({ lang: 'en' }) };
+  }
+}
+
+</script>
+</body>
+</html>

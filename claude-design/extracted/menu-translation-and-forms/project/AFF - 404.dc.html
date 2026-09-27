@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/styles.css">
+  <script src="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/_ds_bundle.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>:root{--aff-bg:#001A2D;--aff-accent:#17C99A;--aff-text:#F3F6F5;--aff-muted:#8FA7B3;--aff-font-head:'Plus Jakarta Sans',sans-serif;--aff-font-body:'Inter',sans-serif;}body{margin:0;background:var(--aff-bg);}</style>
+</helmet>
+<div style="width:100%;max-width:1440px;margin:0 auto;min-height:100vh;background:var(--aff-bg);font-family:var(--aff-font-body);color:var(--aff-text);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;">
+  <div style="position:absolute;top:28px;right:120px;display:flex;gap:6px;font-size:13px;font-weight:600;">
+    <span onClick="{{ setFr }}" style="cursor:pointer;color:{{ frColor }};">FR</span><span style="color:var(--aff-muted);">/</span><span onClick="{{ setEn }}" style="cursor:pointer;color:{{ enColor }};">EN</span>
+  </div>
+  <div style="color:var(--aff-accent);font-family:var(--aff-font-head);font-weight:700;font-size:15px;letter-spacing:0.1em;margin-bottom:24px;">404</div>
+  <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:36px;margin:0 0 16px;">{{ L.title }}</h1>
+  <p style="font-size:16px;color:var(--aff-muted);margin:0 0 36px;">{{ L.subtitle }}</p>
+  <a href="AFF%20Desktop%201440.dc.html" style="background:var(--aff-accent);color:#00201A;border-radius:8px;padding:14px 26px;font-size:14.5px;font-weight:600;text-decoration:none;">{{ L.cta }}</a>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const STRINGS = {
+  en: { title:"This page hasn't been built yet.", subtitle:"Let's get you back to the Factory.", cta:'Back to home' },
+  fr: { title:"Cette page n'existe pas encore.", subtitle:'Retournons à la Factory.', cta:"Retour à l'accueil" }
+};
+class Component extends DCLogic {
+  state = { lang: 'en' };
+  renderVals() {
+    const isFr = this.state.lang === 'fr';
+    return { L: STRINGS[this.state.lang], frColor: isFr ? '#F3F6F5' : 'var(--aff-muted)', enColor: isFr ? 'var(--aff-muted)' : '#F3F6F5',
+      setFr: () => this.setState({ lang: 'fr' }), setEn: () => this.setState({ lang: 'en' }) };
+  }
+}
+
+</script>
+</body>
+</html>

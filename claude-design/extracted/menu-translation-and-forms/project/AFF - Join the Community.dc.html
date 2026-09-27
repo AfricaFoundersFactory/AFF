@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/styles.css">
+  <script src="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/_ds_bundle.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--aff-bg:#001A2D;--aff-bg2:#06243A;--aff-accent:#17C99A;--aff-text:#F3F6F5;--aff-muted:#8FA7B3;--aff-line:rgba(143,167,179,0.18);--aff-font-head:'Plus Jakarta Sans',sans-serif;--aff-font-body:'Inter',sans-serif;}
+    body{margin:0;background:var(--aff-bg);}
+    input,textarea{outline:none;}
+    input::placeholder,textarea::placeholder{color:var(--aff-muted);}
+  </style>
+</helmet>
+<div style="width:100%;max-width:1440px;margin:0 auto;min-height:900px;background:var(--aff-bg);font-family:var(--aff-font-body);color:var(--aff-text);">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:28px 120px;">
+    <a href="AFF%20Desktop%201440.dc.html" style="font-family:var(--aff-font-head);font-weight:700;font-size:16px;letter-spacing:0.06em;color:var(--aff-text);text-decoration:none;">AFRICA FOUNDERS FACTORY</a>
+    <div style="display:flex;align-items:center;gap:24px;">
+      <div style="display:flex;gap:6px;font-size:13px;font-weight:600;">
+        <span onClick="{{ setFr }}" style="cursor:pointer;color:{{ frColor }};">FR</span><span style="color:var(--aff-muted);">/</span><span onClick="{{ setEn }}" style="cursor:pointer;color:{{ enColor }};">EN</span>
+      </div>
+      <a href="AFF%20Desktop%201440.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14px;font-weight:500;">{{ L.cancel }}</a>
+    </div>
+  </header>
+
+  <sc-if value="{{ isNotSubmitted }}" hint-placeholder-val="{{ true }}">
+    <div style="max-width:640px;margin:0 auto;padding:40px 40px 140px;">
+      <div style="display:flex;gap:8px;margin-bottom:48px;">
+        <sc-for list="{{ stepDots }}" as="d" hint-placeholder-count="5">
+          <div style="flex:1;height:3px;border-radius:2px;background:{{ d.bg }};"></div>
+        </sc-for>
+      </div>
+      <div style="font-size:12px;letter-spacing:0.1em;color:var(--aff-accent);font-weight:600;margin-bottom:12px;">{{ L.stepLabel }} {{ stepNumber }} / 5</div>
+
+      <sc-if value="{{ showStep1 }}" hint-placeholder-val="{{ true }}">
+        <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:32px;margin:0 0 28px;">{{ L.step1Title }}</h1>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <sc-for list="{{ roleOptions }}" as="r" hint-placeholder-count="6">
+            <div onClick="{{ r.select }}" style="padding:18px 22px;border-radius:10px;border:{{ r.border }};background:{{ r.bg }};cursor:pointer;font-size:15.5px;font-weight:600;">{{ r.label }}</div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ showStep2 }}" hint-placeholder-val="{{ false }}">
+        <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:32px;margin:0 0 28px;">{{ L.step2Title }}</h1>
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <div>
+            <label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.fullName }}</label>
+            <input value="{{ form.name }}" onChange="{{ onName }}" placeholder="e.g. Amina Diallo" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input>
+          </div>
+          <div>
+            <label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.email }}</label>
+            <input value="{{ form.email }}" onChange="{{ onEmail }}" placeholder="you@email.com" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input>
+          </div>
+          <div>
+            <label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.country }}</label>
+            <input value="{{ form.country }}" onChange="{{ onCountry }}" placeholder="e.g. Côte d'Ivoire" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ showStep3 }}" hint-placeholder-val="{{ false }}">
+        <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:32px;margin:0 0 10px;">{{ L.step3Title }}</h1>
+        <p style="font-size:14px;color:var(--aff-muted);margin:0 0 28px;">{{ roleHint }}</p>
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <sc-if value="{{ isFounderRole }}" hint-placeholder-val="{{ true }}">
+            <div>
+              <label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.startupName }}</label>
+              <input value="{{ form.startup }}" onChange="{{ onStartup }}" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input>
+            </div>
+            <div>
+              <label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.sector }}</label>
+              <input value="{{ form.sector }}" onChange="{{ onSector }}" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input>
+            </div>
+            <div>
+              <label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.stage }}</label>
+              <input value="{{ form.stage }}" onChange="{{ onStage }}" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);"></input>
+            </div>
+          </sc-if>
+          <div>
+            <label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.description }}</label>
+            <textarea value="{{ form.description }}" onChange="{{ onDescription }}" rows="3" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);resize:vertical;"></textarea>
+          </div>
+          <div>
+            <label style="font-size:13px;color:var(--aff-muted);font-weight:600;display:block;margin-bottom:8px;">{{ L.challenge }}</label>
+            <textarea value="{{ form.challenge }}" onChange="{{ onChallenge }}" rows="3" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:14px 16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);resize:vertical;"></textarea>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ showStep4 }}" hint-placeholder-val="{{ false }}">
+        <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:32px;margin:0 0 28px;">{{ L.step4Title }}</h1>
+        <textarea value="{{ form.why }}" onChange="{{ onWhy }}" rows="6" style="width:100%;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:16px;color:var(--aff-text);font-size:15px;font-family:var(--aff-font-body);resize:vertical;"></textarea>
+      </sc-if>
+
+      <sc-if value="{{ showStep5 }}" hint-placeholder-val="{{ false }}">
+        <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:32px;margin:0 0 28px;">{{ L.step5Title }}</h1>
+        <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--aff-line);border-radius:12px;overflow:hidden;">
+          <sc-for list="{{ reviewRows }}" as="row" hint-placeholder-count="6">
+            <div style="display:flex;padding:16px 20px;border-bottom:1px solid var(--aff-line);">
+              <div style="width:180px;flex-shrink:0;font-size:13px;color:var(--aff-muted);font-weight:600;">{{ row.label }}</div>
+              <div style="font-size:14.5px;color:var(--aff-text);">{{ row.value }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <div style="display:flex;justify-content:space-between;margin-top:44px;">
+        <sc-if value="{{ showBack }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ prevStep }}" style="background:transparent;color:var(--aff-text);border:1px solid var(--aff-line);border-radius:8px;padding:13px 24px;font-size:14.5px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);">{{ L.back }}</button>
+        </sc-if>
+        <sc-if value="{{ isFirstStep }}" hint-placeholder-val="{{ true }}"><div></div></sc-if>
+        <sc-if value="{{ showContinue }}" hint-placeholder-val="{{ true }}">
+          <button onClick="{{ nextStep }}" disabled="{{ cantAdvance }}" style="background:var(--aff-accent);color:#00201A;border:none;border-radius:8px;padding:13px 26px;font-size:14.5px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);opacity:{{ continueOpacity }};">{{ L.continueLabel }}</button>
+        </sc-if>
+        <sc-if value="{{ showStep5 }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ submit }}" style="background:var(--aff-accent);color:#00201A;border:none;border-radius:8px;padding:13px 26px;font-size:14.5px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);">{{ L.submitLabel }}</button>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isSubmitted }}" hint-placeholder-val="{{ false }}">
+    <div style="max-width:560px;margin:0 auto;padding:140px 40px;text-align:center;">
+      <div aria-hidden="true" style="width:64px;height:64px;border-radius:50%;border:1px solid var(--aff-accent);display:flex;align-items:center;justify-content:center;margin:0 auto 32px;color:var(--aff-accent);font-size:26px;">&#10003;</div>
+      <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:36px;margin:0 0 18px;">{{ L.successTitle }}</h1>
+      <p style="font-size:16px;line-height:1.6;color:var(--aff-muted);margin:0 0 36px;">{{ L.successBody }}</p>
+      <a href="AFF%20Desktop%201440.dc.html" style="background:var(--aff-accent);color:#00201A;border-radius:8px;padding:14px 26px;font-size:14.5px;font-weight:600;text-decoration:none;">{{ L.backHome }}</a>
+    </div>
+  </sc-if>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const STRINGS = {
+  en: {
+    cancel:'Cancel', stepLabel:'STEP',
+    step1Title:'Who are you?', step2Title:'About you.', step3Title:'Tell us more.', step4Title:'Why do you want to join?', step5Title:'Review + submit.',
+    fullName:'Full name', email:'Email', country:'Country', startupName:'Startup name', sector:'Sector', stage:'Stage',
+    description:'Short description', challenge:'Current biggest challenge',
+    back:'Back', continueLabel:'Continue', submitLabel:'Submit',
+    successTitle:'Welcome to the Factory.', successBody:"We'll be in touch as the community opens up next steps for you.", backHome:'Back to home',
+    roleHintFounder:'A bit about your venture.', roleHintOther:'A bit about your background.',
+    roles: ['Founder', 'Aspiring Founder', 'Expert / Mentor', 'Ecosystem Partner', 'Investor', 'Other'],
+    reviewLabels: ['Role', 'Name', 'Email', 'Country', 'Description', 'Why join']
+  },
+  fr: {
+    cancel:'Annuler', stepLabel:'ÉTAPE',
+    step1Title:'Qui êtes-vous ?', step2Title:'À propos de vous.', step3Title:'Dites-nous en plus.', step4Title:'Pourquoi voulez-vous rejoindre ?', step5Title:'Vérifier et envoyer.',
+    fullName:'Nom complet', email:'Email', country:'Pays', startupName:'Nom de la startup', sector:'Secteur', stage:'Stade',
+    description:'Description courte', challenge:'Principal défi actuel',
+    back:'Retour', continueLabel:'Continuer', submitLabel:'Envoyer',
+    successTitle:'Bienvenue dans la Factory.', successBody:'Nous reviendrons vers vous dès que la communauté ouvrira vos prochaines étapes.', backHome:"Retour à l'accueil",
+    roleHintFounder:'Quelques mots sur votre projet.', roleHintOther:'Quelques mots sur votre parcours.',
+    roles: ['Fondateur', 'Aspirant fondateur', 'Expert / Mentor', 'Partenaire écosystème', 'Investisseur', 'Autre'],
+    reviewLabels: ['Rôle', 'Nom', 'Email', 'Pays', 'Description', 'Pourquoi rejoindre']
+  }
+};
+
+class Component extends DCLogic {
+  state = {
+    lang: 'en', step: 1, submitted: false,
+    form: { role: '', name: '', email: '', country: '', startup: '', sector: '', stage: '', description: '', challenge: '', why: '' }
+  };
+
+  setField(key) { return (e) => this.setState(s => ({ form: { ...s.form, [key]: e.target.value } })); }
+
+  renderVals() {
+    const { step, form, lang } = this.state;
+    const L = STRINGS[lang];
+    const isFr = lang === 'fr';
+    const isFounderRole = form.role === L.roles[0] || form.role === L.roles[1];
+
+    const canAdvanceMap = {
+      1: !!form.role,
+      2: !!form.name && !!form.email && !!form.country,
+      3: !!form.description,
+      4: !!form.why
+    };
+    const canAdvance = !!canAdvanceMap[step];
+
+    const roleOptions = L.roles.map(label => ({
+      label,
+      select: () => this.setState(s => ({ form: { ...s.form, role: label } })),
+      border: form.role === label ? '1px solid var(--aff-accent)' : '1px solid var(--aff-line)',
+      bg: form.role === label ? 'rgba(23,201,154,0.08)' : 'var(--aff-bg2)'
+    }));
+
+    const stepDots = [1, 2, 3, 4, 5].map(n => ({ bg: n <= step ? 'var(--aff-accent)' : 'rgba(143,167,179,0.2)' }));
+
+    const dash = isFr ? '—' : '—';
+    const reviewValues = [form.role, form.name, form.email, form.country, form.description, form.why];
+    const reviewRows = L.reviewLabels.map((label, i) => ({ label, value: reviewValues[i] || dash }));
+
+    return {
+      step, stepNumber: step,
+      isSubmitted: this.state.submitted, isNotSubmitted: !this.state.submitted,
+      showStep1: step === 1, showStep2: step === 2, showStep3: step === 3, showStep4: step === 4, showStep5: step === 5,
+      showBack: step > 1, isFirstStep: step === 1, showContinue: step < 5,
+      form, isFounderRole, L,
+      roleHint: isFounderRole ? L.roleHintFounder : L.roleHintOther,
+      roleOptions, stepDots, reviewRows,
+      canAdvance, cantAdvance: !canAdvance, continueOpacity: canAdvance ? 1 : 0.45,
+      frColor: isFr ? '#F3F6F5' : 'var(--aff-muted)', enColor: isFr ? 'var(--aff-muted)' : '#F3F6F5',
+      setFr: () => this.setState({ lang: 'fr' }), setEn: () => this.setState({ lang: 'en' }),
+      onName: this.setField('name'), onEmail: this.setField('email'), onCountry: this.setField('country'),
+      onStartup: this.setField('startup'), onSector: this.setField('sector'), onStage: this.setField('stage'),
+      onDescription: this.setField('description'), onChallenge: this.setField('challenge'), onWhy: this.setField('why'),
+      nextStep: () => { if (canAdvanceMap[this.state.step]) this.setState(s => ({ step: Math.min(5, s.step + 1) })); },
+      prevStep: () => this.setState(s => ({ step: Math.max(1, s.step - 1) })),
+      submit: () => this.setState({ submitted: true })
+    };
+  }
+}
+
+</script>
+</body>
+</html>

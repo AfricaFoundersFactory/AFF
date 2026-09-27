@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/styles.css">
+  <script src="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/_ds_bundle.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--aff-bg:#001A2D;--aff-bg2:#06243A;--aff-accent:#17C99A;--aff-text:#F3F6F5;--aff-muted:#8FA7B3;--aff-line:rgba(143,167,179,0.18);--aff-font-head:'Plus Jakarta Sans',sans-serif;--aff-font-body:'Inter',sans-serif;}
+    body{margin:0;background:var(--aff-bg);} a{color:var(--aff-accent);} a:hover{color:#20D6A4;}
+    input::placeholder{color:var(--aff-muted);}
+  </style>
+</helmet>
+<div style="width:1440px;background:var(--aff-bg);font-family:var(--aff-font-body);color:var(--aff-text);">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:28px 120px;">
+    <a href="AFF%20Desktop%201440.dc.html" style="font-family:var(--aff-font-head);font-weight:700;font-size:16px;letter-spacing:0.06em;color:var(--aff-text);text-decoration:none;">AFRICA FOUNDERS FACTORY</a>
+    <nav style="display:flex;gap:36px;">
+      <a href="AFF%20-%20Mission.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navMission }}</a>
+      <a href="AFF%20-%20Founders.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navFounders }}</a>
+      <a href="AFF%20-%20Pitch%20Live.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navPitchLive }}</a>
+      <a href="AFF%20-%20Community.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navCommunity }}</a>
+      <a href="AFF%20-%20Resources.dc.html" style="color:var(--aff-text);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navResources }}</a>
+      <a href="AFF%20-%20About.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;">{{ L.navAbout }}</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:22px;">
+      <div style="display:flex;gap:6px;font-size:13px;font-weight:600;">
+        <span onClick="{{ setFr }}" style="cursor:pointer;color:{{ frColor }};">FR</span><span style="color:var(--aff-muted);">/</span><span onClick="{{ setEn }}" style="cursor:pointer;color:{{ enColor }};">EN</span>
+      </div>
+      <a href="AFF%20-%20Join%20the%20Community.dc.html" style="background:var(--aff-accent);color:#00201A;border-radius:8px;padding:11px 20px;font-size:14px;font-weight:600;text-decoration:none;">{{ L.joinCta }}</a>
+    </div>
+  </header>
+  <section style="padding:80px 120px 32px;max-width:720px;margin:0 auto;text-align:center;">
+    <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:44px;line-height:1.25;margin:0;">{{ L.headline }}</h1>
+  </section>
+  <section style="padding:0 120px 24px;display:flex;justify-content:center;">
+    <input placeholder="{{ L.searchPlaceholder }}" style="width:100%;max-width:480px;box-sizing:border-box;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:8px;padding:12px 16px;color:var(--aff-text);font-size:14.5px;font-family:var(--aff-font-body);"></input>
+  </section>
+  <section style="padding:0 120px 28px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:1000px;margin:0 auto;">
+    <sc-for list="{{ categories }}" as="cat" hint-placeholder-count="12">
+      <div style="font-size:12.5px;font-weight:600;letter-spacing:0.04em;padding:9px 16px;border-radius:8px;border:1px solid var(--aff-line);">{{ cat }}</div>
+    </sc-for>
+  </section>
+  <section style="padding:0 120px 20px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:820px;margin:0 auto;">
+    <sc-for list="{{ types }}" as="t" hint-placeholder-count="7">
+      <div style="font-size:12px;color:var(--aff-muted);padding:6px 4px;">{{ t }}</div>
+    </sc-for>
+  </section>
+  <section style="padding:0 120px 140px;text-align:center;">
+    <div style="display:inline-block;font-size:12px;letter-spacing:0.1em;color:var(--aff-accent);font-weight:600;border:1px solid rgba(23,201,154,0.4);border-radius:100px;padding:8px 18px;margin-bottom:20px;">{{ L.comingSoon }}</div>
+    <p style="font-size:14.5px;color:var(--aff-muted);max-width:480px;margin:0 auto;">{{ L.emptyState }}</p>
+  </section>
+  <footer style="padding:60px 120px;border-top:1px solid var(--aff-line);text-align:center;font-size:13px;color:var(--aff-muted);">AfricaFoundersFactory.com</footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const STRINGS = {
+  en: { navMission:'Mission', navFounders:'Founders', navPitchLive:'Pitch Live', navCommunity:'Community', navResources:'Resources', navAbout:'About', joinCta:'Join the Community',
+    headline:'Learn. Apply. Improve.', searchPlaceholder:'Search resources...', comingSoon:'COMING SOON', emptyState:'Our resource library is growing. The first guides and templates are being built.' },
+  fr: { navMission:'Mission', navFounders:'Fondateurs', navPitchLive:'Pitch Live', navCommunity:'Communauté', navResources:'Ressources', navAbout:'À propos', joinCta:'Rejoindre la communauté',
+    headline:'Apprendre. Appliquer. Progresser.', searchPlaceholder:'Rechercher une ressource...', comingSoon:'BIENTÔT DISPONIBLE', emptyState:'Notre bibliothèque de ressources grandit. Les premiers guides et modèles sont en cours de création.' }
+};
+const CATS = {
+  en: ['PITCH','BUSINESS MODEL','CUSTOMER DISCOVERY','MARKET','PRODUCT','TRACTION','FINANCE','FUNDRAISING','LEADERSHIP','AI & TECHNOLOGY','LEGAL BASICS','GROWTH'],
+  fr: ['PITCH','MODÈLE ÉCONOMIQUE','DÉCOUVERTE CLIENT','MARCHÉ','PRODUIT','TRACTION','FINANCE','LEVÉE DE FONDS','LEADERSHIP','IA & TECHNOLOGIE','BASES JURIDIQUES','CROISSANCE']
+};
+const TYPES = {
+  en: ['Guides','Templates','Checklists','Videos','Live Replays','Frameworks','Founder Cases'],
+  fr: ['Guides','Modèles','Checklists','Vidéos','Replays Live','Frameworks','Cas de fondateurs']
+};
+class Component extends DCLogic {
+  state = { lang: 'en' };
+  renderVals() {
+    const isFr = this.state.lang === 'fr';
+    return { L: STRINGS[this.state.lang], categories: CATS[this.state.lang], types: TYPES[this.state.lang],
+      frColor: isFr ? '#F3F6F5' : 'var(--aff-muted)', enColor: isFr ? 'var(--aff-muted)' : '#F3F6F5',
+      setFr: () => this.setState({ lang: 'fr' }), setEn: () => this.setState({ lang: 'en' }) };
+  }
+}
+
+</script>
+</body>
+</html>

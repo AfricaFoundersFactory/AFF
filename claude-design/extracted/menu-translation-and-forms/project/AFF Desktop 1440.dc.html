@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/styles.css">
+  <script src="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/_ds_bundle.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --aff-bg:#001A2D; --aff-bg2:#06243A; --aff-bg3:#031F33;
+      --aff-accent:#17C99A; --aff-accent-soft:#0F3B34; --aff-cyan:#22B8D6;
+      --aff-text:#F3F6F5; --aff-muted:#8FA7B3; --aff-line:rgba(143,167,179,0.18);
+      --aff-font-head:'Plus Jakarta Sans',sans-serif; --aff-font-body:'Inter',sans-serif;
+    }
+    body{margin:0;background:var(--aff-bg);}
+    a{color:var(--aff-accent);}
+    a:hover{color:#20D6A4;}
+    @keyframes affPulse{0%,100%{opacity:.55;transform:scale(1);}50%{opacity:.85;transform:scale(1.04);}}
+    @keyframes affDash{to{stroke-dashoffset:0;}}
+  </style>
+</helmet>
+<div style="width:1440px;background:var(--aff-bg);font-family:var(--aff-font-body);color:var(--aff-text);position:relative;overflow:hidden;">
+
+  <!-- HEADER -->
+  <header data-screen-label="Header" style="display:flex;align-items:center;justify-content:space-between;padding:28px 120px;position:relative;z-index:5;">
+    <a href="AFF%20Desktop%201440.dc.html" style="font-family:var(--aff-font-head);font-weight:700;font-size:16px;letter-spacing:0.06em;color:var(--aff-text);text-decoration:none;">AFRICA FOUNDERS FACTORY</a>
+    <nav style="display:flex;gap:36px;">
+      <a href="AFF%20-%20Mission.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;" style-hover="color:var(--aff-text);">{{ L.navMission }}</a>
+      <a href="AFF%20-%20Founders.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;" style-hover="color:var(--aff-text);">{{ L.navFounders }}</a>
+      <a href="AFF%20-%20Pitch%20Live.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;" style-hover="color:var(--aff-text);">{{ L.navPitchLive }}</a>
+      <a href="AFF%20-%20Community.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;" style-hover="color:var(--aff-text);">{{ L.navCommunity }}</a>
+      <a href="AFF%20-%20Resources.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;" style-hover="color:var(--aff-text);">{{ L.navResources }}</a>
+      <a href="AFF%20-%20About.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;" style-hover="color:var(--aff-text);">{{ L.navAbout }}</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:22px;">
+      <div style="display:flex;gap:6px;font-size:13px;font-weight:600;">
+        <span onClick="{{ setFr }}" style="cursor:pointer;color:{{ frColor }};">FR</span><span style="color:var(--aff-muted);">/</span><span onClick="{{ setEn }}" style="cursor:pointer;color:{{ enColor }};">EN</span>
+      </div>
+      <a href="AFF%20-%20Sign%20In.dc.html" style="color:var(--aff-muted);text-decoration:none;font-size:14.5px;font-weight:500;" style-hover="color:var(--aff-text);">{{ L.signIn }}</a>
+      <a href="AFF%20-%20Join%20the%20Community.dc.html" style="background:var(--aff-accent);color:#00201A;border:none;border-radius:8px;padding:11px 20px;font-family:var(--aff-font-body);font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;" style-hover="background:#20D6A4;">{{ L.joinCta }}</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section data-screen-label="Hero" style="position:relative;min-height:900px;display:flex;flex-direction:column;align-items:center;padding:70px 120px 0;">
+    <div aria-hidden="true" style="position:absolute;top:-220px;left:50%;transform:translateX(-50%);width:1100px;height:700px;background:radial-gradient(circle,rgba(23,201,154,0.20) 0%,rgba(34,184,214,0.08) 45%,rgba(0,26,45,0) 72%);filter:blur(10px);pointer-events:none;"></div>
+    <svg aria-hidden="true" width="1200" height="480" viewBox="0 0 1200 480" style="position:absolute;top:60px;left:120px;pointer-events:none;">
+      <g stroke="var(--aff-accent)" stroke-opacity="0.28" fill="none" stroke-width="1">
+        <line x1="140" y1="120" x2="360" y2="60" stroke-dasharray="260" stroke-dashoffset="260" style="animation:affDash 3s ease forwards 0.2s;"/>
+        <line x1="360" y1="60" x2="620" y2="140" stroke-dasharray="300" stroke-dashoffset="300" style="animation:affDash 3s ease forwards 0.6s;"/>
+        <line x1="620" y1="140" x2="880" y2="70" stroke-dasharray="280" stroke-dashoffset="280" style="animation:affDash 3s ease forwards 1s;"/>
+        <line x1="880" y1="70" x2="1080" y2="180" stroke-dasharray="240" stroke-dashoffset="240" style="animation:affDash 3s ease forwards 1.4s;"/>
+        <line x1="140" y1="120" x2="260" y2="320" stroke-dasharray="220" stroke-dashoffset="220" style="animation:affDash 3s ease forwards 0.9s;"/>
+        <line x1="1080" y1="180" x2="1000" y2="380" stroke-dasharray="230" stroke-dashoffset="230" style="animation:affDash 3s ease forwards 1.7s;"/>
+      </g>
+      <g fill="var(--aff-accent)">
+        <circle cx="140" cy="120" r="3.5" style="animation:affPulse 4s ease-in-out infinite;"/>
+        <circle cx="360" cy="60" r="3" style="animation:affPulse 5s ease-in-out infinite .4s;"/>
+        <circle cx="620" cy="140" r="4" style="animation:affPulse 4.5s ease-in-out infinite .8s;"/>
+        <circle cx="880" cy="70" r="3" style="animation:affPulse 5.2s ease-in-out infinite 1.1s;"/>
+        <circle cx="1080" cy="180" r="3.5" style="animation:affPulse 4.2s ease-in-out infinite 1.5s;"/>
+        <circle cx="260" cy="320" r="3" style="animation:affPulse 4.8s ease-in-out infinite .6s;"/>
+        <circle cx="1000" cy="380" r="3" style="animation:affPulse 4.6s ease-in-out infinite 1.2s;"/>
+      </g>
+    </svg>
+    <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:56px;">
+      <div style="color:var(--aff-accent);font-size:13px;font-weight:600;letter-spacing:0.14em;margin-bottom:26px;">{{ L.heroEyebrow }}</div>
+      <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:64px;line-height:1.14;margin:0 0 26px;max-width:920px;letter-spacing:-0.01em;">{{ L.heroHeadlinePre }}<br>{{ L.heroHeadlineMid }} <span style="color:var(--aff-accent);">{{ L.heroHeadlineAccent }}</span>{{ L.heroHeadlineEnd }}</h1>
+      <p style="font-size:19px;line-height:1.65;color:var(--aff-muted);max-width:680px;margin:0 0 40px;">{{ L.heroBody }}</p>
+      <div style="display:flex;gap:16px;margin-bottom:40px;">
+        <a href="AFF%20-%20Join%20the%20Community.dc.html" style="background:var(--aff-accent);color:#00201A;border:none;border-radius:8px;padding:15px 28px;font-size:15px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);text-decoration:none;" style-hover="background:#20D6A4;">{{ L.joinCta }}</a>
+        <a href="AFF%20-%20Pitch%20Live.dc.html" style="background:transparent;color:var(--aff-text);border:1px solid var(--aff-line);border-radius:8px;padding:15px 28px;font-size:15px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);text-decoration:none;" style-hover="border-color:var(--aff-accent);color:var(--aff-accent);">{{ L.pitchCta }}</a>
+      </div>
+      <div style="font-size:12.5px;letter-spacing:0.16em;color:var(--aff-muted);font-weight:600;">{{ L.heroTagline }}</div>
+    </div>
+  </section>
+
+  <!-- HERO JOURNEY VISUAL -->
+  <section data-screen-label="Hero Journey" style="position:relative;z-index:2;padding:64px 120px 150px;display:flex;justify-content:center;">
+    <div style="width:1200px;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:20px;padding:52px 56px;position:relative;overflow:hidden;">
+      <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(circle at 20% 0%,rgba(23,201,154,0.10),transparent 55%);pointer-events:none;"></div>
+      <div style="position:relative;display:flex;align-items:center;justify-content:space-between;">
+        <sc-for list="{{ heroJourney }}" as="step" hint-placeholder-count="7">
+          <div style="display:flex;align-items:center;flex:1;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:10px;min-width:80px;">
+              <div style="width:12px;height:12px;border-radius:50%;background:{{ step.dotBg }};box-shadow:{{ step.glow }};"></div>
+              <div style="font-family:var(--aff-font-head);font-size:14px;font-weight:600;letter-spacing:0.05em;color:{{ step.textColor }};">{{ step.label }}</div>
+            </div>
+            <sc-if value="{{ step.hasNext }}" hint-placeholder-val="{{ true }}">
+              <div style="height:1px;flex:1;background:{{ step.lineBg }};margin:0 6px 26px;"></div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM SECTION -->
+  <section data-screen-label="Problem Section" style="position:relative;z-index:2;padding:0 120px 150px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:720px;text-align:center;margin-bottom:80px;">
+      <div style="color:var(--aff-accent);font-size:13px;font-weight:600;letter-spacing:0.14em;margin-bottom:22px;">{{ L.problemEyebrow }}</div>
+      <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:42px;line-height:1.25;margin:0 0 20px;">{{ L.problemHeadline1 }}<br>{{ L.problemHeadline2 }}</h2>
+      <p style="font-size:18px;line-height:1.65;color:var(--aff-muted);margin:0;">{{ L.problemBody }}</p>
+    </div>
+    <div style="width:100%;max-width:1200px;display:grid;grid-template-columns:1fr 1fr;">
+      <sc-for list="{{ problems }}" as="p" hint-placeholder-count="4">
+        <div style="padding:44px 56px 44px 0;border-bottom:{{ p.bb }};border-right:{{ p.br }};">
+          <h3 style="font-family:var(--aff-font-head);font-weight:600;font-size:22px;margin:0 0 14px;">{{ p.title }}</h3>
+          <p style="font-size:16.5px;line-height:1.65;color:var(--aff-muted);margin:0;max-width:420px;">{{ p.body }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- THE FACTORY (beginning) -->
+  <section id="affFactorySection" data-screen-label="The Factory (beginning)" style="position:relative;z-index:2;padding:0 120px 180px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:720px;text-align:center;margin-bottom:90px;">
+      <div style="color:var(--aff-accent);font-size:13px;font-weight:600;letter-spacing:0.14em;margin-bottom:22px;">{{ L.factoryEyebrow }}</div>
+      <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:42px;line-height:1.25;margin:0;">{{ L.factoryHeadline1 }}<br>{{ L.factoryHeadline2 }}</h2>
+    </div>
+    <div style="width:100%;max-width:1200px;">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;">
+        <sc-for list="{{ factorySteps }}" as="step" hint-placeholder-count="8">
+          <div style="display:flex;align-items:flex-start;flex:1;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:12px;min-width:70px;">
+              <div style="width:11px;height:11px;border-radius:50%;background:{{ step.dotBg }};box-shadow:{{ step.glow }};transition:all .4s ease;"></div>
+              <div style="font-family:var(--aff-font-head);font-size:13.5px;font-weight:600;letter-spacing:0.04em;color:{{ step.textColor }};transition:color .4s ease;">{{ step.label }}</div>
+            </div>
+            <sc-if value="{{ step.hasNext }}" hint-placeholder-val="{{ true }}">
+              <div style="height:1px;flex:1;background:{{ step.lineBg }};margin:0 4px 24px;transition:background .5s ease;"></div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+      <div style="text-align:center;margin-top:48px;min-height:28px;">
+        <p style="font-size:16.5px;color:var(--aff-text);margin:0;font-weight:500;">{{ activeSentence }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER SCORING -->
+  <section data-screen-label="Founder Scoring" style="position:relative;z-index:2;padding:0 120px 100px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:720px;text-align:center;margin-bottom:80px;">
+      <div style="color:var(--aff-accent);font-size:13px;font-weight:600;letter-spacing:0.14em;margin-bottom:22px;">{{ L.scoringEyebrow }}</div>
+      <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:42px;line-height:1.25;margin:0 0 20px;">{{ L.scoringHeadline1 }}<br>{{ L.scoringHeadline2 }}</h2>
+      <p style="font-size:18px;line-height:1.65;color:var(--aff-muted);margin:0;">{{ L.scoringBody }}</p>
+    </div>
+    <div style="font-family:var(--aff-font-head);font-size:14px;font-weight:600;letter-spacing:0.1em;color:var(--aff-muted);margin-bottom:36px;">AFF FOUNDER SCORING</div>
+    <div style="width:100%;max-width:1200px;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:20px;padding:56px;display:flex;align-items:center;gap:72px;">
+      <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:16px;">
+        <div style="width:190px;height:190px;border-radius:50%;background:conic-gradient(var(--aff-accent) 0deg 230deg, rgba(143,167,179,0.16) 230deg 360deg);display:flex;align-items:center;justify-content:center;">
+          <div style="width:158px;height:158px;border-radius:50%;background:var(--aff-bg2);display:flex;flex-direction:column;align-items:center;justify-content:center;">
+            <div style="font-family:var(--aff-font-head);font-size:46px;font-weight:700;line-height:1;">64<span style="font-size:20px;color:var(--aff-muted);font-weight:500;">/100</span></div>
+          </div>
+        </div>
+        <div style="font-size:11.5px;letter-spacing:0.14em;color:var(--aff-accent);font-weight:600;">{{ L.demoScore }}</div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:22px;">
+        <sc-for list="{{ scoreDims }}" as="dim" hint-placeholder-count="6">
+          <div style="display:flex;align-items:center;gap:20px;">
+            <div style="width:220px;font-size:13.5px;font-weight:600;letter-spacing:0.04em;color:var(--aff-text);flex-shrink:0;">{{ dim.label }}</div>
+            <div style="flex:1;height:4px;border-radius:2px;background:rgba(143,167,179,0.16);position:relative;overflow:hidden;">
+              <div style="position:absolute;left:0;top:0;bottom:0;width:{{ dim.pct }}%;background:var(--aff-accent);border-radius:2px;"></div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <p style="max-width:600px;text-align:center;font-size:14px;color:var(--aff-muted);margin:28px 0 0;line-height:1.6;">{{ L.scoringDisclaimer }}</p>
+  </section>
+
+  <div style="width:100%;max-width:1200px;margin:0 auto 150px;padding:0 120px;">
+    <div style="text-align:center;margin-bottom:44px;">
+      <h3 style="font-family:var(--aff-font-head);font-weight:600;font-size:30px;line-height:1.3;margin:0;">{{ L.cycleHeadline1 }}<br><span style="color:var(--aff-accent);">{{ L.cycleHeadline2 }}</span></h3>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;">
+      <sc-for list="{{ scoreCycle }}" as="step" hint-placeholder-count="6">
+        <div style="display:flex;align-items:center;">
+          <div style="font-family:var(--aff-font-head);font-size:13px;font-weight:600;letter-spacing:0.06em;color:var(--aff-text);padding:10px 18px;border:1px solid var(--aff-line);border-radius:100px;">{{ step.label }}</div>
+          <sc-if value="{{ step.hasNext }}" hint-placeholder-val="{{ true }}">
+            <div style="width:32px;height:1px;background:var(--aff-accent);opacity:0.5;"></div>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- SCORE TO ACTION -->
+  <section data-screen-label="Score to Action" style="position:relative;z-index:2;padding:0 120px 150px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:640px;text-align:center;margin-bottom:64px;">
+      <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:38px;line-height:1.25;margin:0;">{{ L.actionHeadline1 }}<br>{{ L.actionHeadline2 }}</h2>
+    </div>
+    <div style="width:100%;max-width:1200px;display:flex;gap:28px;">
+      <sc-for list="{{ actionCards }}" as="card" hint-placeholder-count="2">
+        <div style="flex:1;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:16px;padding:36px 40px;">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:22px;">
+            <div style="font-family:var(--aff-font-head);font-size:15px;font-weight:600;letter-spacing:0.06em;">{{ card.title }}</div>
+            <div style="font-family:var(--aff-font-head);font-size:26px;font-weight:700;">{{ card.score }}<span style="font-size:14px;color:var(--aff-muted);font-weight:500;">/100</span></div>
+          </div>
+          <div style="display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:0.06em;color:var(--aff-accent);border:1px solid rgba(23,201,154,0.4);border-radius:100px;padding:5px 12px;margin-bottom:22px;">{{ card.status }}</div>
+          <div style="font-size:11.5px;letter-spacing:0.1em;color:var(--aff-muted);font-weight:600;margin-bottom:8px;">{{ L.gapLabel }}</div>
+          <p style="font-size:15.5px;line-height:1.6;color:var(--aff-text);margin:0 0 20px;">{{ card.gap }}</p>
+          <div style="font-size:11.5px;letter-spacing:0.1em;color:var(--aff-muted);font-weight:600;margin-bottom:8px;">{{ L.actionLabel }}</div>
+          <p style="font-size:15.5px;line-height:1.6;color:var(--aff-text);margin:0 0 20px;">{{ card.action }}</p>
+          <div style="font-size:13px;color:var(--aff-accent);font-weight:600;">&#8594; {{ card.resource }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- PROGRESS TRACKING -->
+  <section data-screen-label="Progress Tracking" style="position:relative;z-index:2;padding:0 120px 150px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:680px;text-align:center;margin-bottom:64px;">
+      <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:38px;line-height:1.25;margin:0;">{{ L.progressHeadline1 }}<br>{{ L.progressHeadline2 }}</h2>
+    </div>
+    <div style="width:100%;max-width:1200px;display:flex;gap:72px;align-items:flex-start;">
+      <div style="flex:1;display:flex;align-items:flex-end;gap:36px;height:220px;">
+        <sc-for list="{{ progressAssessments }}" as="a" hint-placeholder-count="4">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <div style="font-family:var(--aff-font-head);font-size:16px;font-weight:700;">{{ a.value }}</div>
+            <div style="width:44px;height:{{ a.value }}px;background:linear-gradient(180deg,var(--aff-accent),rgba(23,201,154,0.35));border-radius:6px 6px 0 0;"></div>
+            <div style="font-size:11px;letter-spacing:0.06em;color:var(--aff-muted);font-weight:600;">{{ a.label }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:18px;">
+        <sc-for list="{{ categoryEvolution }}" as="cat" hint-placeholder-count="4">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--aff-line);">
+            <div style="font-size:15.5px;font-weight:600;">{{ cat.label }}</div>
+            <div style="font-family:var(--aff-font-head);font-size:15px;color:var(--aff-muted);">{{ cat.from }} <span style="color:var(--aff-accent);">&#8594; {{ cat.to }}</span></div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="font-size:12.5px;color:var(--aff-muted);margin-top:26px;">{{ L.illustrative }}</div>
+  </section>
+
+  <!-- FOUNDER PROFILE -->
+  <section data-screen-label="Founder Profile" style="position:relative;z-index:2;padding:0 120px 150px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:640px;text-align:center;margin-bottom:64px;">
+      <div style="color:var(--aff-accent);font-size:13px;font-weight:600;letter-spacing:0.14em;margin-bottom:22px;">{{ L.profileEyebrow }}</div>
+      <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:38px;line-height:1.25;margin:0;">{{ L.profileHeadline1 }}<br>{{ L.profileHeadline2 }}</h2>
+    </div>
+    <div style="width:100%;max-width:1200px;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:16px;padding:44px 48px;display:flex;gap:56px;">
+      <sc-for list="{{ profileGroups }}" as="grp" hint-placeholder-count="3">
+        <div style="flex:1;">
+          <div style="font-size:12px;letter-spacing:0.1em;color:var(--aff-accent);font-weight:600;margin-bottom:20px;">{{ grp.title }}</div>
+          <sc-for list="{{ grp.items }}" as="item" hint-placeholder-count="6">
+            <div style="font-size:15px;color:var(--aff-text);padding:11px 0;border-bottom:1px solid var(--aff-line);">{{ item }}</div>
+          </sc-for>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- PITCH LAB -->
+  <section data-screen-label="Pitch Lab" style="position:relative;z-index:2;padding:0 120px 150px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:640px;text-align:center;margin-bottom:64px;">
+      <div style="color:var(--aff-accent);font-size:13px;font-weight:600;letter-spacing:0.14em;margin-bottom:22px;">{{ L.labEyebrow }}</div>
+      <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:38px;line-height:1.25;margin:0;">{{ L.labHeadline1 }}<br>{{ L.labHeadline2 }}</h2>
+    </div>
+    <div style="width:100%;max-width:1200px;display:flex;justify-content:space-between;margin-bottom:56px;">
+      <sc-for list="{{ pitchLabSteps }}" as="step" hint-placeholder-count="6">
+        <div style="display:flex;align-items:flex-start;flex:1;">
+          <div style="display:flex;flex-direction:column;gap:10px;min-width:90px;">
+            <div style="font-family:var(--aff-font-head);font-size:14px;font-weight:600;letter-spacing:0.05em;color:var(--aff-accent);">{{ step.label }}</div>
+            <div style="font-size:13px;color:var(--aff-muted);line-height:1.5;max-width:140px;">{{ step.desc }}</div>
+          </div>
+          <sc-if value="{{ step.hasNext }}" hint-placeholder-val="{{ true }}">
+            <div style="height:1px;flex:1;background:var(--aff-line);margin:9px 8px 0;"></div>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:flex;align-items:center;gap:40px;">
+      <div style="text-align:center;max-width:260px;">
+        <div style="font-size:12px;letter-spacing:0.08em;color:var(--aff-muted);font-weight:600;">{{ L.gapFounder }}</div>
+      </div>
+      <div style="color:var(--aff-accent);font-size:22px;">&#8594;</div>
+      <div style="text-align:center;max-width:260px;">
+        <div style="font-size:12px;letter-spacing:0.08em;color:var(--aff-text);font-weight:600;">{{ L.gapAudience }}</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PITCH LIVE -->
+  <section data-screen-label="Pitch Live" style="position:relative;z-index:2;padding:0 120px 150px;display:flex;justify-content:center;">
+    <div style="width:100%;max-width:1200px;display:flex;gap:64px;align-items:center;">
+      <div style="flex:1;aspect-ratio:16/9;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:16px;display:flex;align-items:center;justify-content:center;">
+        <div style="width:64px;height:64px;border-radius:50%;border:1px solid var(--aff-accent);display:flex;align-items:center;justify-content:center;">
+          <div style="width:0;height:0;border-top:9px solid transparent;border-bottom:9px solid transparent;border-left:14px solid var(--aff-accent);margin-left:4px;"></div>
+        </div>
+      </div>
+      <div style="flex:1;">
+        <div style="color:var(--aff-accent);font-size:13px;font-weight:600;letter-spacing:0.14em;margin-bottom:22px;">{{ L.liveEyebrow }}</div>
+        <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:34px;line-height:1.3;margin:0 0 20px;">{{ L.liveHeadline1 }}<br>{{ L.liveHeadline2 }}</h2>
+        <p style="font-size:16.5px;line-height:1.65;color:var(--aff-muted);margin:0 0 32px;">{{ L.liveBody }}</p>
+        <div style="display:flex;margin-bottom:32px;">
+          <sc-for list="{{ pitchLiveFormat }}" as="f" hint-placeholder-count="4">
+            <div style="flex:1;padding:0 18px 0 0;border-right:1px solid var(--aff-line);margin-right:18px;">
+              <div style="font-family:var(--aff-font-head);font-size:20px;font-weight:700;margin-bottom:6px;">{{ f.value }}</div>
+              <div style="font-size:11.5px;letter-spacing:0.06em;color:var(--aff-muted);font-weight:600;">{{ f.label }}</div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex;gap:14px;">
+          <a href="AFF%20-%20Apply%20to%20Pitch.dc.html" style="background:var(--aff-accent);color:#00201A;border:none;border-radius:8px;padding:13px 22px;font-size:14px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);text-decoration:none;">{{ L.applyPitch }}</a>
+          <a href="AFF%20-%20Pitch%20Live.dc.html" style="background:transparent;color:var(--aff-text);border:1px solid var(--aff-line);border-radius:8px;padding:13px 22px;font-size:14px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);text-decoration:none;">{{ L.discoverLive }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STARTUP READINESS -->
+  <section data-screen-label="Startup Readiness" style="position:relative;z-index:2;padding:0 120px 150px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:640px;text-align:center;margin-bottom:64px;">
+      <div style="color:var(--aff-accent);font-size:13px;font-weight:600;letter-spacing:0.14em;margin-bottom:22px;">{{ L.readinessEyebrow }}</div>
+      <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:38px;line-height:1.25;margin:0;">{{ L.readinessHeadline1 }}<br>{{ L.readinessHeadline2 }}</h2>
+    </div>
+    <div style="width:100%;max-width:1200px;display:flex;">
+      <sc-for list="{{ readinessStages }}" as="stage" hint-placeholder-count="6">
+        <div style="flex:1;padding:0 14px;border-left:1px solid var(--aff-line);">
+          <div style="font-family:var(--aff-font-head);font-size:13.5px;font-weight:600;letter-spacing:0.04em;color:var(--aff-accent);margin-bottom:16px;">{{ stage.label }}</div>
+          <sc-for list="{{ stage.items }}" as="it" hint-placeholder-count="3">
+            <div style="font-size:13px;color:var(--aff-muted);line-height:1.7;">{{ it }}</div>
+          </sc-for>
+        </div>
+      </sc-for>
+    </div>
+    <p style="max-width:600px;text-align:center;font-size:14px;color:var(--aff-text);margin:44px 0 0;font-weight:500;">{{ L.readinessDisclaimer }}</p>
+  </section>
+
+  <!-- PERSONALIZED ROADMAP -->
+  <section data-screen-label="Personalized Roadmap" style="position:relative;z-index:2;padding:0 120px 150px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:640px;text-align:center;margin-bottom:56px;">
+      <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:38px;line-height:1.25;margin:0;">{{ L.roadmapHeadline }}</h2>
+    </div>
+    <div style="width:100%;max-width:820px;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:16px;padding:16px 40px;">
+      <div style="font-size:11.5px;letter-spacing:0.1em;color:var(--aff-accent);font-weight:600;padding:18px 0;">{{ L.roadmapLabel }}</div>
+      <sc-for list="{{ roadmapItems }}" as="r" hint-placeholder-count="5">
+        <div style="display:flex;align-items:center;gap:20px;padding:16px 0;border-top:1px solid var(--aff-line);">
+          <div style="font-family:var(--aff-font-head);font-size:13px;font-weight:700;color:var(--aff-muted);">{{ r.n }}</div>
+          <div style="font-size:15.5px;color:var(--aff-text);">{{ r.text }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- EXPERT FEEDBACK -->
+  <section data-screen-label="Expert Feedback" style="position:relative;z-index:2;padding:0 120px 150px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:640px;text-align:center;margin-bottom:48px;">
+      <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:38px;line-height:1.25;margin:0;">{{ L.feedbackHeadline1 }}<br>{{ L.feedbackHeadline2 }}</h2>
+    </div>
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:56px;">
+      <div style="font-size:12.5px;font-weight:600;letter-spacing:0.06em;border:1px solid var(--aff-line);border-radius:100px;padding:9px 18px;">{{ L.formulaA }}</div>
+      <div style="color:var(--aff-muted);">+</div>
+      <div style="font-size:12.5px;font-weight:600;letter-spacing:0.06em;border:1px solid var(--aff-line);border-radius:100px;padding:9px 18px;">{{ L.formulaB }}</div>
+      <div style="color:var(--aff-muted);">+</div>
+      <div style="font-size:12.5px;font-weight:600;letter-spacing:0.06em;border:1px solid var(--aff-accent);color:var(--aff-accent);border-radius:100px;padding:9px 18px;">{{ L.formulaC }}</div>
+    </div>
+    <div style="width:100%;max-width:760px;background:var(--aff-bg2);border:1px solid var(--aff-line);border-radius:16px;padding:36px 40px;">
+      <div style="font-size:11.5px;letter-spacing:0.1em;color:var(--aff-muted);font-weight:600;margin-bottom:16px;">{{ L.mentorLabel }}</div>
+      <p style="font-size:18px;line-height:1.6;color:var(--aff-text);margin:0 0 26px;">{{ L.mentorQuote }}</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <sc-for list="{{ feedbackActions }}" as="fa" hint-placeholder-count="5">
+          <div style="font-size:13px;color:{{ fa.color }};border:{{ fa.border }};border-radius:8px;padding:8px 14px;">{{ fa.label }}</div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section data-screen-label="Community" style="position:relative;z-index:2;padding:0 120px 150px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:640px;text-align:center;margin-bottom:48px;">
+      <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:38px;line-height:1.25;margin:0;">{{ L.communityHeadline1 }}<br>{{ L.communityHeadline2 }}</h2>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px;max-width:900px;margin-bottom:36px;">
+      <sc-for list="{{ communityChips }}" as="chip" hint-placeholder-count="8">
+        <div style="font-size:13px;font-weight:600;letter-spacing:0.04em;padding:11px 20px;border-radius:100px;border:{{ chip.borderStyle }};color:{{ chip.color }};">{{ chip.label }}</div>
+      </sc-for>
+    </div>
+    <p style="font-size:15px;color:var(--aff-muted);margin:0 0 32px;">{{ L.communityLine }}</p>
+    <a href="AFF%20-%20Join%20the%20Community.dc.html" style="background:var(--aff-accent);color:#00201A;border:none;border-radius:8px;padding:14px 26px;font-size:14.5px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);text-decoration:none;">{{ L.joinCta }}</a>
+  </section>
+
+  <!-- RESOURCES -->
+  <section data-screen-label="Resources" style="position:relative;z-index:2;padding:0 120px 150px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:640px;text-align:center;margin-bottom:48px;">
+      <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:38px;line-height:1.25;margin:0;">{{ L.resourcesHeadline }}</h2>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:1000px;margin-bottom:28px;">
+      <sc-for list="{{ resourceCategories }}" as="cat" hint-placeholder-count="12">
+        <div style="font-size:12.5px;font-weight:600;letter-spacing:0.04em;padding:9px 16px;border-radius:8px;border:1px solid var(--aff-line);color:var(--aff-text);">{{ cat }}</div>
+      </sc-for>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:820px;margin-bottom:20px;">
+      <sc-for list="{{ resourceTypes }}" as="t" hint-placeholder-count="7">
+        <div style="font-size:12px;color:var(--aff-muted);padding:6px 4px;">{{ t }}</div>
+      </sc-for>
+    </div>
+    <div style="font-size:12px;letter-spacing:0.1em;color:var(--aff-accent);font-weight:600;border:1px solid rgba(23,201,154,0.4);border-radius:100px;padding:8px 18px;">{{ L.comingSoon }}</div>
+  </section>
+
+  <!-- AFRICA + DIASPORA -->
+  <section data-screen-label="Africa + Diaspora" style="position:relative;z-index:2;padding:0 120px 150px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:640px;text-align:center;margin-bottom:44px;">
+      <h2 style="font-family:var(--aff-font-head);font-weight:600;font-size:38px;line-height:1.25;margin:0 0 20px;">{{ L.diasporaHeadline1 }}<br><span style="color:var(--aff-accent);">{{ L.diasporaHeadline2 }}</span></h2>
+      <p style="font-size:17px;line-height:1.65;color:var(--aff-muted);margin:0;">{{ L.diasporaBody }}</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:820px;">
+      <sc-for list="{{ cityNames }}" as="city" hint-placeholder-count="13">
+        <div style="font-size:13px;color:var(--aff-text);border:1px solid var(--aff-line);border-radius:100px;padding:9px 18px;">{{ city }}</div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section data-screen-label="Final CTA" style="position:relative;z-index:2;min-height:560px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 120px;overflow:hidden;">
+    <div aria-hidden="true" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:1000px;height:600px;background:radial-gradient(circle,rgba(23,201,154,0.18) 0%,rgba(34,184,214,0.06) 45%,rgba(0,26,45,0) 72%);filter:blur(10px);pointer-events:none;"></div>
+    <h2 style="position:relative;font-family:var(--aff-font-head);font-weight:600;font-size:44px;line-height:1.3;margin:0 0 22px;max-width:760px;">{{ L.finalHeadline1 }}<br>{{ L.finalHeadline2 }} <span style="color:var(--aff-accent);">{{ L.finalHeadlineAccent }}</span>{{ L.finalHeadlineEnd }}</h2>
+    <div style="position:relative;display:flex;gap:16px;margin-top:16px;">
+      <a href="AFF%20-%20Join%20the%20Community.dc.html" style="background:var(--aff-accent);color:#00201A;border:none;border-radius:8px;padding:15px 28px;font-size:15px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);text-decoration:none;">{{ L.joinCta }}</a>
+      <a href="AFF%20-%20Pitch%20Live.dc.html" style="background:transparent;color:var(--aff-text);border:1px solid var(--aff-line);border-radius:8px;padding:15px 28px;font-size:15px;font-weight:600;cursor:pointer;font-family:var(--aff-font-body);text-decoration:none;">{{ L.pitchCta }}</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer data-screen-label="Footer" style="position:relative;z-index:2;padding:80px 120px 50px;border-top:1px solid var(--aff-line);">
+    <div style="display:flex;justify-content:space-between;margin-bottom:64px;">
+      <div style="max-width:320px;">
+        <div style="font-family:var(--aff-font-head);font-weight:700;font-size:15px;letter-spacing:0.06em;margin-bottom:16px;">AFRICA FOUNDERS FACTORY</div>
+        <p style="font-size:14px;line-height:1.6;color:var(--aff-muted);margin:0;">{{ L.footerMission }}</p>
+      </div>
+      <div style="display:flex;gap:80px;">
+        <div>
+          <div style="font-size:12px;letter-spacing:0.08em;color:var(--aff-muted);font-weight:600;margin-bottom:18px;">{{ L.colExplore }}</div>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <a href="AFF%20-%20Mission.dc.html" style="color:var(--aff-text);text-decoration:none;font-size:14px;" style-hover="color:var(--aff-accent);">{{ L.navMission }}</a>
+            <a href="AFF%20-%20Founders.dc.html" style="color:var(--aff-text);text-decoration:none;font-size:14px;" style-hover="color:var(--aff-accent);">{{ L.navFounders }}</a>
+            <a href="AFF%20-%20Founders.dc.html" style="color:var(--aff-text);text-decoration:none;font-size:14px;" style-hover="color:var(--aff-accent);">{{ L.footerScoring }}</a>
+            <a href="AFF%20-%20Pitch%20Live.dc.html" style="color:var(--aff-text);text-decoration:none;font-size:14px;" style-hover="color:var(--aff-accent);">{{ L.navPitchLive }}</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:0.08em;color:var(--aff-muted);font-weight:600;margin-bottom:18px;">{{ L.colCommunity }}</div>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <a href="AFF%20-%20Join%20the%20Community.dc.html" style="color:var(--aff-text);text-decoration:none;font-size:14px;" style-hover="color:var(--aff-accent);">{{ L.footerJoinLink }}</a>
+            <a href="AFF%20-%20Community.dc.html" style="color:var(--aff-text);text-decoration:none;font-size:14px;" style-hover="color:var(--aff-accent);">{{ L.footerWhoCanJoin }}</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:0.08em;color:var(--aff-muted);font-weight:600;margin-bottom:18px;">{{ L.colResources }}</div>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <a href="AFF%20-%20Resources.dc.html" style="color:var(--aff-text);text-decoration:none;font-size:14px;" style-hover="color:var(--aff-accent);">{{ L.footerLibrary }}</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:0.08em;color:var(--aff-muted);font-weight:600;margin-bottom:18px;">{{ L.colCompany }}</div>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <a href="AFF%20-%20About.dc.html" style="color:var(--aff-text);text-decoration:none;font-size:14px;" style-hover="color:var(--aff-accent);">{{ L.navAbout }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:28px;border-top:1px solid var(--aff-line);font-size:13px;color:var(--aff-muted);">
+      <div>AfricaFoundersFactory.com</div>
+      <div style="display:flex;gap:24px;">
+        <a href="#" style="color:var(--aff-muted);text-decoration:none;" style-hover="color:var(--aff-accent);">TikTok</a>
+        <a href="#" style="color:var(--aff-muted);text-decoration:none;" style-hover="color:var(--aff-accent);">LinkedIn</a>
+        <a href="#" style="color:var(--aff-muted);text-decoration:none;" style-hover="color:var(--aff-accent);">YouTube</a>
+        <a href="#" style="color:var(--aff-muted);text-decoration:none;" style-hover="color:var(--aff-accent);">Instagram</a>
+      </div>
+      <div style="display:flex;gap:16px;align-items:center;">
+        <span onClick="{{ setFr }}" style="cursor:pointer;color:{{ frColor }};">FR</span><span>/</span><span onClick="{{ setEn }}" style="cursor:pointer;color:{{ enColor }};">EN</span>
+        <a href="AFF%20-%20Privacy.dc.html" style="color:var(--aff-muted);text-decoration:none;margin-left:8px;" style-hover="color:var(--aff-accent);">{{ L.legalPrivacy }}</a>
+        <a href="AFF%20-%20Terms.dc.html" style="color:var(--aff-muted);text-decoration:none;" style-hover="color:var(--aff-accent);">{{ L.legalTerms }}</a>
+        <a href="#" style="color:var(--aff-muted);text-decoration:none;" style-hover="color:var(--aff-accent);">{{ L.legalCookies }}</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const STRINGS = {
+  en: {
+    navMission:'Mission', navFounders:'Founders', navPitchLive:'Pitch Live', navCommunity:'Community', navResources:'Resources', navAbout:'About',
+    signIn:'Sign in', joinCta:'Join the Community', pitchCta:'Pitch Your Startup',
+    heroEyebrow:'THE PAN-AFRICAN FOUNDER COMMUNITY',
+    heroHeadlinePre:"Africa doesn't lack ideas.", heroHeadlineMid:'It needs', heroHeadlineAccent:'stronger founders', heroHeadlineEnd:'.',
+    heroBody:'Africa Founders Factory is a community where entrepreneurs challenge their ideas, sharpen their pitch, strengthen their ventures and connect with people who can help them move forward.',
+    heroTagline:'FOUNDERS · EXPERTS · MENTORS · DIASPORA · ECOSYSTEM',
+    problemEyebrow:'WHY THE FACTORY', problemHeadline1:"Great ideas don't fail only", problemHeadline2:'because of bad ideas.',
+    problemBody:"Most founders don't lack ambition. They lack the pressure-testing, storytelling and access that turn a promising idea into a venture people believe in.",
+    factoryEyebrow:'THE FACTORY', factoryHeadline1:"Founders aren't born ready.", factoryHeadline2:'They iterate.',
+    scoringEyebrow:'KNOW WHERE YOU STAND', scoringHeadline1:"You can't improve", scoringHeadline2:"what you don't understand.",
+    scoringBody:'Every founder enters the Factory at a different stage. Africa Founders Factory will help founders understand where their venture stands, identify critical gaps and focus their energy on what needs improvement next.',
+    demoScore:'DEMO SCORE', scoringDisclaimer:'Not an investor rating. Not a valuation. Not a fundraising promise — a structured diagnostic to help founders understand their readiness.',
+    cycleHeadline1:"The score isn't the goal.", cycleHeadline2:'Progress is.',
+    actionHeadline1:'Every weakness should lead', actionHeadline2:'to a next action.',
+    gapLabel:'IDENTIFIED GAP', actionLabel:'NEXT ACTION',
+    progressHeadline1:"Don't compare yourself to another startup.", progressHeadline2:'Compare yourself to your last assessment.',
+    illustrative:'Illustrative data.',
+    profileEyebrow:'YOUR FOUNDER SPACE', profileHeadline1:'Your startup.', profileHeadline2:'Structured in one place.',
+    labEyebrow:'PITCH LAB', labHeadline1:'A great pitch', labHeadline2:'is built through repetition.',
+    gapFounder:'WHAT THE FOUNDER THINKS THEY EXPLAINED', gapAudience:'WHAT THE AUDIENCE ACTUALLY UNDERSTOOD',
+    liveEyebrow:'AFF PITCH LIVE', liveHeadline1:"Don't pitch for applause.", liveHeadline2:'Pitch to improve.',
+    liveBody:'Selected founders present their venture during community live sessions and receive structured questions and feedback from entrepreneurs, experts and community members.',
+    applyPitch:'Apply to Pitch', discoverLive:'Discover Pitch Live',
+    readinessEyebrow:'STARTUP READINESS', readinessHeadline1:'Different stages.', readinessHeadline2:'Different priorities.',
+    readinessDisclaimer:'Fundraising is one possible path, not the definition of startup success.',
+    roadmapHeadline:'Stop guessing what to work on next.', roadmapLabel:'YOUR NEXT PRIORITIES',
+    feedbackHeadline1:'A score gives direction.', feedbackHeadline2:'People give perspective.',
+    formulaA:'STRUCTURED DIAGNOSTIC', formulaB:'HUMAN FEEDBACK', formulaC:'FOUNDER ACTION',
+    mentorLabel:'MENTOR FEEDBACK', mentorQuote:'"Your customer is clear, but the economic buyer still isn\u2019t."',
+    communityHeadline1:'Build alongside people', communityHeadline2:'who understand the journey.',
+    communityLine:'This is the ecosystem we are building.',
+    resourcesHeadline:'Learn. Apply. Improve.', comingSoon:'COMING SOON',
+    diasporaHeadline1:'African founders.', diasporaHeadline2:'Global experience.',
+    diasporaBody:'Africa Founders Factory aims to connect entrepreneurial talent across African markets with experienced professionals, operators and members of the African diaspora.',
+    finalHeadline1:"Your startup doesn't need to be perfect to enter the Factory.", finalHeadline2:'It needs to be', finalHeadlineAccent:'ready to improve', finalHeadlineEnd:'.',
+    footerMission:'A pan-African community where founders build, pitch, get challenged and grow.',
+    colExplore:'EXPLORE', colCommunity:'COMMUNITY', colResources:'RESOURCES', colCompany:'COMPANY',
+    footerScoring:'Founder Scoring', footerJoinLink:'Join', footerWhoCanJoin:'Who Can Join', footerLibrary:'Library',
+    legalPrivacy:'Privacy', legalTerms:'Terms', legalCookies:'Cookies'
+  },
+  fr: {
+    navMission:'Mission', navFounders:'Fondateurs', navPitchLive:'Pitch Live', navCommunity:'Communauté', navResources:'Ressources', navAbout:'À propos',
+    signIn:'Connexion', joinCta:'Rejoindre la communauté', pitchCta:'Présenter ma startup',
+    heroEyebrow:'LA COMMUNAUTÉ PANAFRICAINE DES FONDATEURS',
+    heroHeadlinePre:"L'Afrique ne manque pas d'idées.", heroHeadlineMid:'Elle a besoin de', heroHeadlineAccent:'fondateurs plus forts', heroHeadlineEnd:'.',
+    heroBody:'Africa Founders Factory est une communauté où les entrepreneurs challengent leurs idées, affinent leur pitch, renforcent leurs projets et se connectent à des personnes capables de les faire avancer.',
+    heroTagline:'FONDATEURS · EXPERTS · MENTORS · DIASPORA · ÉCOSYSTÈME',
+    problemEyebrow:'POURQUOI LA FACTORY', problemHeadline1:"Les bonnes idées n'échouent pas seulement", problemHeadline2:'à cause de mauvaises idées.',
+    problemBody:"La plupart des fondateurs ne manquent pas d'ambition. Il leur manque le test critique, le storytelling et l'accès qui transforment une idée prometteuse en un projet auquel on croit.",
+    factoryEyebrow:'LA FACTORY', factoryHeadline1:'Les fondateurs ne naissent pas prêts.', factoryHeadline2:'Ils itèrent.',
+    scoringEyebrow:'SAVOIR OÙ VOUS EN ÊTES', scoringHeadline1:'On ne peut pas améliorer', scoringHeadline2:"ce que l'on ne comprend pas.",
+    scoringBody:"Chaque fondateur entre dans la Factory à un stade différent. Africa Founders Factory aide les entrepreneurs à comprendre où en est réellement leur projet, à identifier leurs principales faiblesses et à concentrer leurs efforts sur les prochaines priorités.",
+    demoScore:'SCORE DE DÉMONSTRATION', scoringDisclaimer:"Ce n'est pas une notation investisseur. Ni une valorisation. Ni une promesse de levée de fonds — un diagnostic structuré pour aider les fondateurs à comprendre leur niveau de préparation.",
+    cycleHeadline1:"Le score n'est pas l'objectif.", cycleHeadline2:'La progression l\u2019est.',
+    actionHeadline1:'Chaque faiblesse doit mener', actionHeadline2:'à une prochaine action.',
+    gapLabel:'ÉCART IDENTIFIÉ', actionLabel:'PROCHAINE ACTION',
+    progressHeadline1:'Ne vous comparez pas à une autre startup.', progressHeadline2:'Comparez-vous à votre dernière évaluation.',
+    illustrative:'Données illustratives.',
+    profileEyebrow:'VOTRE ESPACE FONDATEUR', profileHeadline1:'Votre startup.', profileHeadline2:'Structurée au même endroit.',
+    labEyebrow:'PITCH LAB', labHeadline1:'Un bon pitch', labHeadline2:'se construit par la répétition.',
+    gapFounder:'CE QUE LE FONDATEUR PENSE AVOIR EXPLIQUÉ', gapAudience:'CE QUE L\u2019AUDIENCE A RÉELLEMENT COMPRIS',
+    liveEyebrow:'AFF PITCH LIVE', liveHeadline1:'Ne pitchez pas pour les applaudissements.', liveHeadline2:'Pitchez pour progresser.',
+    liveBody:'Des fondateurs sélectionnés présentent leur projet lors de sessions live communautaires et reçoivent des questions et retours structurés de la part d\u2019entrepreneurs, d\u2019experts et de membres de la communauté.',
+    applyPitch:'Candidater pour pitcher', discoverLive:'Découvrir Pitch Live',
+    readinessEyebrow:'STARTUP READINESS', readinessHeadline1:'Chaque étape.', readinessHeadline2:'Ses propres priorités.',
+    readinessDisclaimer:"La levée de fonds est une option de croissance, pas la définition du succès entrepreneurial.",
+    roadmapHeadline:'Ne devinez plus votre prochaine priorité.', roadmapLabel:'VOS PROCHAINES PRIORITÉS',
+    feedbackHeadline1:'Un score donne une direction.', feedbackHeadline2:'L\u2019expérience apporte de la perspective.',
+    formulaA:'DIAGNOSTIC STRUCTURÉ', formulaB:'RETOURS HUMAINS', formulaC:'ACTION DU FONDATEUR',
+    mentorLabel:'RETOUR MENTOR', mentorQuote:'« Votre client est clair, mais l\u2019acheteur économique ne l\u2019est pas encore. »',
+    communityHeadline1:'Avancez avec ceux', communityHeadline2:'qui comprennent le parcours.',
+    communityLine:'C\u2019est l\u2019écosystème que nous construisons.',
+    resourcesHeadline:'Apprendre. Appliquer. Progresser.', comingSoon:'BIENTÔT DISPONIBLE',
+    diasporaHeadline1:'Des fondateurs africains.', diasporaHeadline2:'Une expérience sans frontières.',
+    diasporaBody:"Africa Founders Factory vise à connecter les talents entrepreneuriaux des marchés africains à des professionnels expérimentés, des opérateurs et des membres de la diaspora africaine.",
+    finalHeadline1:"Votre startup n'a pas besoin d'être parfaite pour entrer dans la Factory.", finalHeadline2:'Elle doit être', finalHeadlineAccent:'prête à progresser', finalHeadlineEnd:'.',
+    footerMission:'Une communauté panafricaine où les fondateurs construisent, pitchent, se font challenger et progressent.',
+    colExplore:'EXPLORER', colCommunity:'COMMUNAUTÉ', colResources:'RESSOURCES', colCompany:'ENTREPRISE',
+    footerScoring:'Diagnostic Founder', footerJoinLink:'Rejoindre', footerWhoCanJoin:'Qui peut rejoindre', footerLibrary:'Bibliothèque',
+    legalPrivacy:'Confidentialité', legalTerms:'Conditions', legalCookies:'Cookies'
+  }
+};
+
+class Component extends DCLogic {
+  state = { heroLit: 4, factoryActive: 0, lang: 'en' };
+
+  componentDidMount() {
+    this._onScroll = () => {
+      const el = document.getElementById('affFactorySection');
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const vh = window.innerHeight || 800;
+      const total = 8;
+      let progress = (vh - rect.top) / (rect.height + vh * 0.3);
+      progress = Math.max(0, Math.min(1, progress));
+      const active = Math.min(total - 1, Math.floor(progress * total));
+      if (active !== this.state.factoryActive) this.setState({ factoryActive: active });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onScroll();
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this._onScroll); }
+
+  renderVals() {
+    const lang = this.state.lang;
+    const L = STRINGS[lang];
+    const isFr = lang === 'fr';
+    const muted = 'var(--aff-muted)';
+    const accent = 'var(--aff-accent)';
+
+    const heroLabelsSet = isFr ? ['IDÉE','CONSTRUIRE','PITCHER','CHALLENGER','AMÉLIORER','CONNECTER','GRANDIR'] : ['IDEA','BUILD','PITCH','CHALLENGE','IMPROVE','CONNECT','GROW'];
+    const heroJourney = heroLabelsSet.map((label, i) => {
+      const lit = i < this.state.heroLit;
+      return { label, hasNext: i < heroLabelsSet.length - 1,
+        dotBg: lit ? accent : 'rgba(143,167,179,0.35)', glow: lit ? '0 0 12px rgba(23,201,154,0.7)' : 'none',
+        textColor: lit ? '#F3F6F5' : muted, lineBg: i < this.state.heroLit - 1 ? accent : 'rgba(143,167,179,0.18)' };
+    });
+
+    const problemsData = isFr ? [
+      { title:'Positionnement flou', body:"Un fondateur peut comprendre son idée en profondeur alors que le marché ne saisit toujours pas pourquoi elle compte." },
+      { title:'Storytelling faible', body:"Une bonne activité mal expliquée peut ressembler à une mauvaise activité." },
+      { title:'Manque de challenge', body:"Sans retours extérieurs, les hypothèses deviennent facilement des certitudes." },
+      { title:'Accès limité', body:"Le talent est partout. L'accès à des personnes expérimentées, non." }
+    ] : [
+      { title:'Unclear Positioning', body:"A founder may understand the idea deeply while the market still doesn't understand why it matters." },
+      { title:'Weak Storytelling', body:'A good business badly explained can look like a bad business.' },
+      { title:'Lack of Challenge', body:'Without external feedback, assumptions easily become convictions.' },
+      { title:'Limited Access', body:"Talent is everywhere. Access to experienced people isn't." }
+    ];
+    const problems = problemsData.map((p, i) => ({ ...p,
+      bb: i < 2 ? '1px solid var(--aff-line)' : 'none',
+      br: i % 2 === 0 ? '1px solid var(--aff-line)' : 'none'
+    }));
+
+    const factoryLabelsSet = isFr ? ['IDÉE','CLARIFIER','CONSTRUIRE','PITCHER','CHALLENGER','AMÉLIORER','CONNECTER','GRANDIR'] : ['IDEA','CLARIFY','BUILD','PITCH','CHALLENGE','IMPROVE','CONNECT','GROW'];
+    const sentencesEn = ['Every founder starts with a rough idea worth pressure-testing.','Sharpen the story until it is impossible to misunderstand.','Turn the idea into something real people can react to.','Say it out loud, in front of people who will push back.','Face direct, expert scrutiny of the venture and the story.','Take the feedback and rebuild the weak parts.','Meet the people who can open the next door.','Keep moving, one iteration at a time.'];
+    const sentencesFr = ["Chaque fondateur part d'une idée à tester sous pression.","Affiner l'histoire jusqu'à la rendre impossible à mal comprendre.","Transformer l'idée en quelque chose de réel, sur lequel réagir.","Le dire à voix haute, devant des gens prêts à challenger.","Faire face à l'examen direct et expert du projet et du discours.","Prendre les retours et reconstruire les points faibles.","Rencontrer les personnes qui peuvent ouvrir la prochaine porte.","Avancer, une itération à la fois."];
+    const sentences = isFr ? sentencesFr : sentencesEn;
+    const active = this.state.factoryActive;
+    const factorySteps = factoryLabelsSet.map((label, i) => {
+      const lit = i <= active; const isCurrent = i === active;
+      return { label, hasNext: i < factoryLabelsSet.length - 1,
+        dotBg: lit ? accent : 'rgba(143,167,179,0.35)',
+        glow: isCurrent ? '0 0 14px rgba(23,201,154,0.8)' : (lit ? '0 0 8px rgba(23,201,154,0.4)' : 'none'),
+        textColor: lit ? '#F3F6F5' : muted, lineBg: i < active ? accent : 'rgba(143,167,179,0.18)' };
+    });
+
+    const scoreDims = (isFr ? [
+      { label:'CLARTÉ DU PROBLÈME', pct:78 }, { label:'CLIENT & MARCHÉ', pct:61 }, { label:'PROPOSITION DE VALEUR', pct:55 },
+      { label:'MODÈLE ÉCONOMIQUE', pct:47 }, { label:'MATURITÉ PRODUIT', pct:70 }, { label:'TRACTION', pct:38 }
+    ] : [
+      { label:'PROBLEM CLARITY', pct:78 }, { label:'CUSTOMER & MARKET', pct:61 }, { label:'VALUE PROPOSITION', pct:55 },
+      { label:'BUSINESS MODEL', pct:47 }, { label:'PRODUCT READINESS', pct:70 }, { label:'TRACTION', pct:38 }
+    ]);
+
+    const scoreCycle = (isFr ? ['ÉVALUER','COMPRENDRE','PRIORISER','AMÉLIORER','RÉÉVALUER','MESURER LE PROGRÈS'] : ['ASSESS','UNDERSTAND','PRIORITIZE','IMPROVE','REASSESS','MEASURE PROGRESS'])
+      .map((label, i, arr) => ({ label, hasNext: i < arr.length - 1 }));
+
+    const actionCards = isFr ? [
+      { title:'MATURITÉ DU PITCH', score:58, status:'À travailler', gap:'Le problème est compréhensible, mais la proposition de valeur reste trop large.', action:'Réécrire la proposition de valeur en une phrase.', resource:'Guide Proposition de Valeur' },
+      { title:'VALIDATION MARCHÉ', score:42, status:'À travailler', gap:"Les hypothèses clients ne sont pas suffisamment validées.", action:'Mener 10 entretiens clients structurés.', resource:"Modèle d'entretien client" }
+    ] : [
+      { title:'PITCH READINESS', score:58, status:'Needs work', gap:'The problem is understandable, but the value proposition remains too broad.', action:'Rewrite the one-sentence value proposition.', resource:'Value Proposition Guide' },
+      { title:'MARKET VALIDATION', score:42, status:'Needs work', gap:'Customer assumptions are not sufficiently validated.', action:'Conduct 10 structured customer interviews.', resource:'Customer Interview Template' }
+    ];
+
+    const progressAssessments = (isFr ? ['ÉVALUATION 01','ÉVALUATION 02','ÉVALUATION 03','ÉVALUATION 04'] : ['ASSESSMENT 01','ASSESSMENT 02','ASSESSMENT 03','ASSESSMENT 04'])
+      .map((label, i) => ({ label, value: [48,57,68,74][i] }));
+    const categoryEvolution = [
+      { label: isFr ? 'Pitch' : 'Pitch', from:42, to:71 }, { label: isFr ? 'Marché' : 'Market', from:55, to:67 },
+      { label: isFr ? 'Produit' : 'Product', from:61, to:78 }, { label:'Finance', from:31, to:59 }
+    ];
+
+    const profileGroups = isFr ? [
+      { title:'PROJET', items:['Identité','Problème','Solution','Proposition de valeur','Modèle économique','Marché'] },
+      { title:'EXÉCUTION', items:['Produit','Traction','Équipe','Finances','Jalons','Documents'] },
+      { title:'CROISSANCE', items:['Pitch','Retours','Sessions',"Plan d'action",'Founder Score','Historique de progression'] }
+    ] : [
+      { title:'VENTURE', items:['Identity','Problem','Solution','Value Proposition','Business Model','Market'] },
+      { title:'EXECUTION', items:['Product','Traction','Team','Financials','Milestones','Documents'] },
+      { title:'GROWTH', items:['Pitch','Feedback','Sessions','Action Plan','Founder Score','Progress History'] }
+    ];
+
+    const pitchLabSteps = (isFr ? [
+      { label:'PRÉPARER', desc:'Structurer le message.' }, { label:'PITCHER', desc:'Expliquer le projet dans des conditions réelles.' },
+      { label:'CHALLENGER', desc:'Faire face à des questions difficiles.' }, { label:'FEEDBACK', desc:"Comprendre ce qui n'était pas clair." },
+      { label:'AMÉLIORER', desc:'Réécrire et renforcer les points faibles.' }, { label:'RÉPÉTER', desc:'Pitcher à nouveau.' }
+    ] : [
+      { label:'PREPARE', desc:'Structure the message.' }, { label:'PITCH', desc:'Explain the venture under real constraints.' },
+      { label:'CHALLENGE', desc:'Face difficult questions.' }, { label:'FEEDBACK', desc:'Understand what was unclear or unconvincing.' },
+      { label:'IMPROVE', desc:'Rewrite and strengthen weak areas.' }, { label:'REPEAT', desc:'Pitch again.' }
+    ]).map((s, i, arr) => ({ ...s, hasNext: i < arr.length - 1 }));
+
+    const pitchLiveFormat = isFr ? [
+      { value:'03 MIN', label:'LE PITCH' }, { value:'05 MIN', label:'LE CHALLENGE' }, { value:'05 MIN', label:'QUESTIONS' }, { value:'01', label:"PLAN D'ACTION" }
+    ] : [
+      { value:'03 MIN', label:'THE PITCH' }, { value:'05 MIN', label:'THE CHALLENGE' }, { value:'05 MIN', label:'QUESTIONS' }, { value:'01', label:'ACTION PLAN' }
+    ];
+
+    const readinessStages = (isFr ? [
+      { label:'IDÉE', items:['Compréhension du problème','Découverte client','Engagement du fondateur'] },
+      { label:'VALIDATION', items:['Entretiens clients','Proposition de valeur','Premières expérimentations'] },
+      { label:'CONSTRUCTION', items:['Produit','Modèle économique','Métriques initiales'] },
+      { label:'TRACTION', items:['Usage','Revenus','Rétention'] },
+      { label:'PRÊT À LEVER', items:['Discours','Métriques','Documents'] },
+      { label:'ÉCHELLE', items:['Processus','Équipe','Gouvernance'] }
+    ] : [
+      { label:'IDEA', items:['Problem understanding','Customer discovery','Founder commitment'] },
+      { label:'VALIDATION', items:['Customer interviews','Value proposition','Early experiments'] },
+      { label:'BUILD', items:['Product','Business model','Initial metrics'] },
+      { label:'TRACTION', items:['Usage','Revenue','Retention'] },
+      { label:'FUNDRAISING READY', items:['Narrative','Metrics','Documents'] },
+      { label:'SCALE', items:['Processes','Team','Governance'] }
+    ]).map((s, i, arr) => ({ ...s, hasNext: i < arr.length - 1 }));
+
+    const roadmapItems = isFr ? [
+      { n:'01', text:'Valider le prix avec 5 clients potentiels.' }, { n:'02', text:'Réécrire l\u2019énoncé du problème.' },
+      { n:'03', text:'Compléter les hypothèses financières sur 12 mois.' }, { n:'04', text:'Enregistrer le Pitch V2.' }, { n:'05', text:'Demander une relecture mentor.' }
+    ] : [
+      { n:'01', text:'Validate pricing with 5 prospective customers.' }, { n:'02', text:'Rewrite the problem statement.' },
+      { n:'03', text:'Complete basic 12-month financial assumptions.' }, { n:'04', text:'Record Pitch V2.' }, { n:'05', text:'Request mentor review.' }
+    ];
+
+    const feedbackActions = (isFr ? ['Consulter','Répondre','Créer une action','Marquer comme traité','Demander un suivi'] : ['Review','Reply','Create action','Mark addressed','Request follow-up'])
+      .map((label, i) => ({ label, color: i === 2 ? accent : muted, border: i === 2 ? '1px solid rgba(23,201,154,0.4)' : '1px solid var(--aff-line)' }));
+
+    const communityChips = (isFr ? [
+      { label:'FONDATEURS' }, { label:'ASPIRANTS FONDATEURS' }, { label:'EXPERTS' }, { label:'MENTORS' },
+      { label:'OPÉRATEURS' }, { label:'DIASPORA AFRICAINE' }, { label:'PARTENAIRES ÉCOSYSTÈME' }, { label:'INVESTISSEURS (À VENIR)', future:true }
+    ] : [
+      { label:'FOUNDERS' }, { label:'ASPIRING FOUNDERS' }, { label:'EXPERTS' }, { label:'MENTORS' },
+      { label:'OPERATORS' }, { label:'AFRICAN DIASPORA' }, { label:'ECOSYSTEM PARTNERS' }, { label:'INVESTORS (FUTURE)', future:true }
+    ]).map(c => ({ label:c.label, borderStyle: c.future ? '1px dashed rgba(143,167,179,0.35)' : '1px solid var(--aff-line)', color: c.future ? muted : '#F3F6F5' }));
+
+    const resourceCategories = isFr ? ['PITCH','MODÈLE ÉCONOMIQUE','DÉCOUVERTE CLIENT','MARCHÉ','PRODUIT','TRACTION','FINANCE','LEVÉE DE FONDS','LEADERSHIP','IA & TECHNOLOGIE','BASES JURIDIQUES','CROISSANCE']
+      : ['PITCH','BUSINESS MODEL','CUSTOMER DISCOVERY','MARKET','PRODUCT','TRACTION','FINANCE','FUNDRAISING','LEADERSHIP','AI & TECHNOLOGY','LEGAL BASICS','GROWTH'];
+    const resourceTypes = isFr ? ['Guides','Modèles','Checklists','Vidéos','Replays Live','Frameworks','Cas de fondateurs']
+      : ['Guides','Templates','Checklists','Videos','Live Replays','Frameworks','Founder Cases'];
+
+    const cityNames = ['Abidjan','Dakar','Lagos','Accra','Douala','Brazzaville','Nairobi','Kigali','Casablanca','Paris','London','Montreal','New York'];
+
+    return {
+      L, frColor: isFr ? '#F3F6F5' : muted, enColor: isFr ? muted : '#F3F6F5',
+      setFr: () => this.setState({ lang: 'fr' }), setEn: () => this.setState({ lang: 'en' }),
+      heroJourney, problems, factorySteps, activeSentence: sentences[active],
+      scoreDims, scoreCycle, actionCards, progressAssessments, categoryEvolution,
+      profileGroups, pitchLabSteps, pitchLiveFormat, readinessStages,
+      roadmapItems, feedbackActions, communityChips, resourceCategories, resourceTypes, cityNames
+    };
+  }
+}
+
+</script>
+</body>
+</html>

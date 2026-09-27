@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/styles.css">
+  <script src="_ds/nocturne-fed67e80-e0ff-4a63-9a16-843533136c6f/_ds_bundle.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>:root{--aff-bg:#001A2D;--aff-accent:#17C99A;--aff-text:#F3F6F5;--aff-muted:#8FA7B3;--aff-line:rgba(143,167,179,0.18);--aff-font-head:'Plus Jakarta Sans',sans-serif;--aff-font-body:'Inter',sans-serif;}body{margin:0;background:var(--aff-bg);}a{color:var(--aff-accent);}</style>
+</helmet>
+<div style="width:100%;max-width:1440px;margin:0 auto;min-height:700px;background:var(--aff-bg);font-family:var(--aff-font-body);color:var(--aff-text);">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:28px 120px;">
+    <a href="AFF%20Desktop%201440.dc.html" style="font-family:var(--aff-font-head);font-weight:700;font-size:16px;letter-spacing:0.06em;color:var(--aff-text);text-decoration:none;">AFRICA FOUNDERS FACTORY</a>
+    <div style="display:flex;gap:6px;font-size:13px;font-weight:600;">
+      <span onClick="{{ setFr }}" style="cursor:pointer;color:{{ frColor }};">FR</span><span style="color:var(--aff-muted);">/</span><span onClick="{{ setEn }}" style="cursor:pointer;color:{{ enColor }};">EN</span>
+    </div>
+  </header>
+  <section style="padding:80px 120px 140px;max-width:720px;margin:0 auto;">
+    <h1 style="font-family:var(--aff-font-head);font-weight:600;font-size:36px;margin:0 0 20px;">{{ L.title }}</h1>
+    <p style="font-size:16px;line-height:1.7;color:var(--aff-muted);margin:0;">{{ L.body }}</p>
+  </section>
+  <footer style="padding:40px 120px;border-top:1px solid var(--aff-line);text-align:center;font-size:13px;color:var(--aff-muted);">AfricaFoundersFactory.com</footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const STRINGS = {
+  en: { title:'Terms of Service', body:'Africa Founders Factory is currently a community, not a commercial service — there are no paid plans, subscriptions or fundraising guarantees. Full terms will be published as the platform develops.' },
+  fr: { title:'Conditions d\u2019utilisation', body:"Africa Founders Factory est aujourd'hui une communauté, pas un service commercial : il n'y a ni offre payante, ni abonnement, ni garantie de levée de fonds. Les conditions complètes seront publiées à mesure que la plateforme se développe." }
+};
+class Component extends DCLogic {
+  state = { lang: 'en' };
+  renderVals() {
+    const isFr = this.state.lang === 'fr';
+    return { L: STRINGS[this.state.lang], frColor: isFr ? '#F3F6F5' : 'var(--aff-muted)', enColor: isFr ? 'var(--aff-muted)' : '#F3F6F5',
+      setFr: () => this.setState({ lang: 'fr' }), setEn: () => this.setState({ lang: 'en' }) };
+  }
+}
+
+</script>
+</body>
+</html>

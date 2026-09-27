@@ -1,0 +1,397 @@
+{
+  "nav": {
+    "mission": "Mission",
+    "founders": "Fondateurs",
+    "pitchLive": "Pitch Live",
+    "community": "Communauté",
+    "resources": "Ressources",
+    "about": "À propos",
+    "signIn": "Connexion"
+  },
+  "common": {
+    "joinCta": "Rejoindre la communauté",
+    "pitchCta": "Présenter ma startup",
+    "back": "Retour",
+    "continue": "Continuer",
+    "submit": "Envoyer",
+    "cancel": "Annuler",
+    "backHome": "Retour à l'accueil",
+    "illustrativeData": "Données illustratives.",
+    "siteName": "Africa Founders Factory",
+    "siteUrl": "AfricaFoundersFactory.com"
+  },
+  "footer": {
+    "mission": "Une communauté panafricaine où les fondateurs construisent, pitchent, se font challenger et progressent.",
+    "colExplore": "EXPLORER",
+    "colCommunity": "COMMUNAUTÉ",
+    "colResources": "RESSOURCES",
+    "colCompany": "ENTREPRISE",
+    "scoring": "Diagnostic Founder",
+    "joinLink": "Rejoindre",
+    "whoCanJoin": "Qui peut rejoindre",
+    "library": "Bibliothèque",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "cookies": "Cookies"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "LA COMMUNAUTÉ PANAFRICAINE DES FONDATEURS",
+      "headlinePre": "L'Afrique ne manque pas d'idées.",
+      "headlineMid": "Elle a besoin de",
+      "headlineAccent": "fondateurs plus forts",
+      "headlineEnd": ".",
+      "body": "Africa Founders Factory est une communauté où les entrepreneurs challengent leurs idées, affinent leur pitch, renforcent leurs projets et se connectent à des personnes capables de les faire avancer.",
+      "tagline": "FONDATEURS · EXPERTS · MENTORS · DIASPORA · ÉCOSYSTÈME"
+    },
+    "heroJourney": {
+      "labels": ["IDÉE", "CONSTRUIRE", "PITCHER", "CHALLENGER", "AMÉLIORER", "CONNECTER", "GRANDIR"],
+      "lit": 4
+    },
+    "problem": {
+      "eyebrow": "POURQUOI LA FACTORY",
+      "headline1": "Les bonnes idées n'échouent pas seulement",
+      "headline2": "à cause de mauvaises idées.",
+      "body": "La plupart des fondateurs ne manquent pas d'ambition. Il leur manque le test critique, le storytelling et l'accès qui transforment une idée prometteuse en un projet auquel on croit.",
+      "items": [
+        { "title": "Positionnement flou", "body": "Un fondateur peut comprendre son idée en profondeur alors que le marché ne saisit toujours pas pourquoi elle compte." },
+        { "title": "Storytelling faible", "body": "Une bonne activité mal expliquée peut ressembler à une mauvaise activité." },
+        { "title": "Manque de challenge", "body": "Sans retours extérieurs, les hypothèses deviennent facilement des certitudes." },
+        { "title": "Accès limité", "body": "Le talent est partout. L'accès à des personnes expérimentées, non." }
+      ]
+    },
+    "factory": {
+      "eyebrow": "LA FACTORY",
+      "headline1": "Les fondateurs ne naissent pas prêts.",
+      "headline2": "Ils itèrent.",
+      "labels": ["IDÉE", "CLARIFIER", "CONSTRUIRE", "PITCHER", "CHALLENGER", "AMÉLIORER", "CONNECTER", "GRANDIR"],
+      "sentences": [
+        "Chaque fondateur part d'une idée à tester sous pression.",
+        "Affiner l'histoire jusqu'à la rendre impossible à mal comprendre.",
+        "Transformer l'idée en quelque chose de réel, sur lequel réagir.",
+        "Le dire à voix haute, devant des gens prêts à challenger.",
+        "Faire face à l'examen direct et expert du projet et du discours.",
+        "Prendre les retours et reconstruire les points faibles.",
+        "Rencontrer les personnes qui peuvent ouvrir la prochaine porte.",
+        "Avancer, une itération à la fois."
+      ]
+    },
+    "scoring": {
+      "eyebrow": "SAVOIR OÙ VOUS EN ÊTES",
+      "headline1": "On ne peut pas améliorer",
+      "headline2": "ce que l'on ne comprend pas.",
+      "body": "Chaque fondateur entre dans la Factory à un stade différent. Africa Founders Factory aide les entrepreneurs à comprendre où en est réellement leur projet, à identifier leurs principales faiblesses et à concentrer leurs efforts sur les prochaines priorités.",
+      "demoScoreLabel": "SCORE DE DÉMONSTRATION",
+      "demoScoreValue": 64,
+      "demoScoreMax": 100,
+      "disclaimer": "Ce n'est pas une notation investisseur. Ni une valorisation. Ni une promesse de levée de fonds — un diagnostic structuré pour aider les fondateurs à comprendre leur niveau de préparation.",
+      "dimensions": [
+        { "label": "CLARTÉ DU PROBLÈME", "pct": 78 },
+        { "label": "CLIENT & MARCHÉ", "pct": 61 },
+        { "label": "PROPOSITION DE VALEUR", "pct": 55 },
+        { "label": "MODÈLE ÉCONOMIQUE", "pct": 47 },
+        { "label": "MATURITÉ PRODUIT", "pct": 70 },
+        { "label": "TRACTION", "pct": 38 }
+      ]
+    },
+    "scoreCycle": {
+      "headline1": "Le score n'est pas l'objectif.",
+      "headline2": "La progression l’est.",
+      "steps": ["ÉVALUER", "COMPRENDRE", "PRIORISER", "AMÉLIORER", "RÉÉVALUER", "MESURER LE PROGRÈS"]
+    },
+    "scoreToAction": {
+      "headline1": "Chaque faiblesse doit mener",
+      "headline2": "à une prochaine action.",
+      "gapLabel": "ÉCART IDENTIFIÉ",
+      "actionLabel": "PROCHAINE ACTION",
+      "cards": [
+        { "title": "MATURITÉ DU PITCH", "score": 58, "status": "À travailler", "gap": "Le problème est compréhensible, mais la proposition de valeur reste trop large.", "action": "Réécrire la proposition de valeur en une phrase.", "resource": "Guide Proposition de Valeur" },
+        { "title": "VALIDATION MARCHÉ", "score": 42, "status": "À travailler", "gap": "Les hypothèses clients ne sont pas suffisamment validées.", "action": "Mener 10 entretiens clients structurés.", "resource": "Modèle d'entretien client" }
+      ]
+    },
+    "progress": {
+      "headline1": "Ne vous comparez pas à une autre startup.",
+      "headline2": "Comparez-vous à votre dernière évaluation.",
+      "assessments": [
+        { "label": "ÉVALUATION 01", "value": 48 },
+        { "label": "ÉVALUATION 02", "value": 57 },
+        { "label": "ÉVALUATION 03", "value": 68 },
+        { "label": "ÉVALUATION 04", "value": 74 }
+      ],
+      "categories": [
+        { "label": "Pitch", "from": 42, "to": 71 },
+        { "label": "Marché", "from": 55, "to": 67 },
+        { "label": "Produit", "from": 61, "to": 78 },
+        { "label": "Finance", "from": 31, "to": 59 }
+      ]
+    },
+    "profile": {
+      "eyebrow": "VOTRE ESPACE FONDATEUR",
+      "headline1": "Votre startup.",
+      "headline2": "Structurée au même endroit.",
+      "groups": [
+        { "title": "PROJET", "items": ["Identité", "Problème", "Solution", "Proposition de valeur", "Modèle économique", "Marché"] },
+        { "title": "EXÉCUTION", "items": ["Produit", "Traction", "Équipe", "Finances", "Jalons", "Documents"] },
+        { "title": "CROISSANCE", "items": ["Pitch", "Retours", "Sessions", "Plan d'action", "Founder Score", "Historique de progression"] }
+      ]
+    },
+    "pitchLab": {
+      "eyebrow": "PITCH LAB",
+      "headline1": "Un bon pitch",
+      "headline2": "se construit par la répétition.",
+      "steps": [
+        { "label": "PRÉPARER", "desc": "Structurer le message." },
+        { "label": "PITCHER", "desc": "Expliquer le projet dans des conditions réelles." },
+        { "label": "CHALLENGER", "desc": "Faire face à des questions difficiles." },
+        { "label": "FEEDBACK", "desc": "Comprendre ce qui n'était pas clair." },
+        { "label": "AMÉLIORER", "desc": "Réécrire et renforcer les points faibles." },
+        { "label": "RÉPÉTER", "desc": "Pitcher à nouveau." }
+      ],
+      "gapFounder": "CE QUE LE FONDATEUR PENSE AVOIR EXPLIQUÉ",
+      "gapAudience": "CE QUE L’AUDIENCE A RÉELLEMENT COMPRIS"
+    },
+    "pitchLive": {
+      "eyebrow": "AFF PITCH LIVE",
+      "headline1": "Ne pitchez pas pour les applaudissements.",
+      "headline2": "Pitchez pour progresser.",
+      "body": "Des fondateurs sélectionnés présentent leur projet lors de sessions live communautaires et reçoivent des questions et retours structurés de la part d’entrepreneurs, d’experts et de membres de la communauté.",
+      "applyCta": "Candidater pour pitcher",
+      "discoverCta": "Découvrir Pitch Live",
+      "format": [
+        { "value": "03 MIN", "label": "LE PITCH" },
+        { "value": "05 MIN", "label": "LE CHALLENGE" },
+        { "value": "05 MIN", "label": "QUESTIONS" },
+        { "value": "01", "label": "PLAN D'ACTION" }
+      ]
+    },
+    "readiness": {
+      "eyebrow": "STARTUP READINESS",
+      "headline1": "Chaque étape.",
+      "headline2": "Ses propres priorités.",
+      "disclaimer": "La levée de fonds est une option de croissance, pas la définition du succès entrepreneurial."
+    },
+    "roadmap": {
+      "headline": "Ne devinez plus votre prochaine priorité.",
+      "label": "VOS PROCHAINES PRIORITÉS",
+      "items": [
+        { "n": "01", "text": "Valider le prix avec 5 clients potentiels." },
+        { "n": "02", "text": "Réécrire l’énoncé du problème." },
+        { "n": "03", "text": "Compléter les hypothèses financières sur 12 mois." },
+        { "n": "04", "text": "Enregistrer le Pitch V2." },
+        { "n": "05", "text": "Demander une relecture mentor." }
+      ]
+    },
+    "feedback": {
+      "headline1": "Un score donne une direction.",
+      "headline2": "L’expérience apporte de la perspective.",
+      "formulaA": "DIAGNOSTIC STRUCTURÉ",
+      "formulaB": "RETOURS HUMAINS",
+      "formulaC": "ACTION DU FONDATEUR",
+      "mentorLabel": "RETOUR MENTOR",
+      "mentorQuote": "« Votre client est clair, mais l’acheteur économique ne l’est pas encore. »",
+      "actions": ["Consulter", "Répondre", "Créer une action", "Marquer comme traité", "Demander un suivi"]
+    },
+    "community": {
+      "headline1": "Avancez avec ceux",
+      "headline2": "qui comprennent le parcours.",
+      "line": "C’est l’écosystème que nous construisons."
+    },
+    "resources": {
+      "headline": "Apprendre. Appliquer. Progresser.",
+      "comingSoon": "BIENTÔT DISPONIBLE"
+    },
+    "diaspora": {
+      "headline1": "Des fondateurs africains.",
+      "headline2": "Une expérience sans frontières.",
+      "body": "Africa Founders Factory vise à connecter les talents entrepreneuriaux des marchés africains à des professionnels expérimentés, des opérateurs et des membres de la diaspora africaine."
+    },
+    "finalCta": {
+      "headline1": "Votre startup n'a pas besoin d'être parfaite pour entrer dans la Factory.",
+      "headline2": "Elle doit être",
+      "headlineAccent": "prête à progresser",
+      "headlineEnd": "."
+    }
+  },
+  "readinessStages": [
+    { "label": "IDÉE", "items": ["Compréhension du problème", "Découverte client", "Engagement du fondateur"] },
+    { "label": "VALIDATION", "items": ["Entretiens clients", "Proposition de valeur", "Premières expérimentations"] },
+    { "label": "CONSTRUCTION", "items": ["Produit", "Modèle économique", "Métriques initiales"] },
+    { "label": "TRACTION", "items": ["Usage", "Revenus", "Rétention"] },
+    { "label": "PRÊT À LEVER", "items": ["Discours", "Métriques", "Documents"] },
+    { "label": "ÉCHELLE", "items": ["Processus", "Équipe", "Gouvernance"] }
+  ],
+  "communityChips": [
+    { "label": "FONDATEURS" },
+    { "label": "ASPIRANTS FONDATEURS" },
+    { "label": "EXPERTS" },
+    { "label": "MENTORS" },
+    { "label": "OPÉRATEURS" },
+    { "label": "DIASPORA AFRICAINE" },
+    { "label": "PARTENAIRES ÉCOSYSTÈME" },
+    { "label": "INVESTISSEURS (À VENIR)", "future": true }
+  ],
+  "resourceCategories": ["PITCH", "MODÈLE ÉCONOMIQUE", "DÉCOUVERTE CLIENT", "MARCHÉ", "PRODUIT", "TRACTION", "FINANCE", "LEVÉE DE FONDS", "LEADERSHIP", "IA & TECHNOLOGIE", "BASES JURIDIQUES", "CROISSANCE"],
+  "resourceTypes": ["Guides", "Modèles", "Checklists", "Vidéos", "Replays Live", "Frameworks", "Cas de fondateurs"],
+  "diasporaCities": ["Abidjan", "Dakar", "Lagos", "Accra", "Douala", "Brazzaville", "Nairobi", "Kigali", "Casablanca", "Paris", "London", "Montreal", "New York"],
+  "mission": {
+    "eyebrow": "NOTRE MISSION",
+    "headline1": "L'Afrique ne manque pas d'idées.",
+    "headline2": "Elle a besoin de",
+    "headlineAccent": "fondateurs plus forts",
+    "headlineEnd": ".",
+    "body1": "Africa Founders Factory est une communauté panafricaine construite autour d'une même boucle : construire, pitcher, se faire challenger, s'améliorer, se connecter, grandir. Il n'y a aujourd'hui ni offre payante, ni prestation de conseil, ni promesse de levée de fonds — seulement un lieu où les fondateurs peuvent tester leurs idées face à des personnes qui comprennent le parcours.",
+    "body2": "Nous pensons que la plus grande contrainte des fondateurs africains n'est pas un manque d'idées, mais le manque de challenge structuré, d'entraînement au storytelling et d'accès à des personnes expérimentées qui transforment une idée prometteuse en un projet auquel on croit."
+  },
+  "about": {
+    "eyebrow": "À PROPOS",
+    "headline": "Une communauté panafricaine, pensée communauté d'abord.",
+    "body1": "Africa Founders Factory démarre comme une communauté : fondateurs, aspirants fondateurs, experts, mentors, opérateurs, diaspora et partenaires écosystème, réunis autour d'une même boucle — construire, pitcher, se faire challenger, s'améliorer, se connecter, grandir.",
+    "body2": "Il n'y a aujourd'hui ni offre payante, ni prestation de conseil, ni abonnement. Des programmes plus avancés pourront voir le jour plus tard, une fois la communauté et le modèle de la Factory éprouvés ensemble.",
+    "contact": {
+      "heading": "Nous contacter",
+      "body": "Une question, une proposition ou envie de contribuer à Africa Founders Factory ? Écrivez-nous.",
+      "emailLabel": "Écrivez-nous directement",
+      "fullName": "Nom complet",
+      "email": "Email",
+      "organization": "Organisation (optionnel)",
+      "subject": "Objet",
+      "message": "Message",
+      "consent": "J'accepte qu'Africa Founders Factory utilise ces informations pour répondre à mon message.",
+      "send": "Envoyer",
+      "sending": "Envoi…",
+      "errorValidation": "Merci de renseigner tous les champs requis avec une adresse email valide.",
+      "errorNotConfigured": "L'envoi d'emails n'est pas encore connecté. Écrivez-nous directement à",
+      "errorSendFailed": "Une erreur est survenue lors de l'envoi. Réessayez ou écrivez-nous directement.",
+      "successTitle": "Message envoyé.",
+      "successBody": "Merci de nous avoir contactés — nous reviendrons vers vous rapidement."
+    }
+  },
+  "founders": {
+    "eyebrow": "POUR LES FONDATEURS",
+    "headline1": "Chaque étape.",
+    "headline2": "Ses propres priorités.",
+    "body": "Où que se trouve votre projet aujourd'hui, la Factory vous aide à comprendre ce qui compte ensuite, grâce à un diagnostic structuré, un entraînement au pitch et un challenge honnête.",
+    "disclaimer": "La levée de fonds est une option de croissance, pas la définition du succès entrepreneurial."
+  },
+  "community": {
+    "headline1": "Avancez avec ceux",
+    "headline2": "qui comprennent le parcours.",
+    "line": "C'est l'écosystème que nous construisons.",
+    "startCta": "Commencer",
+    "pathways": [
+      { "title": "J’AI UNE IDÉE", "desc": "Transformez votre intuition en projet entrepreneurial structuré." },
+      { "title": "JE CONSTRUIS", "desc": "Challengez ce que vous avez construit et identifiez vos prochaines priorités." },
+      { "title": "J’AI DE L’EXPÉRIENCE", "desc": "Partagez votre expérience avec la prochaine génération de fondateurs africains." },
+      { "title": "J'ACCOMPAGNE DES ENTREPRENEURS", "desc": "Connectez votre organisation à un écosystème entrepreneurial en construction." }
+    ]
+  },
+  "pitchLive": {
+    "eyebrow": "AFF PITCH LIVE",
+    "headline1": "Ne pitchez pas pour les applaudissements.",
+    "headline2": "Pitchez pour progresser.",
+    "body": "Des fondateurs sélectionnés présentent leur projet lors de sessions live communautaires et reçoivent des questions et retours structurés de la part d'entrepreneurs, d'experts et de membres de la communauté. Candidater ne garantit pas d'être sélectionné.",
+    "applyCta": "Candidater pour pitcher",
+    "afterHeadline1": "Le Live se termine.",
+    "afterHeadline2": "Le travail commence.",
+    "format": [
+      { "value": "03 MIN", "label": "LE PITCH" },
+      { "value": "05 MIN", "label": "LE CHALLENGE" },
+      { "value": "05 MIN", "label": "QUESTIONS" },
+      { "value": "01", "label": "PLAN D'ACTION" }
+    ],
+    "afterLoop": ["PITCH LIVE", "RETOURS CAPTURÉS", "PROFIL MIS À JOUR", "PLAN D'ACTION CRÉÉ", "LE FONDATEUR PROGRESSE", "NOUVELLE ÉVALUATION", "PROGRÈS SUIVI"]
+  },
+  "resources": {
+    "headline": "Apprendre. Appliquer. Progresser.",
+    "searchPlaceholder": "Rechercher une ressource...",
+    "comingSoon": "BIENTÔT DISPONIBLE",
+    "emptyState": "Notre bibliothèque de ressources grandit. Les premiers guides et modèles sont en cours de création."
+  },
+  "signIn": {
+    "title": "Connexion",
+    "subtitle": "La plateforme Founder arrive bientôt.",
+    "email": "Email",
+    "password": "Mot de passe",
+    "forgot": "Mot de passe oublié ?",
+    "submit": "Se connecter",
+    "noAccount": "Pas encore de compte ?"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "body": "Notre politique de confidentialité complète est en cours de finalisation avec la plateforme. En attendant, les informations soumises sur ce site (candidatures communauté, candidatures pitch) ne servent qu'au fonctionnement d'Africa Founders Factory et ne sont jamais vendues à des tiers."
+  },
+  "terms": {
+    "title": "Conditions d’utilisation",
+    "body": "Africa Founders Factory est aujourd'hui une communauté, pas un service commercial : il n'y a ni offre payante, ni abonnement, ni garantie de levée de fonds. Les conditions complètes seront publiées à mesure que la plateforme se développe."
+  },
+  "notFound": {
+    "title": "Cette page n'existe pas encore.",
+    "subtitle": "Retournons à la Factory.",
+    "cta": "Retour à l'accueil"
+  },
+  "joinCommunity": {
+    "stepLabel": "ÉTAPE",
+    "step1Title": "Qui êtes-vous ?",
+    "step2Title": "À propos de vous.",
+    "step3Title": "Dites-nous en plus.",
+    "step4Title": "Pourquoi voulez-vous rejoindre ?",
+    "step5Title": "Vérifier et envoyer.",
+    "fullName": "Nom complet",
+    "email": "Email",
+    "country": "Pays",
+    "startupName": "Nom de la startup",
+    "sector": "Secteur",
+    "stage": "Stade",
+    "description": "Description courte",
+    "challenge": "Principal défi actuel",
+    "successTitle": "Bienvenue dans la Factory.",
+    "successBody": "Nous reviendrons vers vous dès que la communauté ouvrira vos prochaines étapes.",
+    "roleHintFounder": "Quelques mots sur votre projet.",
+    "roleHintOther": "Quelques mots sur votre parcours.",
+    "roles": ["Fondateur", "Aspirant fondateur", "Expert / Mentor", "Partenaire écosystème", "Investisseur", "Autre"],
+    "reviewLabels": ["Rôle", "Nom", "Email", "Pays", "Description", "Pourquoi rejoindre"]
+  },
+  "applyToPitch": {
+    "stepLabel": "ÉTAPE",
+    "step1Title": "Votre startup, en bref.",
+    "step2Title": "Le pitch.",
+    "step3Title": "Documents.",
+    "step3Sub": "Tout est optionnel — partagez ce que vous avez.",
+    "step4Title": "La question signature.",
+    "step4Sub": "Quelle est LA question sur laquelle vous souhaitez être challengé par nos experts ?",
+    "step5Title": "Vérifier et envoyer.",
+    "founder": "Nom du fondateur",
+    "startup": "Nom de la startup",
+    "country": "Pays",
+    "sector": "Secteur",
+    "stage": "Stade",
+    "website": "Site web (optionnel)",
+    "oneLiner": "Description en une phrase",
+    "problem": "Problème",
+    "solution": "Solution",
+    "traction": "Traction actuelle",
+    "challenge": "Principal défi actuel",
+    "deck": "Pitch deck",
+    "deckHint": "Déposez un fichier ou ajoutez un lien plus tard.",
+    "video": "URL de la vidéo pitch",
+    "linkedin": "LinkedIn",
+    "noGuarantee": "Candidater ne garantit pas une sélection.",
+    "successTitle": "Votre candidature est envoyée.",
+    "successBody": "Candidater ne garantit pas une sélection. Nous vous contacterons si votre pitch est retenu pour une prochaine session.",
+    "reviewLabels": ["Fondateur", "Startup", "Pays / Secteur", "Phrase clé", "Vidéo pitch", "Question signature"]
+  },
+  "metadata": {
+    "home": { "title": "Africa Founders Factory — La communauté panafricaine des fondateurs", "description": "Une communauté où les fondateurs africains challengent leurs idées, affinent leur pitch, renforcent leurs projets et se connectent à des personnes capables de les faire avancer." },
+    "mission": { "title": "Notre mission — Africa Founders Factory", "description": "Africa Founders Factory est une communauté panafricaine construite autour d'une même boucle : construire, pitcher, se faire challenger, s'améliorer, se connecter, grandir." },
+    "about": { "title": "À propos — Africa Founders Factory", "description": "Une communauté panafricaine, pensée communauté d'abord : fondateurs, experts, mentors, opérateurs, diaspora et partenaires écosystème." },
+    "founders": { "title": "Pour les fondateurs — Africa Founders Factory", "description": "Chaque étape, ses propres priorités — diagnostic structuré, entraînement au pitch et challenge honnête pour les fondateurs africains." },
+    "pitchLive": { "title": "Pitch Live — Africa Founders Factory", "description": "Des fondateurs sélectionnés présentent leur projet lors de sessions live communautaires et reçoivent des retours structurés." },
+    "community": { "title": "Communauté — Africa Founders Factory", "description": "Fondateurs, experts, mentors, opérateurs, diaspora et partenaires écosystème qui construisent ensemble la communauté panafricaine des fondateurs." },
+    "resources": { "title": "Ressources — Africa Founders Factory", "description": "Guides, modèles et frameworks pour les fondateurs africains. Bibliothèque bientôt disponible." },
+    "join": { "title": "Rejoindre la communauté — Africa Founders Factory", "description": "Rejoignez la communauté Africa Founders Factory en tant que fondateur, mentor, expert ou partenaire écosystème." },
+    "applyToPitch": { "title": "Candidater pour pitcher — Africa Founders Factory", "description": "Candidatez pour présenter votre projet lors d'une session Pitch Live d'Africa Founders Factory." },
+    "signIn": { "title": "Connexion — Africa Founders Factory", "description": "Connectez-vous à la plateforme Founder d'Africa Founders Factory." },
+    "privacy": { "title": "Politique de confidentialité — Africa Founders Factory", "description": "Comment Africa Founders Factory traite les informations soumises sur ce site." },
+    "terms": { "title": "Conditions d’utilisation — Africa Founders Factory", "description": "Conditions d'utilisation d'Africa Founders Factory." }
+  }
+}
