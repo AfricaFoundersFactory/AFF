@@ -3048,13 +3048,20 @@
       "pageTitle": "Messages",
       "pageSubtitle": "A structured inbox for your expert conversations — not a real-time chat.",
       "inboxTitle": "Inbox",
-      "filters": { "all": "All", "unread": "Unread", "experts": "Experts" },
+      "filters": {
+        "all": "All",
+        "unread": "Unread",
+        "experts": "Experts"
+      },
       "emptyTitle": "No conversations yet",
       "emptyBody": "Conversations appear here once you send a support request to an expert.",
       "noSubject": "(no subject)",
       "noMatchingConversations": "No conversations match this filter.",
       "backToInbox": "Back to inbox",
-      "threadType": { "expert": "Expert support", "system": "System" },
+      "threadType": {
+        "expert": "Expert support",
+        "system": "System"
+      },
       "demoLabel": "Illustrative demo reply — not a real person",
       "composerPlaceholder": "Write a message…",
       "send": "Send",
@@ -3065,9 +3072,20 @@
       "pageTitle": "Opportunities",
       "pageSubtitle": "Programs, grants and challenges matched to your startup — with honest, plain-language reasons.",
       "demoDisclaimer": "Every program listed is fictional demo content for this preview, not a real, currently-open opportunity.",
-      "tabs": { "recommended": "Recommended", "all": "All", "saved": "Saved", "applications": "Applications" },
+      "tabs": {
+        "recommended": "Recommended",
+        "all": "All",
+        "saved": "Saved",
+        "applications": "Applications"
+      },
       "filtersTitle": "Filters",
-      "filters": { "search": "Search", "type": "Type", "any": "Any", "country": "Country", "industry": "Industry" },
+      "filters": {
+        "search": "Search",
+        "type": "Type",
+        "any": "Any",
+        "country": "Country",
+        "industry": "Industry"
+      },
       "types": {
         "ACCELERATOR": "Accelerator",
         "INCUBATOR": "Incubator",
@@ -3099,7 +3117,10 @@
       "addPrepTask": "Add preparation task",
       "prepTaskAdded": "Preparation task added",
       "selfReportedNotice": "Status is self-reported by you — AFF has no live connection to this program.",
-      "requirements": { "incorporated": "Must be a registered company", "saasModel": "Best suited to SaaS/subscription business models" },
+      "requirements": {
+        "incorporated": "Must be a registered company",
+        "saasModel": "Best suited to SaaS/subscription business models"
+      },
       "matching": {
         "reasons": {
           "geographyOpen": "Open to any country",
@@ -3118,9 +3139,18 @@
     "resources": {
       "pageTitle": "Resources",
       "pageSubtitle": "Guides, templates and frameworks tailored to your stage and current gaps.",
-      "tabs": { "recommended": "Recommended", "all": "All resources", "saved": "Saved" },
+      "tabs": {
+        "recommended": "Recommended",
+        "all": "All resources",
+        "saved": "Saved"
+      },
       "filtersTitle": "Filters",
-      "filters": { "search": "Search", "category": "Category", "format": "Format", "any": "Any" },
+      "filters": {
+        "search": "Search",
+        "category": "Category",
+        "format": "Format",
+        "any": "Any"
+      },
       "categories": {
         "STARTUP_BASICS": "Startup Basics",
         "PROBLEM_VALIDATION": "Problem Validation",
@@ -3150,7 +3180,10 @@
       "emptyBody": "Try a different category, format or search term.",
       "saved": "Saved",
       "save": "Save",
-      "origin": { "AFF_RESOURCE": "AFF resource", "EXTERNAL_RESOURCE": "External resource" },
+      "origin": {
+        "AFF_RESOURCE": "AFF resource",
+        "EXTERNAL_RESOURCE": "External resource"
+      },
       "recommendedBecause": "Recommended because:",
       "addToTasks": "Add to tasks",
       "taskAdded": "Added to tasks",
@@ -3187,6 +3220,203 @@
       "noResultsBody": "Try a different keyword or browse by category.",
       "contactTitle": "Still need help?",
       "contactHonestCopy": "AFF doesn't have an automated support ticket system yet — messages sent here go straight to the team's email."
+    },
+    "community": {
+      "demoNotice": "Illustrative community environment — all posts, profiles and events shown here are fictional demo content.",
+      "tabs": {
+        "feed": "Feed",
+        "circles": "Circles",
+        "events": "Events"
+      },
+      "composer": {
+        "title": "Share with the community",
+        "attachStartup": "Attach my active startup to this post",
+        "titlePlaceholder": "Title (optional)",
+        "bodyPlaceholder": "What do you want to ask, share or discuss?",
+        "submit": "Post",
+        "startupWillShow": "Your startup will be shown to the community as configured in Settings.",
+        "startupHiddenNotice": "Your startup is currently hidden in Community — change this in Settings if you want it shown."
+      },
+      "postTypes": {
+        "QUESTION": "Question",
+        "DISCUSSION": "Discussion",
+        "PROGRESS": "Progress update",
+        "RESOURCE_SHARE": "Resource share",
+        "OPPORTUNITY_SHARE": "Opportunity share",
+        "PITCH_FEEDBACK_REQUEST": "Pitch feedback request",
+        "EVENT": "Event",
+        "GENERAL": "General"
+      },
+      "topics": {
+        "FUNDRAISING": "Fundraising",
+        "PITCH": "Pitch",
+        "PRODUCT": "Product",
+        "TECHNOLOGY": "Technology",
+        "AI_DATA": "AI / Data",
+        "SALES": "Sales",
+        "MARKETING": "Marketing",
+        "FINANCE": "Finance",
+        "LEGAL": "Legal",
+        "OPERATIONS": "Operations",
+        "TEAM": "Team",
+        "IMPACT_ESG": "Impact / ESG",
+        "AGRICULTURE": "Agriculture",
+        "FINTECH": "FinTech",
+        "HEALTHTECH": "HealthTech",
+        "CLIMATE": "Climate",
+        "LOGISTICS": "Logistics",
+        "GENERAL": "General"
+      },
+      "feed": {
+        "title": "Community feed",
+        "emptyTitle": "No posts yet",
+        "emptyBody": "Be the first to ask, share or discuss something with the community."
+      },
+      "reactions": {
+        "HELPFUL": "Helpful",
+        "INSIGHTFUL": "Insightful",
+        "SUPPORT": "Support"
+      },
+      "comments": {
+        "placeholder": "Write a reply...",
+        "submit": "Reply",
+        "deleted": "Comment removed by author"
+      },
+      "circles": {
+        "title": "Circles",
+        "join": "Join",
+        "leave": "Leave"
+      },
+      "events": {
+        "title": "Upcoming AFF events",
+        "emptyTitle": "No events scheduled",
+        "seeModule": "See the dedicated module",
+        "register": "Register",
+        "cancel": "Cancel registration"
+      }
+    },
+    "analytics": {
+      "observationOnlyNotice": "Analytics is observation only — it reads from your existing AFF modules and never computes a combined or predictive score.",
+      "ranges": {
+        "30D": "30 days",
+        "90D": "90 days",
+        "ALL": "All time"
+      },
+      "noData": "Not enough data yet",
+      "sections": {
+        "overview": "Overview",
+        "opportunities": "Opportunity activity",
+        "opportunitiesHint": "Founder-entered statuses only — AFF does not track the real external outcome of your applications.",
+        "community": "Community activity",
+        "timeline": "Progress timeline"
+      },
+      "metrics": {
+        "profileCompletion": "Profile completion",
+        "readiness": "Readiness score",
+        "roadmapProgress": "Roadmap progress",
+        "tasksCompleted": "Tasks completed",
+        "tasksOverdueHint": "{count} overdue",
+        "pitchVersions": "Pitch versions",
+        "pitchPracticeHint": "{count} practice sessions",
+        "runway": "Runway",
+        "runwaySustainable": "Sustainable (not burning cash)",
+        "months": "{count} months",
+        "dataRoomCompletion": "Data Room completion",
+        "expertSupport": "Expert sessions completed",
+        "recommendationsHint": "{count} recommendations completed",
+        "saved": "Saved",
+        "preparing": "Preparing",
+        "applied": "Applied",
+        "shortlisted": "Shortlisted",
+        "accepted": "Accepted",
+        "rejected": "Rejected",
+        "postsCreated": "Posts created",
+        "questionsAsked": "Questions asked",
+        "helpfulContributions": "Helpful reactions received",
+        "eventsRegistered": "Events registered"
+      },
+      "trend": {
+        "up": "Improving",
+        "down": "Declining",
+        "flat": "Stable",
+        "unknown": "Not enough history"
+      },
+      "timeline": {
+        "empty": "No timeline events yet",
+        "events": {
+          "readinessAssessmentCompleted": "Readiness assessment completed (v{version})",
+          "roadmapGenerated": "Roadmap generated",
+          "taskCompleted": "Task completed: {title}",
+          "pitchVersionCreated": "Pitch version {version} created",
+          "pitchPracticeCompleted": "Pitch practice session completed",
+          "financialPeriodAdded": "Financial period added: {month}",
+          "dataRoomDocumentUpdated": "Data Room document updated: {title}",
+          "expertRecommendationCompleted": "Expert recommendation completed: {title}",
+          "opportunityApplied": "Marked an opportunity as applied"
+        }
+      }
+    },
+    "settings": {
+      "sections": {
+        "personal": "Personal",
+        "language": "Language",
+        "privacy": "Privacy",
+        "community": "Community",
+        "notifications": "Notifications",
+        "security": "Security",
+        "account": "Account & data"
+      },
+      "personal": {
+        "name": "Name",
+        "email": "Email",
+        "digitalTwinHint": "Your startup's company information lives in My Startup (Digital Twin), not here."
+      },
+      "language": {
+        "hint": "Choose your interface language. This uses AFF's existing French/English routing."
+      },
+      "privacy": {
+        "profileVisibility": "Community profile visibility",
+        "visibilityOptions": {
+          "PRIVATE": "Private",
+          "COMMUNITY": "Visible to AFF community",
+          "PUBLIC": "Public"
+        },
+        "allowCommunityDiscovery": "Allow other founders to discover my community profile",
+        "allowExpertDiscovery": "Allow experts to discover my profile"
+      },
+      "community": {
+        "startupScopedHint": "These settings apply only to {startup} and never affect your other startups.",
+        "showStartup": "Show this startup in Community",
+        "startupVisibility": "Startup visibility in Community",
+        "visibilityOptions": {
+          "HIDDEN": "Hidden",
+          "NAME_ONLY": "Name only",
+          "SUMMARY": "Name + short summary"
+        },
+        "showEventParticipation": "Show my event participation to the community"
+      },
+      "notifications": {
+        "emailUnsupportedNotice": "Email notifications are not yet operational — no email provider is connected. Only in-app notifications work today.",
+        "family": "Notification type",
+        "inApp": "In-app",
+        "email": "Email (unavailable)",
+        "families": {
+          "EXPERT_REQUESTS": "Expert requests",
+          "MESSAGES": "Messages",
+          "OPPORTUNITIES": "Opportunities",
+          "COMMUNITY_REPLIES": "Community replies",
+          "EVENTS": "Events",
+          "ROADMAP_TASK_REMINDERS": "Roadmap & task reminders"
+        }
+      },
+      "security": {
+        "notice": "Production account security (password changes, 2FA) will be available once real authentication is connected. This demo uses a fixed session."
+      },
+      "account": {
+        "exportUnavailable": "Data export is not yet available — planned for a future release.",
+        "deleteUnavailable": "Account deletion is not yet available — planned for a future release.",
+        "persistenceNotice": "Settings changes persist only in server memory for this demo session and do not survive a server restart."
+      }
     }
   }
 }

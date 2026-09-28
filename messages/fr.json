@@ -3048,13 +3048,20 @@
       "pageTitle": "Messages",
       "pageSubtitle": "Une boîte de réception structurée pour vos échanges avec les experts — pas une messagerie instantanée.",
       "inboxTitle": "Boîte de réception",
-      "filters": { "all": "Tous", "unread": "Non lus", "experts": "Experts" },
+      "filters": {
+        "all": "Tous",
+        "unread": "Non lus",
+        "experts": "Experts"
+      },
       "emptyTitle": "Aucune conversation pour le moment",
       "emptyBody": "Les conversations apparaissent ici après l'envoi d'une demande de soutien à un expert.",
       "noSubject": "(sans objet)",
       "noMatchingConversations": "Aucune conversation ne correspond à ce filtre.",
       "backToInbox": "Retour à la boîte de réception",
-      "threadType": { "expert": "Soutien expert", "system": "Système" },
+      "threadType": {
+        "expert": "Soutien expert",
+        "system": "Système"
+      },
       "demoLabel": "Réponse de démonstration illustrative — pas une vraie personne",
       "composerPlaceholder": "Écrire un message…",
       "send": "Envoyer",
@@ -3065,9 +3072,20 @@
       "pageTitle": "Opportunités",
       "pageSubtitle": "Programmes, subventions et concours mis en correspondance avec votre startup — avec des raisons honnêtes et en langage clair.",
       "demoDisclaimer": "Chaque programme listé est un contenu de démonstration fictif pour cet aperçu, pas une opportunité réelle actuellement ouverte.",
-      "tabs": { "recommended": "Recommandées", "all": "Toutes", "saved": "Enregistrées", "applications": "Candidatures" },
+      "tabs": {
+        "recommended": "Recommandées",
+        "all": "Toutes",
+        "saved": "Enregistrées",
+        "applications": "Candidatures"
+      },
       "filtersTitle": "Filtres",
-      "filters": { "search": "Recherche", "type": "Type", "any": "Tous", "country": "Pays", "industry": "Secteur" },
+      "filters": {
+        "search": "Recherche",
+        "type": "Type",
+        "any": "Tous",
+        "country": "Pays",
+        "industry": "Secteur"
+      },
       "types": {
         "ACCELERATOR": "Accélérateur",
         "INCUBATOR": "Incubateur",
@@ -3099,7 +3117,10 @@
       "addPrepTask": "Ajouter une tâche de préparation",
       "prepTaskAdded": "Tâche de préparation ajoutée",
       "selfReportedNotice": "Le statut est déclaré par vous-même — AFF n'a aucune connexion en direct avec ce programme.",
-      "requirements": { "incorporated": "Doit être une entreprise enregistrée", "saasModel": "Mieux adapté aux modèles économiques SaaS/abonnement" },
+      "requirements": {
+        "incorporated": "Doit être une entreprise enregistrée",
+        "saasModel": "Mieux adapté aux modèles économiques SaaS/abonnement"
+      },
       "matching": {
         "reasons": {
           "geographyOpen": "Ouvert à tous les pays",
@@ -3118,9 +3139,18 @@
     "resources": {
       "pageTitle": "Ressources",
       "pageSubtitle": "Guides, modèles et cadres adaptés à votre stade et à vos lacunes actuelles.",
-      "tabs": { "recommended": "Recommandées", "all": "Toutes les ressources", "saved": "Enregistrées" },
+      "tabs": {
+        "recommended": "Recommandées",
+        "all": "Toutes les ressources",
+        "saved": "Enregistrées"
+      },
       "filtersTitle": "Filtres",
-      "filters": { "search": "Recherche", "category": "Catégorie", "format": "Format", "any": "Tous" },
+      "filters": {
+        "search": "Recherche",
+        "category": "Catégorie",
+        "format": "Format",
+        "any": "Tous"
+      },
       "categories": {
         "STARTUP_BASICS": "Bases de la startup",
         "PROBLEM_VALIDATION": "Validation du problème",
@@ -3150,7 +3180,10 @@
       "emptyBody": "Essayez une catégorie, un format ou une recherche différente.",
       "saved": "Enregistrée",
       "save": "Enregistrer",
-      "origin": { "AFF_RESOURCE": "Ressource AFF", "EXTERNAL_RESOURCE": "Ressource externe" },
+      "origin": {
+        "AFF_RESOURCE": "Ressource AFF",
+        "EXTERNAL_RESOURCE": "Ressource externe"
+      },
       "recommendedBecause": "Recommandé car :",
       "addToTasks": "Ajouter aux tâches",
       "taskAdded": "Ajoutée aux tâches",
@@ -3187,6 +3220,203 @@
       "noResultsBody": "Essayez un autre mot-clé ou parcourez par catégorie.",
       "contactTitle": "Besoin d'aide supplémentaire ?",
       "contactHonestCopy": "AFF n'a pas encore de système de tickets de support automatisé — les messages envoyés ici sont transmis directement à l'e-mail de l'équipe."
+    },
+    "community": {
+      "demoNotice": "Environnement communautaire illustratif — toutes les publications, profils et événements affichés ici sont des contenus de démonstration fictifs.",
+      "tabs": {
+        "feed": "Fil",
+        "circles": "Cercles",
+        "events": "Événements"
+      },
+      "composer": {
+        "title": "Partager avec la communauté",
+        "attachStartup": "Associer ma startup active à cette publication",
+        "titlePlaceholder": "Titre (optionnel)",
+        "bodyPlaceholder": "Que voulez-vous demander, partager ou discuter ?",
+        "submit": "Publier",
+        "startupWillShow": "Votre startup sera affichée à la communauté selon la configuration dans les Paramètres.",
+        "startupHiddenNotice": "Votre startup est actuellement masquée dans la Communauté — modifiez cela dans les Paramètres si vous souhaitez l'afficher."
+      },
+      "postTypes": {
+        "QUESTION": "Question",
+        "DISCUSSION": "Discussion",
+        "PROGRESS": "Mise à jour d'avancement",
+        "RESOURCE_SHARE": "Partage de ressource",
+        "OPPORTUNITY_SHARE": "Partage d'opportunité",
+        "PITCH_FEEDBACK_REQUEST": "Demande de retour sur pitch",
+        "EVENT": "Événement",
+        "GENERAL": "Général"
+      },
+      "topics": {
+        "FUNDRAISING": "Levée de fonds",
+        "PITCH": "Pitch",
+        "PRODUCT": "Produit",
+        "TECHNOLOGY": "Technologie",
+        "AI_DATA": "IA / Données",
+        "SALES": "Ventes",
+        "MARKETING": "Marketing",
+        "FINANCE": "Finance",
+        "LEGAL": "Juridique",
+        "OPERATIONS": "Opérations",
+        "TEAM": "Équipe",
+        "IMPACT_ESG": "Impact / ESG",
+        "AGRICULTURE": "Agriculture",
+        "FINTECH": "FinTech",
+        "HEALTHTECH": "HealthTech",
+        "CLIMATE": "Climat",
+        "LOGISTICS": "Logistique",
+        "GENERAL": "Général"
+      },
+      "feed": {
+        "title": "Fil communautaire",
+        "emptyTitle": "Aucune publication pour l'instant",
+        "emptyBody": "Soyez le premier à poser une question, partager ou discuter avec la communauté."
+      },
+      "reactions": {
+        "HELPFUL": "Utile",
+        "INSIGHTFUL": "Pertinent",
+        "SUPPORT": "Soutien"
+      },
+      "comments": {
+        "placeholder": "Écrire une réponse...",
+        "submit": "Répondre",
+        "deleted": "Commentaire supprimé par l'auteur"
+      },
+      "circles": {
+        "title": "Cercles",
+        "join": "Rejoindre",
+        "leave": "Quitter"
+      },
+      "events": {
+        "title": "Prochains événements AFF",
+        "emptyTitle": "Aucun événement prévu",
+        "seeModule": "Voir le module dédié",
+        "register": "S'inscrire",
+        "cancel": "Annuler l'inscription"
+      }
+    },
+    "analytics": {
+      "observationOnlyNotice": "Les analyses sont uniquement de l'observation — elles s'appuient sur vos modules AFF existants et ne calculent jamais un score combiné ou prédictif.",
+      "ranges": {
+        "30D": "30 jours",
+        "90D": "90 jours",
+        "ALL": "Depuis le début"
+      },
+      "noData": "Pas encore assez de données",
+      "sections": {
+        "overview": "Vue d'ensemble",
+        "opportunities": "Activité d'opportunités",
+        "opportunitiesHint": "Statuts saisis par le fondateur uniquement — AFF ne suit pas le résultat externe réel de vos candidatures.",
+        "community": "Activité communautaire",
+        "timeline": "Chronologie de progression"
+      },
+      "metrics": {
+        "profileCompletion": "Complétion du profil",
+        "readiness": "Score de préparation",
+        "roadmapProgress": "Avancement de la feuille de route",
+        "tasksCompleted": "Tâches terminées",
+        "tasksOverdueHint": "{count} en retard",
+        "pitchVersions": "Versions de pitch",
+        "pitchPracticeHint": "{count} sessions d'entraînement",
+        "runway": "Trésorerie restante",
+        "runwaySustainable": "Soutenable (pas de consommation de trésorerie)",
+        "months": "{count} mois",
+        "dataRoomCompletion": "Complétion de la Data Room",
+        "expertSupport": "Sessions expert terminées",
+        "recommendationsHint": "{count} recommandations terminées",
+        "saved": "Enregistrées",
+        "preparing": "En préparation",
+        "applied": "Candidatées",
+        "shortlisted": "Présélectionnées",
+        "accepted": "Acceptées",
+        "rejected": "Rejetées",
+        "postsCreated": "Publications créées",
+        "questionsAsked": "Questions posées",
+        "helpfulContributions": "Réactions utiles reçues",
+        "eventsRegistered": "Événements suivis"
+      },
+      "trend": {
+        "up": "En amélioration",
+        "down": "En baisse",
+        "flat": "Stable",
+        "unknown": "Historique insuffisant"
+      },
+      "timeline": {
+        "empty": "Aucun événement pour l'instant",
+        "events": {
+          "readinessAssessmentCompleted": "Évaluation de préparation terminée (v{version})",
+          "roadmapGenerated": "Feuille de route générée",
+          "taskCompleted": "Tâche terminée : {title}",
+          "pitchVersionCreated": "Version de pitch {version} créée",
+          "pitchPracticeCompleted": "Session d'entraînement au pitch terminée",
+          "financialPeriodAdded": "Période financière ajoutée : {month}",
+          "dataRoomDocumentUpdated": "Document Data Room mis à jour : {title}",
+          "expertRecommendationCompleted": "Recommandation expert terminée : {title}",
+          "opportunityApplied": "Opportunité marquée comme candidatée"
+        }
+      }
+    },
+    "settings": {
+      "sections": {
+        "personal": "Personnel",
+        "language": "Langue",
+        "privacy": "Confidentialité",
+        "community": "Communauté",
+        "notifications": "Notifications",
+        "security": "Sécurité",
+        "account": "Compte et données"
+      },
+      "personal": {
+        "name": "Nom",
+        "email": "E-mail",
+        "digitalTwinHint": "Les informations de votre entreprise se trouvent dans Ma Startup (Jumeau numérique), pas ici."
+      },
+      "language": {
+        "hint": "Choisissez la langue de l'interface. Utilise le routage français/anglais déjà en place."
+      },
+      "privacy": {
+        "profileVisibility": "Visibilité du profil communautaire",
+        "visibilityOptions": {
+          "PRIVATE": "Privé",
+          "COMMUNITY": "Visible par la communauté AFF",
+          "PUBLIC": "Public"
+        },
+        "allowCommunityDiscovery": "Permettre aux autres fondateurs de découvrir mon profil communautaire",
+        "allowExpertDiscovery": "Permettre aux experts de découvrir mon profil"
+      },
+      "community": {
+        "startupScopedHint": "Ces paramètres s'appliquent uniquement à {startup} et n'affectent jamais vos autres startups.",
+        "showStartup": "Afficher cette startup dans la Communauté",
+        "startupVisibility": "Visibilité de la startup dans la Communauté",
+        "visibilityOptions": {
+          "HIDDEN": "Masquée",
+          "NAME_ONLY": "Nom uniquement",
+          "SUMMARY": "Nom + court résumé"
+        },
+        "showEventParticipation": "Afficher ma participation aux événements à la communauté"
+      },
+      "notifications": {
+        "emailUnsupportedNotice": "Les notifications par e-mail ne sont pas encore opérationnelles — aucun fournisseur d'e-mail n'est connecté. Seules les notifications dans l'application fonctionnent aujourd'hui.",
+        "family": "Type de notification",
+        "inApp": "Dans l'application",
+        "email": "E-mail (indisponible)",
+        "families": {
+          "EXPERT_REQUESTS": "Demandes d'expert",
+          "MESSAGES": "Messages",
+          "OPPORTUNITIES": "Opportunités",
+          "COMMUNITY_REPLIES": "Réponses communautaires",
+          "EVENTS": "Événements",
+          "ROADMAP_TASK_REMINDERS": "Rappels feuille de route et tâches"
+        }
+      },
+      "security": {
+        "notice": "La sécurité du compte en production (changement de mot de passe, 2FA) sera disponible une fois l'authentification réelle connectée. Cette démo utilise une session fixe."
+      },
+      "account": {
+        "exportUnavailable": "L'export des données n'est pas encore disponible — prévu pour une prochaine version.",
+        "deleteUnavailable": "La suppression du compte n'est pas encore disponible — prévue pour une prochaine version.",
+        "persistenceNotice": "Les modifications de paramètres ne persistent qu'en mémoire serveur pour cette démo et ne survivent pas à un redémarrage du serveur."
+      }
     }
   }
 }
