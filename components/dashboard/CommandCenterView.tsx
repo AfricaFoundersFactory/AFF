@@ -41,6 +41,7 @@ export function CommandCenterView({
   const tPitch = useTranslations("dashboard.pitch");
   const tFinancials = useTranslations("dashboard.financials");
   const tExperts = useTranslations("dashboard.experts");
+  const tInvestors = useTranslations("dashboard.investors");
   const tRoot = useTranslations();
   const format = useFormatter();
 
@@ -61,6 +62,7 @@ export function CommandCenterView({
     pitch,
     financials,
     expertSupport,
+    fundraisingPipeline,
   } = data;
 
   const formatDate = (iso: string) =>
@@ -393,6 +395,56 @@ export function CommandCenterView({
             <p className="text-[13.5px] text-aff-muted">{tExperts("commandCenter.noNeedsBody")}</p>
             <ButtonLink href="/dashboard/experts" variant="secondary" className="px-4 py-2.5 text-[13px]">
               {tExperts("commandCenter.exploreCta")}
+            </ButtonLink>
+          </div>
+        )}
+      </DashboardSection>
+
+      {/* Fundraising Pipeline widget (AFF-DASH-10 part L) — lightweight
+          counts only, never a composite fundraising score and never a
+          fabricated investor recommendation. */}
+      <DashboardSection title={tInvestors("commandCenter.title")}>
+        {fundraisingPipeline.activeRelationshipsCount > 0 ? (
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+              <div>
+                <div className="text-[11.5px] font-semibold tracking-[0.06em] text-aff-muted">
+                  {tInvestors("commandCenter.activeRelationships").toUpperCase()}
+                </div>
+                <div className="mt-1 text-[14.5px] font-semibold text-aff-text">{fundraisingPipeline.activeRelationshipsCount}</div>
+              </div>
+              <div>
+                <div className="text-[11.5px] font-semibold tracking-[0.06em] text-aff-muted">
+                  {tInvestors("commandCenter.nextFollowUp").toUpperCase()}
+                </div>
+                <div className="mt-1 text-[14.5px] font-semibold text-aff-text">
+                  {fundraisingPipeline.nextFollowUpAt ? formatDate(fundraisingPipeline.nextFollowUpAt) : tInvestors("commandCenter.none")}
+                </div>
+              </div>
+              <div>
+                <div className="text-[11.5px] font-semibold tracking-[0.06em] text-aff-muted">
+                  {tInvestors("commandCenter.introRequests").toUpperCase()}
+                </div>
+                <div className="mt-1 text-[14.5px] font-semibold text-aff-text">{fundraisingPipeline.pendingIntroductionRequestsCount}</div>
+              </div>
+              <div>
+                <div className="text-[11.5px] font-semibold tracking-[0.06em] text-aff-muted">
+                  {tInvestors("commandCenter.currentRound").toUpperCase()}
+                </div>
+                <div className="mt-1 text-[14.5px] font-semibold text-aff-text">
+                  {fundraisingPipeline.currentRoundName ?? tInvestors("commandCenter.none")}
+                </div>
+              </div>
+            </div>
+            <ButtonLink href="/dashboard/investors" variant="secondary" className="px-4 py-2.5 text-[13px]">
+              {tInvestors("commandCenter.viewAll")}
+            </ButtonLink>
+          </div>
+        ) : (
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <p className="text-[13.5px] text-aff-muted">{tInvestors("commandCenter.empty")}</p>
+            <ButtonLink href="/dashboard/investors" className="px-4 py-2.5 text-[13px]">
+              {tInvestors("commandCenter.viewAll")}
             </ButtonLink>
           </div>
         )}

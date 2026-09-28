@@ -3417,6 +3417,222 @@
         "deleteUnavailable": "Account deletion is not yet available — planned for a future release.",
         "persistenceNotice": "Settings changes persist only in server memory for this demo session and do not survive a server restart."
       }
+    },
+    "investors": {
+      "pageTitle": "Investor Network",
+      "pageSubtitle": "A private founder workspace for investor discovery and fundraising relationship tracking — not a live investor database.",
+      "demoNotice": "All investor organizations shown are illustrative demo investors. They do not represent real investor interest, commitment, or partnership with AFF.",
+      "tabs": {
+        "recommended": "Recommended",
+        "discover": "Discover",
+        "shortlist": "Shortlist",
+        "pipeline": "Pipeline",
+        "overview": "Fundraising overview"
+      },
+      "filters": {
+        "query": "Search",
+        "queryPlaceholder": "Search investor name or description",
+        "type": "Investor type",
+        "stage": "Stage",
+        "industry": "Industry",
+        "geography": "Geography",
+        "country": "Country",
+        "instrument": "Instrument",
+        "impactTheme": "Impact focus",
+        "all": "All",
+        "clear": "Clear filters",
+        "ticketAmount": "Ticket amount",
+        "ticketAmountPlaceholder": "e.g. 50000",
+        "currency": "Currency"
+      },
+      "investorType": {
+        "ANGEL": "Angel investor",
+        "ANGEL_NETWORK": "Angel network",
+        "VC": "Venture capital",
+        "CORPORATE_VC": "Corporate VC",
+        "FAMILY_OFFICE": "Family office",
+        "IMPACT_FUND": "Impact fund",
+        "DEVELOPMENT_FINANCE": "Development finance institution",
+        "ACCELERATOR_FUND": "Accelerator fund",
+        "VENTURE_STUDIO": "Venture studio",
+        "PRIVATE_EQUITY": "Private equity",
+        "OTHER": "Other"
+      },
+      "reasons": {
+        "STAGE_MATCH": "Invests at your stage",
+        "INDUSTRY_MATCH": "Invests in your industry",
+        "GEOGRAPHY_MATCH": "Covers your geography",
+        "TICKET_OVERLAP": "Typical ticket overlaps your funding requirement",
+        "INSTRUMENT_MATCH": "Supports your preferred instrument",
+        "IMPACT_MATCH": "Aligns with your impact themes"
+      },
+      "mismatches": {
+        "STAGE_MISMATCH": "Usually invests at a different stage than yours",
+        "GEOGRAPHY_MISMATCH": "Does not list your geography among its focus countries",
+        "TICKET_MISMATCH": "Typical ticket size does not overlap your funding requirement",
+        "TICKET_COMPARISON_UNAVAILABLE": "Ticket comparison unavailable — currencies differ",
+        "INSTRUMENT_MISMATCH": "Does not typically use your preferred instrument"
+      },
+      "card": {
+        "whyRelevant": "Why this investor may be relevant",
+        "potentialMismatch": "Potential mismatch",
+        "shortlistAdd": "Add to shortlist",
+        "shortlistRemove": "Remove from shortlist",
+        "shortlisted": "Shortlisted",
+        "viewProfile": "View profile",
+        "demoBadge": "Illustrative demo investor"
+      },
+      "empty": {
+        "recommended": "No recommended investors yet",
+        "recommendedBody": "Complete your Digital Twin (stage, industry, geography) and a funding requirement in Financials to see explainable matches here.",
+        "discover": "No investors match these filters",
+        "shortlist": "Your shortlist is empty",
+        "shortlistBody": "Add investors from Discover or Recommended to start organizing your own outreach priorities.",
+        "pipeline": "No fundraising relationships yet",
+        "pipelineBody": "Add an investor to your pipeline to start tracking stage, next actions, and interactions."
+      },
+      "priority": {
+        "LOW": "Low",
+        "MEDIUM": "Medium",
+        "HIGH": "High"
+      },
+      "pipelineStage": {
+        "RESEARCH": "Research",
+        "SHORTLISTED": "Shortlisted",
+        "INTRO_REQUESTED": "Introduction requested",
+        "CONTACTED": "Contacted",
+        "MEETING": "Meeting",
+        "FOLLOW_UP": "Follow-up",
+        "DUE_DILIGENCE": "Due diligence",
+        "TERM_SHEET": "Term sheet",
+        "COMMITTED": "Committed",
+        "PASSED": "Passed",
+        "DECLINED": "Declined",
+        "ARCHIVED": "Archived"
+      },
+      "interactionType": {
+        "NOTE": "Note",
+        "EMAIL": "Email",
+        "CALL": "Call",
+        "MEETING": "Meeting",
+        "INTRODUCTION": "Introduction",
+        "FOLLOW_UP": "Follow-up",
+        "DATA_ROOM_SHARED": "Data Room shared",
+        "OTHER": "Other"
+      },
+      "introductionStatus": {
+        "DRAFT": "Draft",
+        "REQUESTED": "Requested",
+        "UNDER_REVIEW": "Under review",
+        "APPROVED": "Approved",
+        "DECLINED": "Declined",
+        "INTRODUCED": "Introduced",
+        "CANCELLED": "Cancelled"
+      },
+      "roundStatus": {
+        "PLANNING": "Planning",
+        "ACTIVE": "Active",
+        "PAUSED": "Paused",
+        "CLOSED": "Closed",
+        "CANCELLED": "Cancelled"
+      },
+      "profile": {
+        "back": "Back to Investor Network",
+        "type": "Investor type",
+        "description": "About",
+        "thesisTitle": "Investment thesis",
+        "stages": "Stages",
+        "industries": "Industries",
+        "geographies": "Geographies",
+        "countries": "Countries",
+        "ticket": "Typical ticket",
+        "unknown": "Not specified",
+        "instruments": "Instruments",
+        "impactThemes": "Impact themes",
+        "matchTitle": "Relevant match reasons",
+        "mismatchTitle": "Known mismatches",
+        "noReasons": "Not enough startup data yet to compute match reasons — complete your Digital Twin and funding requirement.",
+        "relationshipStatus": "Relationship status",
+        "notInPipeline": "Not yet in your pipeline",
+        "founderNotes": "Founder notes",
+        "notesPlaceholder": "Private notes only you can see",
+        "nextAction": "Next action",
+        "nextActionPlaceholder": "e.g. Send updated deck",
+        "nextActionDate": "Next action date",
+        "addToShortlist": "Add to shortlist",
+        "addToPipeline": "Add to pipeline",
+        "save": "Save",
+        "requestIntroduction": "Request introduction",
+        "recordInteraction": "Record interaction",
+        "interactionsTitle": "Interaction history",
+        "noInteractions": "No interactions recorded yet",
+        "recordedByFounder": "Recorded by founder",
+        "shareDataRoomTitle": "Data Room sharing",
+        "shareDataRoomBody": "Nothing from your Data Room is shared until you explicitly select documents below.",
+        "shareDocuments": "Share selected documents",
+        "revoke": "Revoke",
+        "noShares": "No documents shared with this investor",
+        "active": "Active",
+        "revoked": "Revoked"
+      },
+      "introReadiness": {
+        "title": "Introduction readiness checklist",
+        "note": "A factual checklist, not a score. Missing items are recommended before requesting an introduction — they do not block your request.",
+        "profileCompleted": "Startup profile sufficiently completed",
+        "pitchExists": "Pitch exists",
+        "fundingRequirementEntered": "Funding requirement entered",
+        "dataRoomReady": "Data Room reasonably complete",
+        "financialsAvailable": "Financial information available",
+        "readinessAssessmentAvailable": "Readiness assessment available"
+      },
+      "introForm": {
+        "title": "Request an introduction",
+        "reason": "Why do you want this introduction?",
+        "reasonPlaceholder": "e.g. Aligned thesis on stage and geography for our current round",
+        "noSlaNotice": "AFF reviews introduction requests manually — there is no automated delivery and no guaranteed timeframe.",
+        "submit": "Submit request",
+        "cancel": "Cancel request",
+        "draftNotice": "Saving as a draft does not send anything to AFF — it is a private preparation step. Only Submit request actually submits it.",
+        "draftBadge": "Draft — not yet submitted",
+        "saveDraft": "Save as draft",
+        "editDraft": "Edit draft",
+        "discardDraft": "Discard draft",
+        "cancelEdit": "Cancel editing",
+        "contextPlaceholder": "Any additional context for AFF reviewing this request"
+      },
+      "commandCenter": {
+        "title": "Fundraising Pipeline",
+        "activeRelationships": "Active relationships",
+        "nextFollowUp": "Next follow-up",
+        "introRequests": "Introduction requests",
+        "currentRound": "Current round",
+        "none": "None",
+        "empty": "No fundraising activity yet — visit the Investor Network to get started.",
+        "viewAll": "Open Investor Network"
+      },
+      "roundForm": {
+        "sectionTitle": "Fundraising rounds",
+        "explainer": "A Fundraising Round is your active or planned fundraising process (status, timeline). It does not replace your Funding Requirement in Financials, which stays the canonical statement of how much capital your startup needs.",
+        "newRound": "New round",
+        "empty": "No fundraising rounds yet — create one to start tracking your process.",
+        "edit": "Edit round",
+        "name": "Round name",
+        "targetAmount": "Target amount",
+        "currency": "Currency",
+        "instrument": "Instrument",
+        "status": "Status",
+        "targetCloseDate": "Target close date",
+        "notes": "Notes",
+        "save": "Save",
+        "cancel": "Cancel",
+        "validationError": "Enter a round name and a valid target amount."
+      },
+      "pipelineBoard": {
+        "changeStage": "Change stage",
+        "stageEmpty": "No relationships in this stage",
+        "stageFilterLabel": "Filter by stage",
+        "allStages": "All stages"
+      }
     }
   }
 }

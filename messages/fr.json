@@ -3417,6 +3417,222 @@
         "deleteUnavailable": "La suppression du compte n'est pas encore disponible — prévue pour une prochaine version.",
         "persistenceNotice": "Les modifications de paramètres ne persistent qu'en mémoire serveur pour cette démo et ne survivent pas à un redémarrage du serveur."
       }
+    },
+    "investors": {
+      "pageTitle": "Réseau d'investisseurs",
+      "pageSubtitle": "Un espace de travail privé pour découvrir des investisseurs et suivre vos relations de levée de fonds — pas une base de données d'investisseurs en direct.",
+      "demoNotice": "Tous les investisseurs affichés sont des investisseurs de démonstration fictifs. Ils ne représentent aucun intérêt, engagement ou partenariat réel avec AFF.",
+      "tabs": {
+        "recommended": "Recommandés",
+        "discover": "Découvrir",
+        "shortlist": "Présélection",
+        "pipeline": "Pipeline",
+        "overview": "Aperçu de la levée"
+      },
+      "filters": {
+        "query": "Recherche",
+        "queryPlaceholder": "Rechercher un nom ou une description",
+        "type": "Type d'investisseur",
+        "stage": "Stade",
+        "industry": "Secteur",
+        "geography": "Zone géographique",
+        "country": "Pays",
+        "instrument": "Instrument",
+        "impactTheme": "Thème d'impact",
+        "all": "Tous",
+        "clear": "Réinitialiser les filtres",
+        "ticketAmount": "Montant du ticket",
+        "ticketAmountPlaceholder": "ex. 50000",
+        "currency": "Devise"
+      },
+      "investorType": {
+        "ANGEL": "Investisseur providentiel",
+        "ANGEL_NETWORK": "Réseau de business angels",
+        "VC": "Capital-risque",
+        "CORPORATE_VC": "VC corporate",
+        "FAMILY_OFFICE": "Family office",
+        "IMPACT_FUND": "Fonds à impact",
+        "DEVELOPMENT_FINANCE": "Institution de financement du développement",
+        "ACCELERATOR_FUND": "Fonds d'accélérateur",
+        "VENTURE_STUDIO": "Venture studio",
+        "PRIVATE_EQUITY": "Capital-investissement",
+        "OTHER": "Autre"
+      },
+      "reasons": {
+        "STAGE_MATCH": "Investit à votre stade",
+        "INDUSTRY_MATCH": "Investit dans votre secteur",
+        "GEOGRAPHY_MATCH": "Couvre votre zone géographique",
+        "TICKET_OVERLAP": "Le ticket habituel chevauche votre besoin de financement",
+        "INSTRUMENT_MATCH": "Soutient votre instrument privilégié",
+        "IMPACT_MATCH": "S'aligne avec vos thèmes d'impact"
+      },
+      "mismatches": {
+        "STAGE_MISMATCH": "Investit généralement à un stade différent du vôtre",
+        "GEOGRAPHY_MISMATCH": "Ne mentionne pas votre zone géographique parmi ses priorités",
+        "TICKET_MISMATCH": "Le ticket habituel ne chevauche pas votre besoin de financement",
+        "TICKET_COMPARISON_UNAVAILABLE": "Comparaison de ticket indisponible — devises différentes",
+        "INSTRUMENT_MISMATCH": "N'utilise généralement pas votre instrument privilégié"
+      },
+      "card": {
+        "whyRelevant": "Pourquoi cet investisseur pourrait être pertinent",
+        "potentialMismatch": "Écart potentiel",
+        "shortlistAdd": "Ajouter à la présélection",
+        "shortlistRemove": "Retirer de la présélection",
+        "shortlisted": "Présélectionné",
+        "viewProfile": "Voir le profil",
+        "demoBadge": "Investisseur de démonstration"
+      },
+      "empty": {
+        "recommended": "Aucun investisseur recommandé pour le moment",
+        "recommendedBody": "Complétez votre Digital Twin (stade, secteur, géographie) et un besoin de financement dans Finances pour voir des correspondances explicables ici.",
+        "discover": "Aucun investisseur ne correspond à ces filtres",
+        "shortlist": "Votre présélection est vide",
+        "shortlistBody": "Ajoutez des investisseurs depuis Découvrir ou Recommandés pour organiser vos priorités de prospection.",
+        "pipeline": "Aucune relation de levée de fonds pour le moment",
+        "pipelineBody": "Ajoutez un investisseur à votre pipeline pour suivre le stade, les prochaines actions et les interactions."
+      },
+      "priority": {
+        "LOW": "Basse",
+        "MEDIUM": "Moyenne",
+        "HIGH": "Haute"
+      },
+      "pipelineStage": {
+        "RESEARCH": "Recherche",
+        "SHORTLISTED": "Présélectionné",
+        "INTRO_REQUESTED": "Introduction demandée",
+        "CONTACTED": "Contacté",
+        "MEETING": "Rencontre",
+        "FOLLOW_UP": "Relance",
+        "DUE_DILIGENCE": "Due diligence",
+        "TERM_SHEET": "Term sheet",
+        "COMMITTED": "Engagé",
+        "PASSED": "Décliné par l'investisseur",
+        "DECLINED": "Refusé",
+        "ARCHIVED": "Archivé"
+      },
+      "interactionType": {
+        "NOTE": "Note",
+        "EMAIL": "E-mail",
+        "CALL": "Appel",
+        "MEETING": "Rencontre",
+        "INTRODUCTION": "Introduction",
+        "FOLLOW_UP": "Relance",
+        "DATA_ROOM_SHARED": "Data Room partagée",
+        "OTHER": "Autre"
+      },
+      "introductionStatus": {
+        "DRAFT": "Brouillon",
+        "REQUESTED": "Demandée",
+        "UNDER_REVIEW": "En cours d'examen",
+        "APPROVED": "Approuvée",
+        "DECLINED": "Refusée",
+        "INTRODUCED": "Introduit",
+        "CANCELLED": "Annulée"
+      },
+      "roundStatus": {
+        "PLANNING": "Planification",
+        "ACTIVE": "Active",
+        "PAUSED": "En pause",
+        "CLOSED": "Clôturée",
+        "CANCELLED": "Annulée"
+      },
+      "profile": {
+        "back": "Retour au Réseau d'investisseurs",
+        "type": "Type d'investisseur",
+        "description": "À propos",
+        "thesisTitle": "Thèse d'investissement",
+        "stages": "Stades",
+        "industries": "Secteurs",
+        "geographies": "Zones géographiques",
+        "countries": "Pays",
+        "ticket": "Ticket habituel",
+        "unknown": "Non précisé",
+        "instruments": "Instruments",
+        "impactThemes": "Thèmes d'impact",
+        "matchTitle": "Raisons de pertinence",
+        "mismatchTitle": "Écarts connus",
+        "noReasons": "Données de startup insuffisantes pour calculer des raisons de correspondance — complétez votre Digital Twin et votre besoin de financement.",
+        "relationshipStatus": "Statut de la relation",
+        "notInPipeline": "Pas encore dans votre pipeline",
+        "founderNotes": "Notes du fondateur",
+        "notesPlaceholder": "Notes privées visibles par vous seul",
+        "nextAction": "Prochaine action",
+        "nextActionPlaceholder": "ex. Envoyer le deck mis à jour",
+        "nextActionDate": "Date de la prochaine action",
+        "addToShortlist": "Ajouter à la présélection",
+        "addToPipeline": "Ajouter au pipeline",
+        "save": "Enregistrer",
+        "requestIntroduction": "Demander une introduction",
+        "recordInteraction": "Enregistrer une interaction",
+        "interactionsTitle": "Historique des interactions",
+        "noInteractions": "Aucune interaction enregistrée",
+        "recordedByFounder": "Enregistré par le fondateur",
+        "shareDataRoomTitle": "Partage de la Data Room",
+        "shareDataRoomBody": "Rien de votre Data Room n'est partagé tant que vous ne sélectionnez pas explicitement des documents ci-dessous.",
+        "shareDocuments": "Partager les documents sélectionnés",
+        "revoke": "Révoquer",
+        "noShares": "Aucun document partagé avec cet investisseur",
+        "active": "Actif",
+        "revoked": "Révoqué"
+      },
+      "introReadiness": {
+        "title": "Liste de préparation à l'introduction",
+        "note": "Une liste factuelle, pas un score. Les éléments manquants sont recommandés avant de demander une introduction — ils ne bloquent pas votre demande.",
+        "profileCompleted": "Profil de la startup suffisamment complété",
+        "pitchExists": "Pitch existant",
+        "fundingRequirementEntered": "Besoin de financement renseigné",
+        "dataRoomReady": "Data Room raisonnablement complète",
+        "financialsAvailable": "Informations financières disponibles",
+        "readinessAssessmentAvailable": "Évaluation de préparation disponible"
+      },
+      "introForm": {
+        "title": "Demander une introduction",
+        "reason": "Pourquoi souhaitez-vous cette introduction ?",
+        "reasonPlaceholder": "ex. Thèse alignée sur le stade et la géographie pour notre tour actuel",
+        "noSlaNotice": "AFF examine les demandes d'introduction manuellement — il n'y a pas de livraison automatisée ni de délai garanti.",
+        "submit": "Envoyer la demande",
+        "cancel": "Annuler la demande",
+        "draftNotice": "Enregistrer un brouillon n'envoie rien à AFF — il s'agit d'une étape de préparation privée. Seul « Envoyer la demande » la soumet réellement.",
+        "draftBadge": "Brouillon — pas encore soumis",
+        "saveDraft": "Enregistrer comme brouillon",
+        "editDraft": "Modifier le brouillon",
+        "discardDraft": "Supprimer le brouillon",
+        "cancelEdit": "Annuler la modification",
+        "contextPlaceholder": "Tout contexte supplémentaire pour l'examen de cette demande par AFF"
+      },
+      "commandCenter": {
+        "title": "Pipeline de levée de fonds",
+        "activeRelationships": "Relations actives",
+        "nextFollowUp": "Prochaine relance",
+        "introRequests": "Demandes d'introduction",
+        "currentRound": "Tour en cours",
+        "none": "Aucun",
+        "empty": "Aucune activité de levée de fonds pour le moment — rendez-vous sur le Réseau d'investisseurs pour commencer.",
+        "viewAll": "Ouvrir le Réseau d'investisseurs"
+      },
+      "roundForm": {
+        "sectionTitle": "Tours de financement",
+        "explainer": "Un tour de financement représente votre processus de levée de fonds actif ou prévu (statut, calendrier). Il ne remplace pas votre besoin de financement dans Finances, qui reste la référence de ce dont votre startup a besoin.",
+        "newRound": "Nouveau tour",
+        "empty": "Aucun tour de financement pour le moment — créez-en un pour commencer à suivre votre processus.",
+        "edit": "Modifier le tour",
+        "name": "Nom du tour",
+        "targetAmount": "Montant cible",
+        "currency": "Devise",
+        "instrument": "Instrument",
+        "status": "Statut",
+        "targetCloseDate": "Date de clôture visée",
+        "notes": "Notes",
+        "save": "Enregistrer",
+        "cancel": "Annuler",
+        "validationError": "Saisissez un nom de tour et un montant cible valide."
+      },
+      "pipelineBoard": {
+        "changeStage": "Changer d'étape",
+        "stageEmpty": "Aucune relation à cette étape",
+        "stageFilterLabel": "Filtrer par étape",
+        "allStages": "Toutes les étapes"
+      }
     }
   }
 }

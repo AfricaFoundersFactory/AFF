@@ -33,6 +33,9 @@ import { getWorkspace, getActiveVersion } from "@/lib/services/pitch";
 import { getFinancialProfile, getFinancialSnapshot } from "@/lib/services/financials";
 import { getDataRoom, getCompletion } from "@/lib/services/data-room";
 import { listStartupNeeds } from "@/lib/services/experts";
+import { listPipeline, getActiveRound } from "@/lib/services/fundraising-pipeline";
+import { listIntroductionRequests } from "@/lib/services/introduction-requests";
+import { TERMINAL_PIPELINE_STAGES } from "@/types/investors";
 import type { RunwayResult } from "@/lib/financials/calculations";
 import type { ExpertiseCategoryId } from "@/lib/experts/taxonomy";
 
@@ -69,6 +72,16 @@ export type ExpertSupportSummary = {
   topCategories: ExpertiseCategoryId[];
 };
 
+// Fundraising Pipeline widget (AFF-DASH-10 part L) — deliberately narrow:
+// counts and the single next follow-up, never a composite fundraising
+// score, never a fabricated investor recommendation.
+export type FundraisingPipelineSummary = {
+  activeRelationshipsCount: number;
+  nextFollowUpAt: string | undefined;
+  pendingIntroductionRequestsCount: number;
+  currentRoundName: string | undefined;
+};
+
 export type CommandCenterData = {
   startup: Startup;
   // undefined means "not assessed yet" — the UI must show that state
@@ -94,6 +107,9 @@ export type CommandCenterData = {
   // Never undefined — even zero open needs is a valid, honestly-rendered
   // state ("explore the network" rather than a missing widget).
   expertSupport: ExpertSupportSummary;
+  // Never undefined — zero active relationships is a valid, honestly
+  // rendered state pointing the founder at Investor Network.
+  fundraisingPipeline: FundraisingPipelineSummary;
 };
 
 function isDueThisWeek(dueDate: string | undefined, nowIso: string): boolean {
@@ -168,6 +184,21 @@ export async function getCommandCenterData(startupId: string): Promise<CommandCe
   const topCategories = Array.from(new Set(openNeeds.map((n) => n.category))).slice(0, 3);
   const expertSupport: ExpertSupportSummary = { openNeedsCount: openNeeds.length, topCategories };
 
+  const pipelineEntries = listPipeline(startupId).filter((e) => !TERMINAL_PIPELINE_STAGES.includes(e.stage));
+  const nextFollowUpAt = pipelineEntries
+    .map((e) => e.nextActionAt)
+    .filter((d): d is string => Boolean(d))
+    .sort()[0];
+  const pendingIntroductionRequestsCount = listIntroductionRequests(startupId).filter(
+    (r) => r.status === "REQUESTED" || r.status === "UNDER_REVIEW",
+  ).length;
+  const fundraisingPipeline: FundraisingPipelineSummary = {
+    activeRelationshipsCount: pipelineEntries.length,
+    nextFollowUpAt,
+    pendingIntroductionRequestsCount,
+    currentRoundName: getActiveRound(startupId)?.name,
+  };
+
   const opportunityMatchCtx = buildOpportunityMatchContext(twin);
   const rankedOpportunities = matchOpportunities(
     listOpportunities().filter((o) => o.status !== "CLOSED"),
@@ -188,5 +219,6 @@ export async function getCommandCenterData(startupId: string): Promise<CommandCe
     pitch,
     financials,
     expertSupport,
+    fundraisingPipeline,
   };
 }
