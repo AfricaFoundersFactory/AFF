@@ -31,7 +31,9 @@ import { getTasksForStartup } from "@/lib/services/tasks";
 import { getWorkspace, getActiveVersion } from "@/lib/services/pitch";
 import { getFinancialProfile, getFinancialSnapshot } from "@/lib/services/financials";
 import { getDataRoom, getCompletion } from "@/lib/services/data-room";
+import { listStartupNeeds } from "@/lib/services/experts";
 import type { RunwayResult } from "@/lib/financials/calculations";
+import type { ExpertiseCategoryId } from "@/lib/experts/taxonomy";
 
 // Pitch Lab summary for the Command Center widget (Part 25) — deliberately
 // minimal: title, Pitch Readiness %, and a count of sections needing
@@ -57,6 +59,15 @@ export type FinancialCommandCenterSummary = {
   dataRoomRequiredTotal: number;
 };
 
+// Expert Support widget (AFF-DASH-07) — a lightweight, honest summary of
+// derived+declared open needs. Never a score/ranking of experts, and never
+// manufactures urgency: an empty needsCategories list means "explore the
+// network" rather than a fabricated need count.
+export type ExpertSupportSummary = {
+  openNeedsCount: number;
+  topCategories: ExpertiseCategoryId[];
+};
+
 export type CommandCenterData = {
   startup: Startup;
   // undefined means "not assessed yet" — the UI must show that state
@@ -79,6 +90,9 @@ export type CommandCenterData = {
   // has any founder-entered data yet — the widget must offer a CTA rather
   // than a fabricated runway or completion figure.
   financials: FinancialCommandCenterSummary | undefined;
+  // Never undefined — even zero open needs is a valid, honestly-rendered
+  // state ("explore the network" rather than a missing widget).
+  expertSupport: ExpertSupportSummary;
 };
 
 function isDueThisWeek(dueDate: string | undefined, nowIso: string): boolean {
@@ -149,6 +163,10 @@ export async function getCommandCenterData(startupId: string): Promise<CommandCe
         })()
       : undefined;
 
+  const openNeeds = listStartupNeeds(startupId, nowIso).filter((n) => n.status === "OPEN");
+  const topCategories = Array.from(new Set(openNeeds.map((n) => n.category))).slice(0, 3);
+  const expertSupport: ExpertSupportSummary = { openNeedsCount: openNeeds.length, topCategories };
+
   return {
     startup: { id: startupId, twin },
     readiness: getLatestAssessment(startupId),
@@ -161,5 +179,6 @@ export async function getCommandCenterData(startupId: string): Promise<CommandCe
     upcomingEvents: demoUpcomingEventsByStartup[startupId] ?? [],
     pitch,
     financials,
+    expertSupport,
   };
 }

@@ -2804,6 +2804,245 @@
         "noDataBody": "Démarrez votre data room pour suivre l'état de vos documents.",
         "startCta": "Configurer la Data Room"
       }
+    },
+    "experts": {
+      "pageTitle": "Experts & Mentors",
+      "pageSubtitle": "Trouvez des experts et mentors qui peuvent vous aider selon les besoins actuels de votre startup.",
+      "demoDisclaimer": "Tous les profils d'experts sont des données de démonstration fictives pour cet aperçu — aucun expert réel n'est encore référencé.",
+      "expertise": {
+        "STRATEGY": "Stratégie",
+        "PROBLEM_MARKET_VALIDATION": "Validation problème & marché",
+        "PRODUCT": "Produit",
+        "TECHNOLOGY": "Technologie",
+        "AI_DATA": "IA & Données",
+        "UX_DESIGN": "UX & Design",
+        "BUSINESS_MODEL": "Modèle économique",
+        "GO_TO_MARKET": "Go-to-Market",
+        "SALES": "Ventes",
+        "MARKETING": "Marketing",
+        "GROWTH": "Croissance",
+        "OPERATIONS": "Opérations",
+        "FINANCE": "Finance",
+        "FINANCIAL_MODELING": "Modélisation financière",
+        "FUNDRAISING": "Levée de fonds",
+        "INVESTOR_RELATIONS": "Relations investisseurs",
+        "PITCHING": "Pitch",
+        "LEGAL": "Juridique",
+        "GOVERNANCE": "Gouvernance",
+        "COMPLIANCE": "Conformité",
+        "IP": "Propriété intellectuelle",
+        "HR_TALENT": "RH & Talents",
+        "LEADERSHIP": "Leadership",
+        "IMPACT_ESG": "Impact & ESG",
+        "AGRITECH": "Agriculture / AgriTech",
+        "FINTECH": "FinTech",
+        "HEALTHTECH": "HealthTech",
+        "CLIMATE": "Climat",
+        "LOGISTICS": "Logistique",
+        "MARKETPLACE": "Marketplace",
+        "SAAS": "SaaS",
+        "B2B": "B2B",
+        "B2C": "B2C"
+      },
+      "availability": {
+        "AVAILABLE": "Disponible",
+        "LIMITED": "Disponibilité limitée",
+        "UNAVAILABLE": "Indisponible"
+      },
+      "languages": {
+        "fr": "Français",
+        "en": "Anglais",
+        "ar": "Arabe",
+        "pt": "Portugais"
+      },
+      "formats": {
+        "VIDEO_CALL": "Appel vidéo",
+        "PHONE_CALL": "Appel téléphonique",
+        "CHAT": "Chat",
+        "IN_PERSON": "En personne",
+        "DOCUMENT_REVIEW": "Revue de document",
+        "PITCH_REVIEW": "Revue de pitch"
+      },
+      "verification": {
+        "UNVERIFIED": "Non vérifié",
+        "PROFILE_REVIEWED": "Profil examiné par AFF",
+        "AFF_VERIFIED": "Vérifié par AFF"
+      },
+      "directory": {
+        "filters": {
+          "expertise": "Expertise",
+          "industry": "Secteur",
+          "stage": "Stade de la startup",
+          "language": "Langue",
+          "country": "Pays",
+          "availability": "Disponibilité",
+          "all": "Tous",
+          "reset": "Réinitialiser les filtres"
+        },
+        "viewProfile": "Voir le profil",
+        "empty": "Aucun expert ne correspond à ces filtres pour le moment.",
+        "relevantTitle": "Pertinent pour vos besoins actuels",
+        "relevantEmpty": "Explorez le réseau d'experts — aucun besoin spécifique n'a encore été détecté.",
+        "exploreCta": "Explorer le réseau d'experts",
+        "findHelpTitle": "Trouver de l'aide",
+        "findHelpBody": "Choisissez un domaine dans lequel vous avez besoin d'aide, ou sélectionnez un besoin détecté par AFF ci-dessous.",
+        "detectedNeedsTitle": "Besoins détectés par AFF",
+        "declareNeedCta": "Déclarer un besoin spécifique",
+        "declareNeedTitle": "J'ai besoin d'aide pour...",
+        "declareNeedCategoryLabel": "Catégorie",
+        "declareNeedTitleLabel": "De quoi avez-vous besoin ?",
+        "declareNeedDescriptionLabel": "Plus de détails (optionnel)",
+        "declareNeedSubmit": "Trouver des experts"
+      },
+      "needs": {
+        "sourceLabels": {
+          "READINESS_GAP": "Écart de préparation AFF",
+          "ROADMAP_ITEM": "Élément de la feuille de route",
+          "TASK": "Tâche",
+          "PITCH_GAP": "Écart dans le pitch",
+          "FINANCIAL_SIGNAL": "Signal financier",
+          "DATA_ROOM_GAP": "Écart dans la data room",
+          "FOUNDER_DECLARED": "Déclaré par vous"
+        },
+        "readinessGap": {
+          "title": "Une dimension de la préparation AFF nécessite votre attention",
+          "description": "Cette dimension a obtenu un score inférieur au seuil lors de votre dernière évaluation de préparation AFF."
+        },
+        "financialSignal": {
+          "title": {
+            "revenue_declining": "Revenu en baisse",
+            "expenses_outpacing_revenue": "Dépenses supérieures aux revenus",
+            "runway_below_3_months": "Trésorerie inférieure à 3 mois",
+            "runway_below_6_months": "Trésorerie inférieure à 6 mois",
+            "stale_financial_update": "Les données financières n'ont pas été mises à jour récemment",
+            "no_forecast": "Aucune prévision financière pour le moment",
+            "funding_exceeds_forecast_need": "La demande de financement pourrait dépasser le besoin prévisionnel"
+          },
+          "description": {
+            "revenue_declining": "Votre revenu mensuel est en baisse.",
+            "expenses_outpacing_revenue": "Les dépenses augmentent plus vite que le revenu.",
+            "runway_below_3_months": "Votre trésorerie disponible est critique.",
+            "runway_below_6_months": "Votre trésorerie disponible devient courte.",
+            "stale_financial_update": "Pensez à mettre à jour vos données financières.",
+            "no_forecast": "Une prévision vous aiderait à planifier votre trésorerie et votre levée de fonds.",
+            "funding_exceeds_forecast_need": "Vérifiez votre demande par rapport à votre besoin prévisionnel réel."
+          }
+        },
+        "pitchGap": {
+          "title": {
+            "ask_clarity": "Votre demande de financement manque de clarté",
+            "financial_funding_clarity": "Votre narratif financier manque de clarté",
+            "narrative_clarity": "Le récit de votre pitch manque de clarté",
+            "problem_evidence": "Les preuves de votre problème doivent être renforcées",
+            "market_story": "Votre argumentaire marché doit être renforcé",
+            "business_model": "La section modèle économique manque de clarté",
+            "traction_story": "Votre argumentaire de traction doit être renforcé",
+            "team_story": "La présentation de votre équipe doit être renforcée"
+          },
+          "description": {
+            "ask_clarity": "Les investisseurs questionneront immédiatement une demande de financement floue.",
+            "financial_funding_clarity": "Rendez vos données financières et de financement plus lisibles.",
+            "narrative_clarity": "Un expert du pitch peut vous aider à affiner votre récit global.",
+            "problem_evidence": "Ajoutez des preuves plus solides que le problème est réel et douloureux.",
+            "market_story": "Affinez votre argumentaire de taille de marché et de positionnement.",
+            "business_model": "Clarifiez comment votre modèle économique génère réellement des revenus.",
+            "traction_story": "Mettez en avant des indicateurs de traction précis et crédibles.",
+            "team_story": "Clarifiez pourquoi votre équipe est la bonne pour exécuter."
+          }
+        },
+        "dataRoomGap": {
+          "title": "Un document de la data room nécessite votre attention",
+          "description": "Ce document est manquant ou obsolète dans votre data room investisseurs."
+        },
+        "roadmapItem": {
+          "title": "Un élément prioritaire de la feuille de route est ouvert",
+          "description": "Cet élément de la feuille de route est prioritaire et toujours ouvert."
+        }
+      },
+      "matching": {
+        "reasons": {
+          "expertise": "Expertise en {category}",
+          "stage": "Travaille avec des startups au stade {stage}",
+          "industry": "Expérience en {industry}",
+          "market": "Connaît bien {market}",
+          "language": "Parle {language}",
+          "available": "Disponible pour du mentorat"
+        },
+        "relevantCount": "Pertinent pour {count} de vos besoins actuels",
+        "disclaimer": "Le rapprochement se base uniquement sur l'expertise, le stade, le secteur, le marché et la langue déclarés — jamais un score, un classement ou une recommandation par IA."
+      },
+      "profile": {
+        "aboutTitle": "À propos",
+        "expertiseTitle": "Expertise",
+        "industriesTitle": "Secteurs",
+        "stagesTitle": "Stades de startup",
+        "marketsTitle": "Marchés",
+        "languagesTitle": "Langues",
+        "formatsTitle": "Formats de mentorat",
+        "availabilityTitle": "Disponibilité",
+        "backgroundTitle": "Parcours professionnel",
+        "helpTitle": "En quoi cet expert peut aider votre startup",
+        "helpEmpty": "Aucun recoupement spécifique détecté avec vos besoins actuels pour le moment.",
+        "requestCta": "Demander un accompagnement",
+        "notFoundTitle": "Expert introuvable",
+        "notFoundBody": "Ce profil d'expert n'existe pas ou n'est plus actif.",
+        "backToDirectory": "Retour à l'annuaire"
+      },
+      "request": {
+        "title": "Demander un accompagnement",
+        "startupLabel": "Startup",
+        "topicLabel": "Sujet",
+        "messageLabel": "Message",
+        "formatLabel": "Format préféré",
+        "languageLabel": "Langue préférée",
+        "needLabel": "Besoin associé (optionnel)",
+        "needNone": "Aucun",
+        "submit": "Envoyer la demande",
+        "cancel": "Annuler",
+        "sentNotice": "Cette demande est envoyée uniquement au sein d'AFF — aucun email ni notification externe n'est envoyé à l'expert.",
+        "successTitle": "Demande envoyée",
+        "successBody": "Votre demande a été enregistrée dans AFF. Vous pouvez la suivre depuis Mon accompagnement."
+      },
+      "requestsPage": {
+        "pageTitle": "Mon accompagnement",
+        "pageSubtitle": "Suivez les demandes envoyées aux experts et les séances de mentorat qui en découlent.",
+        "status": {
+          "DRAFT": "Brouillon",
+          "SENT": "Envoyée",
+          "ACCEPTED": "Acceptée",
+          "DECLINED": "Refusée",
+          "CANCELLED": "Annulée",
+          "COMPLETED": "Terminée"
+        },
+        "nextStep": {
+          "DRAFT": "Pas encore envoyée.",
+          "SENT": "En attente de la réponse de l'expert dans AFF.",
+          "ACCEPTED": "Séance à programmer.",
+          "DECLINED": "Cette demande a été refusée.",
+          "CANCELLED": "Cette demande a été annulée.",
+          "COMPLETED": "Cet accompagnement est terminé."
+        },
+        "empty": "Vous n'avez pas encore demandé d'accompagnement à un expert.",
+        "requestsTitle": "Demandes d'accompagnement",
+        "sessionsTitle": "Séances de mentorat",
+        "sessionsEmpty": "Aucune séance de mentorat pour le moment.",
+        "demoLabel": "Contenu de démonstration illustratif — pas un vrai conseil",
+        "recommendationsTitle": "Recommandations clés",
+        "actionItemsTitle": "Actions à mener",
+        "createTask": "Créer une tâche",
+        "dismiss": "Ignorer",
+        "taskCreated": "Tâche créée",
+        "followUp": "{total} recommandations — {accepted} acceptées, {convertedToTask} converties en tâche, {completed} terminées",
+        "addToRoadmap": "Ajouter à la feuille de route",
+        "addedToRoadmap": "Ajoutée à la feuille de route"
+      },
+      "commandCenter": {
+        "title": "Accompagnement par des experts",
+        "needsBody": "{count} besoins actuels pourraient bénéficier d'un accompagnement expert",
+        "findCta": "Trouver un expert",
+        "exploreCta": "Explorer le réseau d'experts",
+        "noNeedsBody": "Aucun besoin spécifique n'a encore été détecté — explorez le réseau d'experts à tout moment."
+      }
     }
   }
 }

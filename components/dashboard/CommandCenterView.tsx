@@ -40,6 +40,7 @@ export function CommandCenterView({
   const tFields = useTranslations("dashboard.digitalTwin.fields");
   const tPitch = useTranslations("dashboard.pitch");
   const tFinancials = useTranslations("dashboard.financials");
+  const tExperts = useTranslations("dashboard.experts");
   const format = useFormatter();
 
   if (!data) {
@@ -58,6 +59,7 @@ export function CommandCenterView({
     upcomingEvents,
     pitch,
     financials,
+    expertSupport,
   } = data;
 
   const formatDate = (iso: string) =>
@@ -358,6 +360,38 @@ export function CommandCenterView({
             <p className="text-[13.5px] text-aff-muted">{tFinancials("commandCenter.noDataBody")}</p>
             <ButtonLink href="/dashboard/financials" className="px-4 py-2.5 text-[13px]">
               {tFinancials("commandCenter.startCta")}
+            </ButtonLink>
+          </div>
+        )}
+      </DashboardSection>
+
+      {/* Expert Support widget (Part: Command Center Integration) — a
+          separate, honest summary of open needs that could benefit from
+          expert support; never a score, never manufactured urgency. */}
+      <DashboardSection title={tExperts("commandCenter.title")}>
+        {expertSupport.openNeedsCount > 0 ? (
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <p className="text-[13.5px] text-aff-text">
+                {tExperts("commandCenter.needsBody", { count: expertSupport.openNeedsCount })}
+              </p>
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {expertSupport.topCategories.map((category) => (
+                  <span key={category} className="rounded-full border border-aff-line px-2.5 py-1 text-[11.5px] text-aff-text">
+                    {tExperts(`expertise.${category}`)}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <ButtonLink href="/dashboard/experts" className="px-4 py-2.5 text-[13px]">
+              {tExperts("commandCenter.findCta")}
+            </ButtonLink>
+          </div>
+        ) : (
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <p className="text-[13.5px] text-aff-muted">{tExperts("commandCenter.noNeedsBody")}</p>
+            <ButtonLink href="/dashboard/experts" variant="secondary" className="px-4 py-2.5 text-[13px]">
+              {tExperts("commandCenter.exploreCta")}
             </ButtonLink>
           </div>
         )}

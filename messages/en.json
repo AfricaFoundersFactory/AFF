@@ -2804,6 +2804,245 @@
         "noDataBody": "Start your data room to track document readiness.",
         "startCta": "Set up Data Room"
       }
+    },
+    "experts": {
+      "pageTitle": "Experts & Mentors",
+      "pageSubtitle": "Find experts and mentors who can help with what your startup needs right now.",
+      "demoDisclaimer": "All expert profiles are fictional demo data for this preview — no real experts are listed yet.",
+      "expertise": {
+        "STRATEGY": "Strategy",
+        "PROBLEM_MARKET_VALIDATION": "Problem & Market Validation",
+        "PRODUCT": "Product",
+        "TECHNOLOGY": "Technology",
+        "AI_DATA": "AI & Data",
+        "UX_DESIGN": "UX & Design",
+        "BUSINESS_MODEL": "Business Model",
+        "GO_TO_MARKET": "Go-to-Market",
+        "SALES": "Sales",
+        "MARKETING": "Marketing",
+        "GROWTH": "Growth",
+        "OPERATIONS": "Operations",
+        "FINANCE": "Finance",
+        "FINANCIAL_MODELING": "Financial Modeling",
+        "FUNDRAISING": "Fundraising",
+        "INVESTOR_RELATIONS": "Investor Relations",
+        "PITCHING": "Pitching",
+        "LEGAL": "Legal",
+        "GOVERNANCE": "Governance",
+        "COMPLIANCE": "Compliance",
+        "IP": "Intellectual Property",
+        "HR_TALENT": "HR & Talent",
+        "LEADERSHIP": "Leadership",
+        "IMPACT_ESG": "Impact & ESG",
+        "AGRITECH": "Agriculture / AgriTech",
+        "FINTECH": "FinTech",
+        "HEALTHTECH": "HealthTech",
+        "CLIMATE": "Climate",
+        "LOGISTICS": "Logistics",
+        "MARKETPLACE": "Marketplace",
+        "SAAS": "SaaS",
+        "B2B": "B2B",
+        "B2C": "B2C"
+      },
+      "availability": {
+        "AVAILABLE": "Available",
+        "LIMITED": "Limited availability",
+        "UNAVAILABLE": "Unavailable"
+      },
+      "languages": {
+        "fr": "French",
+        "en": "English",
+        "ar": "Arabic",
+        "pt": "Portuguese"
+      },
+      "formats": {
+        "VIDEO_CALL": "Video call",
+        "PHONE_CALL": "Phone call",
+        "CHAT": "Chat",
+        "IN_PERSON": "In person",
+        "DOCUMENT_REVIEW": "Document review",
+        "PITCH_REVIEW": "Pitch review"
+      },
+      "verification": {
+        "UNVERIFIED": "Not yet verified",
+        "PROFILE_REVIEWED": "Profile reviewed by AFF",
+        "AFF_VERIFIED": "AFF verified"
+      },
+      "directory": {
+        "filters": {
+          "expertise": "Expertise",
+          "industry": "Industry",
+          "stage": "Startup stage",
+          "language": "Language",
+          "country": "Country",
+          "availability": "Availability",
+          "all": "All",
+          "reset": "Reset filters"
+        },
+        "viewProfile": "View profile",
+        "empty": "No experts match these filters yet.",
+        "relevantTitle": "Relevant to your current needs",
+        "relevantEmpty": "Explore the expert network — no specific need has been detected yet.",
+        "exploreCta": "Explore expert network",
+        "findHelpTitle": "Find help",
+        "findHelpBody": "Choose an area you need help with, or pick from a need AFF has detected below.",
+        "detectedNeedsTitle": "Needs AFF has detected",
+        "declareNeedCta": "Declare a specific need",
+        "declareNeedTitle": "I need help with...",
+        "declareNeedCategoryLabel": "Category",
+        "declareNeedTitleLabel": "What do you need help with?",
+        "declareNeedDescriptionLabel": "More detail (optional)",
+        "declareNeedSubmit": "Find experts"
+      },
+      "needs": {
+        "sourceLabels": {
+          "READINESS_GAP": "AFF Readiness gap",
+          "ROADMAP_ITEM": "Roadmap item",
+          "TASK": "Task",
+          "PITCH_GAP": "Pitch gap",
+          "FINANCIAL_SIGNAL": "Financial signal",
+          "DATA_ROOM_GAP": "Data room gap",
+          "FOUNDER_DECLARED": "Declared by you"
+        },
+        "readinessGap": {
+          "title": "An AFF Readiness dimension needs attention",
+          "description": "This dimension scored below the threshold in your latest AFF Readiness assessment."
+        },
+        "financialSignal": {
+          "title": {
+            "revenue_declining": "Declining revenue",
+            "expenses_outpacing_revenue": "Expenses outpacing revenue",
+            "runway_below_3_months": "Runway below 3 months",
+            "runway_below_6_months": "Runway below 6 months",
+            "stale_financial_update": "Financial data hasn't been updated recently",
+            "no_forecast": "No financial forecast yet",
+            "funding_exceeds_forecast_need": "Funding ask may exceed forecast need"
+          },
+          "description": {
+            "revenue_declining": "Your monthly revenue has been declining.",
+            "expenses_outpacing_revenue": "Expenses are growing faster than revenue.",
+            "runway_below_3_months": "Your cash runway is critically short.",
+            "runway_below_6_months": "Your cash runway is getting short.",
+            "stale_financial_update": "Consider updating your financial records.",
+            "no_forecast": "A forecast would help you plan your runway and fundraising.",
+            "funding_exceeds_forecast_need": "Double-check your ask against your actual forecast need."
+          }
+        },
+        "pitchGap": {
+          "title": {
+            "ask_clarity": "Your fundraising ask needs more clarity",
+            "financial_funding_clarity": "Your financial/funding narrative needs more clarity",
+            "narrative_clarity": "Your pitch narrative needs more clarity",
+            "problem_evidence": "Your problem evidence needs strengthening",
+            "market_story": "Your market story needs strengthening",
+            "business_model": "Your business model section needs clarity",
+            "traction_story": "Your traction story needs strengthening",
+            "team_story": "Your team story needs strengthening"
+          },
+          "description": {
+            "ask_clarity": "Investors will ask about a vague fundraising ask immediately.",
+            "financial_funding_clarity": "Make your financial and funding facts easier to follow.",
+            "narrative_clarity": "A pitch expert can help sharpen your overall narrative.",
+            "problem_evidence": "Add stronger evidence that the problem is real and painful.",
+            "market_story": "Sharpen your market sizing and positioning story.",
+            "business_model": "Clarify how your business model actually makes money.",
+            "traction_story": "Lead with specific, credible traction metrics.",
+            "team_story": "Clarify why your team is the right one to execute."
+          }
+        },
+        "dataRoomGap": {
+          "title": "A data room document needs attention",
+          "description": "This document is missing or outdated in your investor data room."
+        },
+        "roadmapItem": {
+          "title": "A high-priority roadmap item is open",
+          "description": "This roadmap item is high priority and still open."
+        }
+      },
+      "matching": {
+        "reasons": {
+          "expertise": "{category} expertise",
+          "stage": "Works with {stage}-stage startups",
+          "industry": "Experience in {industry}",
+          "market": "Familiar with {market}",
+          "language": "Speaks {language}",
+          "available": "Available for mentoring"
+        },
+        "relevantCount": "Relevant to {count} of your current needs",
+        "disclaimer": "Matching is based on declared expertise, stage, industry, market and language overlap only — never a score, ranking, or AI recommendation."
+      },
+      "profile": {
+        "aboutTitle": "About",
+        "expertiseTitle": "Expertise",
+        "industriesTitle": "Industries",
+        "stagesTitle": "Startup stages",
+        "marketsTitle": "Markets",
+        "languagesTitle": "Languages",
+        "formatsTitle": "Mentoring formats",
+        "availabilityTitle": "Availability",
+        "backgroundTitle": "Professional background",
+        "helpTitle": "How this expert may help your startup",
+        "helpEmpty": "No specific overlap detected with your current needs yet.",
+        "requestCta": "Request support",
+        "notFoundTitle": "Expert not found",
+        "notFoundBody": "This expert profile does not exist or is no longer active.",
+        "backToDirectory": "Back to directory"
+      },
+      "request": {
+        "title": "Request support",
+        "startupLabel": "Startup",
+        "topicLabel": "Topic",
+        "messageLabel": "Message",
+        "formatLabel": "Preferred format",
+        "languageLabel": "Preferred language",
+        "needLabel": "Related need (optional)",
+        "needNone": "None",
+        "submit": "Send request",
+        "cancel": "Cancel",
+        "sentNotice": "This sends your request inside AFF only — no external email or notification is sent to the expert.",
+        "successTitle": "Request sent",
+        "successBody": "Your request has been recorded inside AFF. You can track it from My Support & Mentoring."
+      },
+      "requestsPage": {
+        "pageTitle": "My Support & Mentoring",
+        "pageSubtitle": "Track requests you've sent to experts and the mentoring sessions that follow.",
+        "status": {
+          "DRAFT": "Draft",
+          "SENT": "Sent",
+          "ACCEPTED": "Accepted",
+          "DECLINED": "Declined",
+          "CANCELLED": "Cancelled",
+          "COMPLETED": "Completed"
+        },
+        "nextStep": {
+          "DRAFT": "Not yet sent.",
+          "SENT": "Waiting for the expert to respond inside AFF.",
+          "ACCEPTED": "Session to be scheduled.",
+          "DECLINED": "This request was declined.",
+          "CANCELLED": "This request was cancelled.",
+          "COMPLETED": "This engagement is complete."
+        },
+        "empty": "You haven't requested support from an expert yet.",
+        "requestsTitle": "Support requests",
+        "sessionsTitle": "Mentoring sessions",
+        "sessionsEmpty": "No mentoring sessions yet.",
+        "demoLabel": "Illustrative demo content — not real advice",
+        "recommendationsTitle": "Key recommendations",
+        "actionItemsTitle": "Action items",
+        "createTask": "Create task",
+        "dismiss": "Dismiss",
+        "taskCreated": "Task created",
+        "followUp": "{total} recommendations — {accepted} accepted, {convertedToTask} converted to task, {completed} completed",
+        "addToRoadmap": "Add to roadmap",
+        "addedToRoadmap": "Added to roadmap"
+      },
+      "commandCenter": {
+        "title": "Expert Support",
+        "needsBody": "{count} current needs could benefit from expert support",
+        "findCta": "Find an expert",
+        "exploreCta": "Explore expert network",
+        "noNeedsBody": "No specific need has been detected yet — browse the expert network anytime."
+      }
     }
   }
 }
