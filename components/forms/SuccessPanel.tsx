@@ -4,10 +4,12 @@ export function SuccessPanel({
   title,
   body,
   ctaLabel,
+  ctaHref = "/",
 }: {
   title: string;
   body: string;
   ctaLabel: string;
+  ctaHref?: string;
 }) {
   return (
     <div className="mx-auto max-w-md py-20 text-center sm:py-32">
@@ -21,7 +23,7 @@ export function SuccessPanel({
         {title}
       </h1>
       <p className="mb-9 text-base leading-relaxed text-aff-muted">{body}</p>
-      <ButtonLink href="/">{ctaLabel}</ButtonLink>
+      <ButtonLink href={ctaHref}>{ctaLabel}</ButtonLink>
     </div>
   );
 }

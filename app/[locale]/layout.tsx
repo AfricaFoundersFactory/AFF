@@ -4,8 +4,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { plusJakartaSans, inter } from "@/lib/fonts";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -71,13 +69,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${plusJakartaSans.variable} ${inter.variable}`}>
       <body className="min-h-screen bg-aff-bg font-body text-aff-text antialiased">
-        <NextIntlClientProvider>
-          <div className="flex min-h-screen flex-col overflow-x-hidden">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
-        </NextIntlClientProvider>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
   );

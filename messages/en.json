@@ -45,7 +45,15 @@
       "tagline": "FOUNDERS · EXPERTS · MENTORS · DIASPORA · ECOSYSTEM"
     },
     "heroJourney": {
-      "labels": ["IDEA", "BUILD", "PITCH", "CHALLENGE", "IMPROVE", "CONNECT", "GROW"],
+      "labels": [
+        "IDEA",
+        "BUILD",
+        "PITCH",
+        "CHALLENGE",
+        "IMPROVE",
+        "CONNECT",
+        "GROW"
+      ],
       "lit": 4
     },
     "problem": {
@@ -54,17 +62,38 @@
       "headline2": "because of bad ideas.",
       "body": "Most founders don't lack ambition. They lack the pressure-testing, storytelling and access that turn a promising idea into a venture people believe in.",
       "items": [
-        { "title": "Unclear Positioning", "body": "A founder may understand the idea deeply while the market still doesn't understand why it matters." },
-        { "title": "Weak Storytelling", "body": "A good business badly explained can look like a bad business." },
-        { "title": "Lack of Challenge", "body": "Without external feedback, assumptions easily become convictions." },
-        { "title": "Limited Access", "body": "Talent is everywhere. Access to experienced people isn't." }
+        {
+          "title": "Unclear Positioning",
+          "body": "A founder may understand the idea deeply while the market still doesn't understand why it matters."
+        },
+        {
+          "title": "Weak Storytelling",
+          "body": "A good business badly explained can look like a bad business."
+        },
+        {
+          "title": "Lack of Challenge",
+          "body": "Without external feedback, assumptions easily become convictions."
+        },
+        {
+          "title": "Limited Access",
+          "body": "Talent is everywhere. Access to experienced people isn't."
+        }
       ]
     },
     "factory": {
       "eyebrow": "THE FACTORY",
       "headline1": "Founders aren't born ready.",
       "headline2": "They iterate.",
-      "labels": ["IDEA", "CLARIFY", "BUILD", "PITCH", "CHALLENGE", "IMPROVE", "CONNECT", "GROW"],
+      "labels": [
+        "IDEA",
+        "CLARIFY",
+        "BUILD",
+        "PITCH",
+        "CHALLENGE",
+        "IMPROVE",
+        "CONNECT",
+        "GROW"
+      ],
       "sentences": [
         "Every founder starts with a rough idea worth pressure-testing.",
         "Sharpen the story until it is impossible to misunderstand.",
@@ -86,18 +115,43 @@
       "demoScoreMax": 100,
       "disclaimer": "Not an investor rating. Not a valuation. Not a fundraising promise — a structured diagnostic to help founders understand their readiness.",
       "dimensions": [
-        { "label": "PROBLEM CLARITY", "pct": 78 },
-        { "label": "CUSTOMER & MARKET", "pct": 61 },
-        { "label": "VALUE PROPOSITION", "pct": 55 },
-        { "label": "BUSINESS MODEL", "pct": 47 },
-        { "label": "PRODUCT READINESS", "pct": 70 },
-        { "label": "TRACTION", "pct": 38 }
+        {
+          "label": "PROBLEM CLARITY",
+          "pct": 78
+        },
+        {
+          "label": "CUSTOMER & MARKET",
+          "pct": 61
+        },
+        {
+          "label": "VALUE PROPOSITION",
+          "pct": 55
+        },
+        {
+          "label": "BUSINESS MODEL",
+          "pct": 47
+        },
+        {
+          "label": "PRODUCT READINESS",
+          "pct": 70
+        },
+        {
+          "label": "TRACTION",
+          "pct": 38
+        }
       ]
     },
     "scoreCycle": {
       "headline1": "The score isn't the goal.",
       "headline2": "Progress is.",
-      "steps": ["ASSESS", "UNDERSTAND", "PRIORITIZE", "IMPROVE", "REASSESS", "MEASURE PROGRESS"]
+      "steps": [
+        "ASSESS",
+        "UNDERSTAND",
+        "PRIORITIZE",
+        "IMPROVE",
+        "REASSESS",
+        "MEASURE PROGRESS"
+      ]
     },
     "scoreToAction": {
       "headline1": "Every weakness should lead",
@@ -105,24 +159,66 @@
       "gapLabel": "IDENTIFIED GAP",
       "actionLabel": "NEXT ACTION",
       "cards": [
-        { "title": "PITCH READINESS", "score": 58, "status": "Needs work", "gap": "The problem is understandable, but the value proposition remains too broad.", "action": "Rewrite the one-sentence value proposition.", "resource": "Value Proposition Guide" },
-        { "title": "MARKET VALIDATION", "score": 42, "status": "Needs work", "gap": "Customer assumptions are not sufficiently validated.", "action": "Conduct 10 structured customer interviews.", "resource": "Customer Interview Template" }
+        {
+          "title": "PITCH READINESS",
+          "score": 58,
+          "status": "Needs work",
+          "gap": "The problem is understandable, but the value proposition remains too broad.",
+          "action": "Rewrite the one-sentence value proposition.",
+          "resource": "Value Proposition Guide"
+        },
+        {
+          "title": "MARKET VALIDATION",
+          "score": 42,
+          "status": "Needs work",
+          "gap": "Customer assumptions are not sufficiently validated.",
+          "action": "Conduct 10 structured customer interviews.",
+          "resource": "Customer Interview Template"
+        }
       ]
     },
     "progress": {
       "headline1": "Don't compare yourself to another startup.",
       "headline2": "Compare yourself to your last assessment.",
       "assessments": [
-        { "label": "ASSESSMENT 01", "value": 48 },
-        { "label": "ASSESSMENT 02", "value": 57 },
-        { "label": "ASSESSMENT 03", "value": 68 },
-        { "label": "ASSESSMENT 04", "value": 74 }
+        {
+          "label": "ASSESSMENT 01",
+          "value": 48
+        },
+        {
+          "label": "ASSESSMENT 02",
+          "value": 57
+        },
+        {
+          "label": "ASSESSMENT 03",
+          "value": 68
+        },
+        {
+          "label": "ASSESSMENT 04",
+          "value": 74
+        }
       ],
       "categories": [
-        { "label": "Pitch", "from": 42, "to": 71 },
-        { "label": "Market", "from": 55, "to": 67 },
-        { "label": "Product", "from": 61, "to": 78 },
-        { "label": "Finance", "from": 31, "to": 59 }
+        {
+          "label": "Pitch",
+          "from": 42,
+          "to": 71
+        },
+        {
+          "label": "Market",
+          "from": 55,
+          "to": 67
+        },
+        {
+          "label": "Product",
+          "from": 61,
+          "to": 78
+        },
+        {
+          "label": "Finance",
+          "from": 31,
+          "to": 59
+        }
       ]
     },
     "profile": {
@@ -130,9 +226,39 @@
       "headline1": "Your startup.",
       "headline2": "Structured in one place.",
       "groups": [
-        { "title": "VENTURE", "items": ["Identity", "Problem", "Solution", "Value Proposition", "Business Model", "Market"] },
-        { "title": "EXECUTION", "items": ["Product", "Traction", "Team", "Financials", "Milestones", "Documents"] },
-        { "title": "GROWTH", "items": ["Pitch", "Feedback", "Sessions", "Action Plan", "Founder Score", "Progress History"] }
+        {
+          "title": "VENTURE",
+          "items": [
+            "Identity",
+            "Problem",
+            "Solution",
+            "Value Proposition",
+            "Business Model",
+            "Market"
+          ]
+        },
+        {
+          "title": "EXECUTION",
+          "items": [
+            "Product",
+            "Traction",
+            "Team",
+            "Financials",
+            "Milestones",
+            "Documents"
+          ]
+        },
+        {
+          "title": "GROWTH",
+          "items": [
+            "Pitch",
+            "Feedback",
+            "Sessions",
+            "Action Plan",
+            "Founder Score",
+            "Progress History"
+          ]
+        }
       ]
     },
     "pitchLab": {
@@ -140,12 +266,30 @@
       "headline1": "A great pitch",
       "headline2": "is built through repetition.",
       "steps": [
-        { "label": "PREPARE", "desc": "Structure the message." },
-        { "label": "PITCH", "desc": "Explain the venture under real constraints." },
-        { "label": "CHALLENGE", "desc": "Face difficult questions." },
-        { "label": "FEEDBACK", "desc": "Understand what was unclear or unconvincing." },
-        { "label": "IMPROVE", "desc": "Rewrite and strengthen weak areas." },
-        { "label": "REPEAT", "desc": "Pitch again." }
+        {
+          "label": "PREPARE",
+          "desc": "Structure the message."
+        },
+        {
+          "label": "PITCH",
+          "desc": "Explain the venture under real constraints."
+        },
+        {
+          "label": "CHALLENGE",
+          "desc": "Face difficult questions."
+        },
+        {
+          "label": "FEEDBACK",
+          "desc": "Understand what was unclear or unconvincing."
+        },
+        {
+          "label": "IMPROVE",
+          "desc": "Rewrite and strengthen weak areas."
+        },
+        {
+          "label": "REPEAT",
+          "desc": "Pitch again."
+        }
       ],
       "gapFounder": "WHAT THE FOUNDER THINKS THEY EXPLAINED",
       "gapAudience": "WHAT THE AUDIENCE ACTUALLY UNDERSTOOD"
@@ -158,10 +302,22 @@
       "applyCta": "Apply to Pitch",
       "discoverCta": "Discover Pitch Live",
       "format": [
-        { "value": "03 MIN", "label": "THE PITCH" },
-        { "value": "05 MIN", "label": "THE CHALLENGE" },
-        { "value": "05 MIN", "label": "QUESTIONS" },
-        { "value": "01", "label": "ACTION PLAN" }
+        {
+          "value": "03 MIN",
+          "label": "THE PITCH"
+        },
+        {
+          "value": "05 MIN",
+          "label": "THE CHALLENGE"
+        },
+        {
+          "value": "05 MIN",
+          "label": "QUESTIONS"
+        },
+        {
+          "value": "01",
+          "label": "ACTION PLAN"
+        }
       ]
     },
     "readiness": {
@@ -174,11 +330,26 @@
       "headline": "Stop guessing what to work on next.",
       "label": "YOUR NEXT PRIORITIES",
       "items": [
-        { "n": "01", "text": "Validate pricing with 5 prospective customers." },
-        { "n": "02", "text": "Rewrite the problem statement." },
-        { "n": "03", "text": "Complete basic 12-month financial assumptions." },
-        { "n": "04", "text": "Record Pitch V2." },
-        { "n": "05", "text": "Request mentor review." }
+        {
+          "n": "01",
+          "text": "Validate pricing with 5 prospective customers."
+        },
+        {
+          "n": "02",
+          "text": "Rewrite the problem statement."
+        },
+        {
+          "n": "03",
+          "text": "Complete basic 12-month financial assumptions."
+        },
+        {
+          "n": "04",
+          "text": "Record Pitch V2."
+        },
+        {
+          "n": "05",
+          "text": "Request mentor review."
+        }
       ]
     },
     "feedback": {
@@ -189,7 +360,13 @@
       "formulaC": "FOUNDER ACTION",
       "mentorLabel": "MENTOR FEEDBACK",
       "mentorQuote": "“Your customer is clear, but the economic buyer still isn’t.”",
-      "actions": ["Review", "Reply", "Create action", "Mark addressed", "Request follow-up"]
+      "actions": [
+        "Review",
+        "Reply",
+        "Create action",
+        "Mark addressed",
+        "Request follow-up"
+      ]
     },
     "community": {
       "headline1": "Build alongside people",
@@ -213,26 +390,120 @@
     }
   },
   "readinessStages": [
-    { "label": "IDEA", "items": ["Problem understanding", "Customer discovery", "Founder commitment"] },
-    { "label": "VALIDATION", "items": ["Customer interviews", "Value proposition", "Early experiments"] },
-    { "label": "BUILD", "items": ["Product", "Business model", "Initial metrics"] },
-    { "label": "TRACTION", "items": ["Usage", "Revenue", "Retention"] },
-    { "label": "FUNDRAISING READY", "items": ["Narrative", "Metrics", "Documents"] },
-    { "label": "SCALE", "items": ["Processes", "Team", "Governance"] }
+    {
+      "label": "IDEA",
+      "items": [
+        "Problem understanding",
+        "Customer discovery",
+        "Founder commitment"
+      ]
+    },
+    {
+      "label": "VALIDATION",
+      "items": [
+        "Customer interviews",
+        "Value proposition",
+        "Early experiments"
+      ]
+    },
+    {
+      "label": "BUILD",
+      "items": [
+        "Product",
+        "Business model",
+        "Initial metrics"
+      ]
+    },
+    {
+      "label": "TRACTION",
+      "items": [
+        "Usage",
+        "Revenue",
+        "Retention"
+      ]
+    },
+    {
+      "label": "FUNDRAISING READY",
+      "items": [
+        "Narrative",
+        "Metrics",
+        "Documents"
+      ]
+    },
+    {
+      "label": "SCALE",
+      "items": [
+        "Processes",
+        "Team",
+        "Governance"
+      ]
+    }
   ],
   "communityChips": [
-    { "label": "FOUNDERS" },
-    { "label": "ASPIRING FOUNDERS" },
-    { "label": "EXPERTS" },
-    { "label": "MENTORS" },
-    { "label": "OPERATORS" },
-    { "label": "AFRICAN DIASPORA" },
-    { "label": "ECOSYSTEM PARTNERS" },
-    { "label": "INVESTORS (FUTURE)", "future": true }
+    {
+      "label": "FOUNDERS"
+    },
+    {
+      "label": "ASPIRING FOUNDERS"
+    },
+    {
+      "label": "EXPERTS"
+    },
+    {
+      "label": "MENTORS"
+    },
+    {
+      "label": "OPERATORS"
+    },
+    {
+      "label": "AFRICAN DIASPORA"
+    },
+    {
+      "label": "ECOSYSTEM PARTNERS"
+    },
+    {
+      "label": "INVESTORS (FUTURE)",
+      "future": true
+    }
   ],
-  "resourceCategories": ["PITCH", "BUSINESS MODEL", "CUSTOMER DISCOVERY", "MARKET", "PRODUCT", "TRACTION", "FINANCE", "FUNDRAISING", "LEADERSHIP", "AI & TECHNOLOGY", "LEGAL BASICS", "GROWTH"],
-  "resourceTypes": ["Guides", "Templates", "Checklists", "Videos", "Live Replays", "Frameworks", "Founder Cases"],
-  "diasporaCities": ["Abidjan", "Dakar", "Lagos", "Accra", "Douala", "Brazzaville", "Nairobi", "Kigali", "Casablanca", "Paris", "London", "Montreal", "New York"],
+  "resourceCategories": [
+    "PITCH",
+    "BUSINESS MODEL",
+    "CUSTOMER DISCOVERY",
+    "MARKET",
+    "PRODUCT",
+    "TRACTION",
+    "FINANCE",
+    "FUNDRAISING",
+    "LEADERSHIP",
+    "AI & TECHNOLOGY",
+    "LEGAL BASICS",
+    "GROWTH"
+  ],
+  "resourceTypes": [
+    "Guides",
+    "Templates",
+    "Checklists",
+    "Videos",
+    "Live Replays",
+    "Frameworks",
+    "Founder Cases"
+  ],
+  "diasporaCities": [
+    "Abidjan",
+    "Dakar",
+    "Lagos",
+    "Accra",
+    "Douala",
+    "Brazzaville",
+    "Nairobi",
+    "Kigali",
+    "Casablanca",
+    "Paris",
+    "London",
+    "Montreal",
+    "New York"
+  ],
   "mission": {
     "eyebrow": "OUR MISSION",
     "headline1": "Africa doesn't lack ideas.",
@@ -279,10 +550,22 @@
     "line": "This is the ecosystem we are building.",
     "startCta": "Start",
     "pathways": [
-      { "title": "I HAVE AN IDEA", "desc": "Turn your intuition into a structured entrepreneurial hypothesis." },
-      { "title": "I'M BUILDING", "desc": "Challenge what you've built and identify what needs to improve." },
-      { "title": "I HAVE EXPERIENCE", "desc": "Share practical experience with the next generation of African founders." },
-      { "title": "I SUPPORT ENTREPRENEURS", "desc": "Connect your organization to an emerging founder ecosystem." }
+      {
+        "title": "I HAVE AN IDEA",
+        "desc": "Turn your intuition into a structured entrepreneurial hypothesis."
+      },
+      {
+        "title": "I'M BUILDING",
+        "desc": "Challenge what you've built and identify what needs to improve."
+      },
+      {
+        "title": "I HAVE EXPERIENCE",
+        "desc": "Share practical experience with the next generation of African founders."
+      },
+      {
+        "title": "I SUPPORT ENTREPRENEURS",
+        "desc": "Connect your organization to an emerging founder ecosystem."
+      }
     ]
   },
   "pitchLive": {
@@ -294,12 +577,32 @@
     "afterHeadline1": "The Live ends.",
     "afterHeadline2": "The work begins.",
     "format": [
-      { "value": "03 MIN", "label": "THE PITCH" },
-      { "value": "05 MIN", "label": "THE CHALLENGE" },
-      { "value": "05 MIN", "label": "QUESTIONS" },
-      { "value": "01", "label": "ACTION PLAN" }
+      {
+        "value": "03 MIN",
+        "label": "THE PITCH"
+      },
+      {
+        "value": "05 MIN",
+        "label": "THE CHALLENGE"
+      },
+      {
+        "value": "05 MIN",
+        "label": "QUESTIONS"
+      },
+      {
+        "value": "01",
+        "label": "ACTION PLAN"
+      }
     ],
-    "afterLoop": ["PITCH LIVE", "FEEDBACK CAPTURED", "PROFILE UPDATED", "ACTION PLAN CREATED", "FOUNDER IMPROVES", "NEW ASSESSMENT", "PROGRESS TRACKED"]
+    "afterLoop": [
+      "PITCH LIVE",
+      "FEEDBACK CAPTURED",
+      "PROFILE UPDATED",
+      "ACTION PLAN CREATED",
+      "FOUNDER IMPROVES",
+      "NEW ASSESSMENT",
+      "PROGRESS TRACKED"
+    ]
   },
   "resources": {
     "headline": "Learn. Apply. Improve.",
@@ -348,8 +651,22 @@
     "successBody": "We'll be in touch as the community opens up next steps for you.",
     "roleHintFounder": "A bit about your venture.",
     "roleHintOther": "A bit about your background.",
-    "roles": ["Founder", "Aspiring Founder", "Expert / Mentor", "Ecosystem Partner", "Investor", "Other"],
-    "reviewLabels": ["Role", "Name", "Email", "Country", "Description", "Why join"]
+    "roles": [
+      "Founder",
+      "Aspiring Founder",
+      "Expert / Mentor",
+      "Ecosystem Partner",
+      "Investor",
+      "Other"
+    ],
+    "reviewLabels": [
+      "Role",
+      "Name",
+      "Email",
+      "Country",
+      "Description",
+      "Why join"
+    ]
   },
   "applyToPitch": {
     "stepLabel": "STEP",
@@ -378,20 +695,1903 @@
     "noGuarantee": "Submitting does not guarantee selection.",
     "successTitle": "Your pitch is in.",
     "successBody": "Submission does not guarantee selection. We'll reach out if your pitch is chosen for an upcoming session.",
-    "reviewLabels": ["Founder", "Startup", "Country / Sector", "One-liner", "Video pitch", "Signature question"]
+    "reviewLabels": [
+      "Founder",
+      "Startup",
+      "Country / Sector",
+      "One-liner",
+      "Video pitch",
+      "Signature question"
+    ]
   },
   "metadata": {
-    "home": { "title": "Africa Founders Factory — The Pan-African Founder Community", "description": "A community where African founders challenge their ideas, sharpen their pitch, strengthen their ventures and connect with people who can help them move forward." },
-    "mission": { "title": "Our Mission — Africa Founders Factory", "description": "Africa Founders Factory is a pan-African community built around one loop: build, pitch, get challenged, improve, connect, grow." },
-    "about": { "title": "About — Africa Founders Factory", "description": "A pan-African community, built community-first: founders, experts, mentors, operators, diaspora and ecosystem partners." },
-    "founders": { "title": "For Founders — Africa Founders Factory", "description": "Different stages, different priorities — structured diagnostic, pitch practice and honest challenge for African founders." },
-    "pitchLive": { "title": "Pitch Live — Africa Founders Factory", "description": "Selected founders present their venture during community live sessions and receive structured feedback." },
-    "community": { "title": "Community — Africa Founders Factory", "description": "Founders, experts, mentors, operators, diaspora and ecosystem partners building the pan-African founder community together." },
-    "resources": { "title": "Resources — Africa Founders Factory", "description": "Guides, templates and frameworks for African founders. Library coming soon." },
-    "join": { "title": "Join the Community — Africa Founders Factory", "description": "Join the Africa Founders Factory community as a founder, mentor, expert or ecosystem partner." },
-    "applyToPitch": { "title": "Apply to Pitch — Africa Founders Factory", "description": "Apply to present your venture during an Africa Founders Factory Pitch Live session." },
-    "signIn": { "title": "Sign in — Africa Founders Factory", "description": "Sign in to the Africa Founders Factory Founder Platform." },
-    "privacy": { "title": "Privacy Policy — Africa Founders Factory", "description": "How Africa Founders Factory handles information submitted through this site." },
-    "terms": { "title": "Terms of Service — Africa Founders Factory", "description": "Terms of Service for Africa Founders Factory." }
+    "home": {
+      "title": "Africa Founders Factory — The Pan-African Founder Community",
+      "description": "A community where African founders challenge their ideas, sharpen their pitch, strengthen their ventures and connect with people who can help them move forward."
+    },
+    "mission": {
+      "title": "Our Mission — Africa Founders Factory",
+      "description": "Africa Founders Factory is a pan-African community built around one loop: build, pitch, get challenged, improve, connect, grow."
+    },
+    "about": {
+      "title": "About — Africa Founders Factory",
+      "description": "A pan-African community, built community-first: founders, experts, mentors, operators, diaspora and ecosystem partners."
+    },
+    "founders": {
+      "title": "For Founders — Africa Founders Factory",
+      "description": "Different stages, different priorities — structured diagnostic, pitch practice and honest challenge for African founders."
+    },
+    "pitchLive": {
+      "title": "Pitch Live — Africa Founders Factory",
+      "description": "Selected founders present their venture during community live sessions and receive structured feedback."
+    },
+    "community": {
+      "title": "Community — Africa Founders Factory",
+      "description": "Founders, experts, mentors, operators, diaspora and ecosystem partners building the pan-African founder community together."
+    },
+    "resources": {
+      "title": "Resources — Africa Founders Factory",
+      "description": "Guides, templates and frameworks for African founders. Library coming soon."
+    },
+    "join": {
+      "title": "Join the Community — Africa Founders Factory",
+      "description": "Join the Africa Founders Factory community as a founder, mentor, expert or ecosystem partner."
+    },
+    "applyToPitch": {
+      "title": "Apply to Pitch — Africa Founders Factory",
+      "description": "Apply to present your venture during an Africa Founders Factory Pitch Live session."
+    },
+    "signIn": {
+      "title": "Sign in — Africa Founders Factory",
+      "description": "Sign in to the Africa Founders Factory Founder Platform."
+    },
+    "privacy": {
+      "title": "Privacy Policy — Africa Founders Factory",
+      "description": "How Africa Founders Factory handles information submitted through this site."
+    },
+    "terms": {
+      "title": "Terms of Service — Africa Founders Factory",
+      "description": "Terms of Service for Africa Founders Factory."
+    }
+  },
+  "dashboard": {
+    "nav": {
+      "commandCenter": "Command Center",
+      "myStartup": "My Startup",
+      "readiness": "Readiness",
+      "roadmap": "Roadmap",
+      "tasks": "Tasks",
+      "pitchLab": "Pitch Lab",
+      "financials": "Financials",
+      "dataRoom": "Data Room",
+      "experts": "Experts",
+      "investors": "Investors",
+      "pitchLive": "Pitch Live",
+      "community": "Community",
+      "resources": "Resources",
+      "opportunities": "Opportunities",
+      "analytics": "Analytics",
+      "messages": "Messages",
+      "settings": "Settings",
+      "help": "Help"
+    },
+    "navGroups": {
+      "workspace": "Workspace",
+      "build": "Build",
+      "connect": "Connect",
+      "grow": "Grow",
+      "insights": "Insights"
+    },
+    "stage": {
+      "idea": "Idea",
+      "mvp": "MVP",
+      "early_traction": "Early Traction",
+      "growth": "Growth",
+      "scale": "Scale"
+    },
+    "userMenu": {
+      "openMenu": "Open user menu",
+      "profile": "Profile",
+      "workspaceSettings": "Workspace settings",
+      "signOut": "Sign out"
+    },
+    "notifications": {
+      "label": "Notifications",
+      "emptyTitle": "No notifications yet",
+      "emptyBody": "You're all caught up."
+    },
+    "placeholder": {
+      "badge": "Module under construction"
+    },
+    "demoDataNotice": "Illustrative demo data — this workspace is not yet connected to a live assessment.",
+    "greeting": {
+      "morning": "Good morning, {name}",
+      "afternoon": "Good afternoon, {name}",
+      "evening": "Good evening, {name}"
+    },
+    "attentionLine": "Here is what needs your attention today.",
+    "dimensionLabels": {
+      "market": "Market",
+      "product": "Product",
+      "business": "Business",
+      "traction": "Traction",
+      "team": "Team",
+      "finance": "Finance",
+      "fundraising": "Fundraising",
+      "operations": "Operations",
+      "legal": "Legal",
+      "impact": "Impact"
+    },
+    "readiness": {
+      "eyebrow": "AFF READINESS",
+      "scoreSuffix": "/ 100",
+      "sinceLastAssessment": "+{delta} since last assessment",
+      "stageLabel": "Stage",
+      "dimensionsTitle": "Readiness Dimensions",
+      "cta": "View full assessment",
+      "confidenceLabel": "Confidence",
+      "lastAssessedLabel": "Last assessed",
+      "profileCompletionLabel": "Profile completion",
+      "profileCompletionCaption": "Profile completion (separate from readiness)",
+      "viewDiagnostic": "View diagnostic",
+      "notAssessedTitle": "Readiness not assessed yet",
+      "notAssessedBody": "Complete your first AFF Readiness assessment to see your score, confidence, strengths and gaps.",
+      "startAssessment": "Start assessment",
+      "reassess": "Reassess startup",
+      "draftInProgress": "You have an assessment in progress.",
+      "resumeAssessment": "Resume assessment",
+      "pageTitle": "AFF Readiness",
+      "pageSubtitle": "An explainable, evidence-based diagnostic of your startup's readiness — not an investment recommendation.",
+      "strengthsGapsTitle": "Strengths & Gaps",
+      "topStrengths": "Top strengths",
+      "priorityGaps": "Priority gaps",
+      "noStrengthsYet": "No clear strengths identified yet.",
+      "noGapsYet": "No priority gaps identified yet.",
+      "strengthsLabel": "Strengths",
+      "gapsLabel": "Gaps",
+      "historyTitle": "Readiness Over Time",
+      "historyDisclaimer": "Score change since previous assessment. This reflects new or updated evidence — it does not imply AFF caused the change.",
+      "whyThisScore": "Why this score",
+      "evidenceUsed": "Evidence used",
+      "missingEvidenceTitle": "Missing evidence",
+      "howToImprove": "How to improve",
+      "noEvidenceYet": "No evidence recorded for this criterion yet.",
+      "potentialImprovement": "Potential",
+      "potentialImprovementValue": "+{points} points",
+      "potentialImprovementHint": "Based on currently weak or unevaluated criteria — an illustration of possible upside, not a guarantee.",
+      "backToReadiness": "Back to AFF Readiness",
+      "assessmentSuccessTitle": "Assessment completed.",
+      "assessmentSuccessBody": "Your AFF Readiness diagnostic has been updated — view your score, confidence, strengths and gaps.",
+      "assessmentTitle": "AFF Readiness Assessment",
+      "assessmentProgress": "Assessment progress: {pct}%",
+      "assessmentIntro": "AFF already knows most of what's in your Digital Twin — you'll only be asked what it can't derive on its own.",
+      "saveAndExit": "Save and exit",
+      "completeAssessment": "Complete assessment",
+      "reviewTitle": "Review",
+      "reviewIntro": "You can go back to any dimension before completing.",
+      "requiredLabel": "Required",
+      "optionalLabel": "Optional",
+      "notApplicableSkipped": "Not applicable — skipped",
+      "scaleLow": "Not at all",
+      "scaleHigh": "Completely",
+      "yes": "Yes",
+      "no": "No",
+      "status": {
+        "strong": "Strong",
+        "good": "Good",
+        "developing": "Developing",
+        "weak": "Weak",
+        "not_applicable": "Not applicable"
+      },
+      "criterionStatus": {
+        "strong": "Strong",
+        "good": "Good",
+        "developing": "Developing",
+        "weak": "Weak",
+        "insufficient_evidence": "Insufficient evidence",
+        "not_applicable": "Not applicable"
+      },
+      "dimensions": {
+        "problem_market": {
+          "label": "Problem & Market",
+          "description": "How clearly the problem, target customer and market are defined and evidenced."
+        },
+        "product": {
+          "label": "Product",
+          "description": "How defined, validated and differentiated the product is."
+        },
+        "business_model": {
+          "label": "Business Model",
+          "description": "How clear the revenue model, pricing and distribution are."
+        },
+        "traction": {
+          "label": "Traction",
+          "description": "Evidence of customers, revenue, growth and retention."
+        },
+        "team": {
+          "label": "Team",
+          "description": "Founder commitment, complementary skills and execution capacity."
+        },
+        "finance": {
+          "label": "Finance",
+          "description": "Financial visibility, cost structure and runway."
+        },
+        "fundraising": {
+          "label": "Fundraising",
+          "description": "Clarity of funding history, instrument and readiness to raise."
+        },
+        "operations": {
+          "label": "Operations",
+          "description": "Operational processes, tooling and scalability."
+        },
+        "legal_governance": {
+          "label": "Legal & Governance",
+          "description": "Legal entity status, IP protection and governance structure."
+        },
+        "impact_esg": {
+          "label": "Impact & ESG",
+          "description": "Impact thesis, tracked metrics and beneficiary evidence."
+        }
+      },
+      "criteria": {
+        "problem_clarity": {
+          "label": "Problem clarity",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate problem clarity — no problem statement was found.} other {Problem clarity scored {score}/100 based on the statement and supporting evidence in your Digital Twin.}}",
+          "improvementHint": "Describe the problem you solve and add evidence in My Startup → Problem."
+        },
+        "target_customer_definition": {
+          "label": "Target customer definition",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate your target customer definition — no target customer was found.} other {Target customer definition scored {score}/100 based on how precisely your Digital Twin describes who you serve.}}",
+          "improvementHint": "Describe your target customer precisely in My Startup → Problem."
+        },
+        "market_evidence": {
+          "label": "Market evidence",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate market evidence — no supporting evidence or trends were found.} other {Market evidence scored {score}/100 based on the validation evidence and market trends recorded.}}",
+          "improvementHint": "Add validation evidence and market trends in My Startup → Problem and Market."
+        },
+        "competitive_understanding": {
+          "label": "Competitive understanding",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate your competitive understanding — no competitors or advantage were found.} other {Competitive understanding scored {score}/100 based on the competitors and competitive advantage recorded.}}",
+          "improvementHint": "List your competitors and articulate your competitive advantage in My Startup → Market."
+        },
+        "market_sizing": {
+          "label": "Market sizing",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate market sizing — no TAM was found.} other {Market sizing scored {score}/100 based on how much of TAM/SAM/SOM is documented.}}",
+          "improvementHint": "Add at least a TAM estimate with its methodology in My Startup → Market."
+        },
+        "solution_definition": {
+          "label": "Solution definition",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate your solution definition — no description or value proposition was found.} other {Solution definition scored {score}/100 based on your product description and value proposition.}}",
+          "improvementHint": "Add a product description and value proposition in My Startup → Product."
+        },
+        "development_stage": {
+          "label": "Development stage",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate your development stage — none was recorded.} other {Development stage scored {score}/100 based on the stage recorded for your product.}}",
+          "improvementHint": "Set your product's development stage in My Startup → Product."
+        },
+        "product_validation": {
+          "label": "Product validation",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate product validation — this question hasn't been answered yet.} other {Product validation scored {score}/100 based on your assessment answer about validating with real users.}}",
+          "improvementHint": "Validate your product with real users beyond friends and family, then confirm it in your next assessment."
+        },
+        "differentiation": {
+          "label": "Differentiation",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate differentiation — no competitive advantage was found.} other {Differentiation scored {score}/100 based on the competitive advantage described in your Digital Twin.}}",
+          "improvementHint": "Describe what makes your product different in My Startup → Market."
+        },
+        "technical_feasibility": {
+          "label": "Technical feasibility",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate technical feasibility — this question hasn't been answered yet.} other {Technical feasibility scored {score}/100 based on your self-assessment of technical de-risking.}}",
+          "improvementHint": "Answer the technical feasibility question in your next assessment."
+        },
+        "adoption": {
+          "label": "Adoption",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate adoption — no active usage or retention metric was found.} other {Adoption scored {score}/100 based on active usage or retention metrics recorded.}}",
+          "improvementHint": "Add an active users or retention metric in My Startup → Traction."
+        },
+        "product_roadmap": {
+          "label": "Product roadmap",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate your product roadmap — this question hasn't been answered yet.} other {Product roadmap scored {score}/100 based on your assessment answer about having a roadmap.}}",
+          "improvementHint": "Define a roadmap for the next two quarters and confirm it in your next assessment."
+        },
+        "revenue_model_clarity": {
+          "label": "Revenue model clarity",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate revenue model clarity — no revenue streams or pricing model were found.} other {Revenue model clarity scored {score}/100 based on your revenue streams and pricing model.}}",
+          "improvementHint": "Define your revenue streams and pricing model in My Startup → Business."
+        },
+        "pricing_defined": {
+          "label": "Pricing defined",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate pricing — no pricing model was found.} other {Pricing defined scored {score}/100 based on the pricing model recorded.}}",
+          "improvementHint": "Define your pricing model in My Startup → Business."
+        },
+        "unit_economics_clarity": {
+          "label": "Unit economics clarity",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate unit economics clarity — no average revenue per customer was found.} other {Unit economics clarity scored {score}/100 based on the average revenue per customer recorded.}}",
+          "improvementHint": "Add your average revenue per customer in My Startup → Business."
+        },
+        "distribution_clarity": {
+          "label": "Distribution clarity",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate distribution clarity — no distribution model was found.} other {Distribution clarity scored {score}/100 based on the distribution model recorded.}}",
+          "improvementHint": "Describe your distribution model in My Startup → Business."
+        },
+        "key_partnerships": {
+          "label": "Key partnerships",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate key partnerships — none were recorded.} other {Key partnerships scored {score}/100 based on the number of partnerships recorded.}}",
+          "improvementHint": "Add key partnerships in My Startup → Business."
+        },
+        "customer_validation": {
+          "label": "Customer validation",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate customer validation — no traction narrative or evidence was found.} other {Customer validation scored {score}/100 based on your traction narrative and problem evidence.}}",
+          "improvementHint": "Add a traction narrative describing customer validation in My Startup → Traction."
+        },
+        "paying_customers": {
+          "label": "Paying customers",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate paying customers — no customer metric was found.} other {Paying customers scored {score}/100 based on the customer count metric recorded.}}",
+          "improvementHint": "Add a customers metric in My Startup → Traction."
+        },
+        "revenue_evidence": {
+          "label": "Revenue evidence",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate revenue evidence — no revenue metric was found.} other {Revenue evidence scored {score}/100 based on the revenue-type metric recorded.}}",
+          "improvementHint": "Add a revenue, MRR, ARR or GMV metric in My Startup → Traction."
+        },
+        "growth": {
+          "label": "Growth",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate growth — no revenue growth metric was found.} other {Growth scored {score}/100 based on the revenue growth metric recorded.}}",
+          "improvementHint": "Add a revenue growth metric in My Startup → Traction."
+        },
+        "retention": {
+          "label": "Retention",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate customer retention reliably — no retention metric was found.} other {Retention scored {score}/100 based on the retention metric recorded.}}",
+          "improvementHint": "Add at least one retention metric in My Startup → Traction."
+        },
+        "commercial_pipeline": {
+          "label": "Commercial pipeline",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate your commercial pipeline — no pilots or contracts metric was found.} other {Commercial pipeline scored {score}/100 based on the pilots or contracts metric recorded.}}",
+          "improvementHint": "Add a pilots or contracts metric in My Startup → Traction."
+        },
+        "partnerships": {
+          "label": "Partnerships",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate partnerships — none were recorded.} other {Partnerships scored {score}/100 based on major customers and key partnerships recorded.}}",
+          "improvementHint": "Add major customers or key partnerships in My Startup → Traction or Business."
+        },
+        "founder_commitment": {
+          "label": "Founder commitment",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate founder commitment — no founders were found.} other {Founder commitment scored {score}/100 based on how many founders are full-time.}}",
+          "improvementHint": "Add your founders and their engagement level in My Startup → Team."
+        },
+        "complementary_skills": {
+          "label": "Complementary skills",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate complementary skills — at least two founders are needed to assess this.} other {Complementary skills scored {score}/100 based on how distinct your co-founders' roles are.}}",
+          "improvementHint": "Add a second founder with a distinct role in My Startup → Team."
+        },
+        "key_roles": {
+          "label": "Key roles coverage",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate key roles coverage — no founders or team members were found.} other {Key roles coverage scored {score}/100 based on your combined founder and team headcount.}}",
+          "improvementHint": "Add founders and team members in My Startup → Team."
+        },
+        "execution_capacity": {
+          "label": "Execution capacity",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate execution capacity — this question hasn't been answered yet.} other {Execution capacity scored {score}/100 based on your self-assessment.}}",
+          "improvementHint": "Answer the execution capacity question in your next assessment."
+        },
+        "domain_expertise": {
+          "label": "Domain expertise",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate domain expertise — this question hasn't been answered yet.} other {Domain expertise scored {score}/100 based on your assessment answer about prior industry experience.}}",
+          "improvementHint": "Answer the domain expertise question in your next assessment."
+        },
+        "governance_structure": {
+          "label": "Team governance",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate team governance — this question hasn't been answered yet.} other {Team governance scored {score}/100 based on your assessment answer about decision-making structure.}}",
+          "improvementHint": "Define a clear decision-making process among founders and confirm it in your next assessment."
+        },
+        "financial_visibility": {
+          "label": "Financial visibility",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate financial visibility — no revenue or expenses were found.} other {Financial visibility scored {score}/100 based on the revenue and expenses recorded.}}",
+          "improvementHint": "Add your monthly revenue and expenses in My Startup → Financials."
+        },
+        "revenue_quality": {
+          "label": "Revenue quality",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate revenue quality — this question hasn't been answered yet.} other {Revenue quality scored {score}/100 based on your assessment answers about revenue consistency.}}",
+          "improvementHint": "Answer the revenue questions in your next assessment."
+        },
+        "cost_structure": {
+          "label": "Cost structure",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate your cost structure — no monthly expenses were found.} other {Cost structure scored {score}/100 based on the monthly expenses recorded.}}",
+          "improvementHint": "Add your monthly expenses in My Startup → Financials."
+        },
+        "burn_control": {
+          "label": "Burn control",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate burn control — no monthly burn was found.} other {Burn control scored {score}/100 based on your monthly burn relative to revenue.}}",
+          "improvementHint": "Add your monthly burn in My Startup → Financials."
+        },
+        "runway": {
+          "label": "Runway",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate runway — no runway was found.} other {Runway scored {score}/100 based on the number of months of runway recorded.}}",
+          "improvementHint": "Add your runway in months in My Startup → Financials."
+        },
+        "forecasting": {
+          "label": "Forecasting",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate forecasting — this question hasn't been answered yet.} other {Forecasting scored {score}/100 based on your assessment answer about maintaining a financial forecast.}}",
+          "improvementHint": "Build a financial forecast and confirm it in your next assessment."
+        },
+        "unit_economics": {
+          "label": "Unit economics",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate unit economics — no CAC or LTV metric was found.} other {Unit economics scored {score}/100 based on the CAC and LTV metrics recorded.}}",
+          "improvementHint": "Add CAC and LTV metrics in My Startup → Traction."
+        },
+        "funding_history_clarity": {
+          "label": "Funding history clarity",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate funding history clarity — no funding information was found.} other {Funding history clarity scored {score}/100 based on the funding status and history recorded.}}",
+          "improvementHint": "Record your funding status and history in My Startup → Funding."
+        },
+        "fundraising_readiness": {
+          "label": "Fundraising readiness",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate fundraising readiness — this question hasn't been answered yet.} other {Fundraising readiness scored {score}/100 based on your assessment answer about pitch materials.}}",
+          "improvementHint": "Prepare an up-to-date pitch deck and financial model, then confirm it in your next assessment."
+        },
+        "use_of_funds_clarity": {
+          "label": "Use of funds clarity",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate use of funds clarity — none was found.} other {Use of funds clarity scored {score}/100 based on the use of funds recorded.}}",
+          "improvementHint": "Describe your planned use of funds in My Startup → Funding."
+        },
+        "instrument_clarity": {
+          "label": "Instrument clarity",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate instrument clarity — none was found.} other {Instrument clarity scored {score}/100 based on the funding instrument recorded.}}",
+          "improvementHint": "Select your funding instrument in My Startup → Funding."
+        },
+        "investor_readiness": {
+          "label": "Investor readiness",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate investor readiness — no target raise was found.} other {Investor readiness scored {score}/100 based on the target raise and ticket size recorded.}}",
+          "improvementHint": "Add your target raise and ticket size in My Startup → Funding."
+        },
+        "operational_processes": {
+          "label": "Operational processes",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate operational processes — this question hasn't been answered yet.} other {Operational processes scored {score}/100 based on your assessment answer about documented processes.}}",
+          "improvementHint": "Document your core operating processes and confirm it in your next assessment."
+        },
+        "delivery_capacity": {
+          "label": "Delivery capacity",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate delivery capacity — this question hasn't been answered yet.} other {Delivery capacity scored {score}/100 based on your self-assessment.}}",
+          "improvementHint": "Answer the delivery capacity question in your next assessment."
+        },
+        "tooling_and_systems": {
+          "label": "Tooling and systems",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate tooling and systems — this question hasn't been answered yet.} other {Tooling and systems scored {score}/100 based on your assessment answer about operating tools.}}",
+          "improvementHint": "Adopt dedicated tools for daily operations and confirm it in your next assessment."
+        },
+        "scalability_readiness": {
+          "label": "Scalability readiness",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate scalability readiness — this question hasn't been answered yet.} other {Scalability readiness scored {score}/100 based on your self-assessment.}}",
+          "improvementHint": "Answer the scalability readiness question in your next assessment."
+        },
+        "legal_entity_status": {
+          "label": "Legal entity status",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate legal entity status — no registration information was found.} other {Legal entity status scored {score}/100 based on the registration status recorded.}}",
+          "improvementHint": "Record your company registration status in My Startup → Overview."
+        },
+        "ip_protection": {
+          "label": "IP protection",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate IP protection — no IP status was found.} other {IP protection scored {score}/100 based on the IP status recorded for your product.}}",
+          "improvementHint": "Record your IP status in My Startup → Product."
+        },
+        "regulatory_compliance": {
+          "label": "Regulatory compliance",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate regulatory compliance — this question hasn't been answered yet.} other {Regulatory compliance scored {score}/100 based on your assessment answer about regulatory awareness.}}",
+          "improvementHint": "Review the regulatory requirements for your industry and markets, then confirm it in your next assessment."
+        },
+        "contracts_and_agreements": {
+          "label": "Contracts and agreements",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate contracts and agreements — this question hasn't been answered yet.} other {Contracts and agreements scored {score}/100 based on your assessment answer about signed agreements.}}",
+          "improvementHint": "Put founder agreements, IP assignment and key contracts in place, then confirm it in your next assessment."
+        },
+        "board_governance": {
+          "label": "Board governance",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate board governance — this question hasn't been answered yet.} other {Board governance scored {score}/100 based on your assessment answer about a board or advisory structure.}}",
+          "improvementHint": "Consider setting up a board or advisory structure and confirm it in your next assessment."
+        },
+        "impact_thesis_clarity": {
+          "label": "Impact thesis clarity",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate impact thesis clarity — no thesis was found.} other {Impact thesis clarity scored {score}/100 based on the impact thesis recorded.}}",
+          "improvementHint": "Write your impact thesis in My Startup → Impact."
+        },
+        "impact_metrics_tracked": {
+          "label": "Impact metrics tracked",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate impact metrics — none were found.} other {Impact metrics tracked scored {score}/100 based on the beneficiaries, jobs or metrics recorded.}}",
+          "improvementHint": "Record at least one impact metric in My Startup → Impact."
+        },
+        "beneficiary_evidence": {
+          "label": "Beneficiary evidence",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate beneficiary evidence — no beneficiary count was found.} other {Beneficiary evidence scored {score}/100 based on the number of beneficiaries recorded.}}",
+          "improvementHint": "Record your beneficiary count in My Startup → Impact."
+        },
+        "esg_considerations": {
+          "label": "ESG considerations",
+          "explanation": "{status, select, insufficient_evidence {AFF could not evaluate ESG considerations — none were found.} other {ESG considerations scored {score}/100 based on the environmental or social impact recorded.}}",
+          "improvementHint": "Describe your environmental or social impact in My Startup → Impact."
+        }
+      },
+      "missingEvidence": {
+        "assessmentAnswer": "This question hasn't been answered yet",
+        "businessAvgRevenuePerCustomer": "No average revenue per customer recorded",
+        "businessDistributionModel": "No distribution model recorded",
+        "businessKeyPartnerships": "No key partnerships recorded",
+        "businessPricingModel": "No pricing model recorded",
+        "businessRevenueStreams": "No revenue streams recorded",
+        "financialsMonthlyBurn": "No monthly burn recorded",
+        "financialsMonthlyExpenses": "No monthly expenses recorded",
+        "financialsMonthlyRevenue": "No monthly revenue recorded",
+        "financialsRunway": "No runway recorded",
+        "foundersAtLeastOne": "No founders recorded",
+        "foundersAtLeastTwo": "At least two founders are needed to assess this",
+        "fundingInstrument": "No funding instrument recorded",
+        "fundingTargetRaise": "No target raise recorded",
+        "fundingUseOfFunds": "No use of funds recorded",
+        "identityRegistration": "No legal registration status recorded",
+        "impactBeneficiaries": "No beneficiary count recorded",
+        "impactDecision": "Impact tracking is not enabled",
+        "impactEnvironmentalOrSocial": "No environmental or social impact recorded",
+        "impactThesis": "No impact thesis recorded",
+        "marketCompetitiveAdvantage": "No competitive advantage recorded",
+        "marketCompetitors": "No competitors recorded",
+        "marketSizing": "No TAM recorded",
+        "marketTrends": "No market trends recorded",
+        "problemEvidence": "No supporting evidence recorded",
+        "problemStatement": "No problem statement recorded",
+        "problemTargetCustomer": "No target customer recorded",
+        "productDescription": "No product description recorded",
+        "productDevelopmentStage": "No development stage recorded",
+        "productIpStatus": "No IP status recorded",
+        "productValueProposition": "No value proposition recorded",
+        "tractionMajorCustomers": "No major customers or partnerships recorded",
+        "tractionMetric": "No matching traction metric recorded",
+        "tractionNarrative": "No traction narrative recorded"
+      },
+      "questions": {
+        "q_product_validation": "Have you validated your product with real users beyond friends and family?",
+        "q_technical_feasibility": "How technically de-risked is your product today?",
+        "q_product_roadmap": "Do you have a clear product roadmap for the next two quarters?",
+        "q_execution_capacity": "How would you rate your team's ability to execute against your plan?",
+        "q_domain_expertise": "Do you or a co-founder have direct prior experience in this industry?",
+        "q_team_governance": "Do you have a clear decision-making process among founders (defined roles, regular syncs)?",
+        "q_generates_revenue": "Do you currently generate revenue?",
+        "q_revenue_consistency": "Is your revenue mostly recurring or one-off?",
+        "q_forecasting": "Do you maintain an updated financial forecast or model?",
+        "q_fundraising_readiness": "Do you have an up-to-date pitch deck and financial model ready to share with investors?",
+        "q_operational_processes": "Do you have documented operating processes (onboarding, delivery, support)?",
+        "q_delivery_capacity": "How confident are you in delivering at 2x your current volume without breaking?",
+        "q_tooling_and_systems": "Do you use dedicated tools or systems to run daily operations (CRM, accounting, support)?",
+        "q_scalability_readiness": "How scalable is your current operating model?",
+        "q_regulatory_compliance": "Are you aware of and compliant with the regulatory requirements for your industry and markets?",
+        "q_contracts_and_agreements": "Do you have signed founder agreements, IP assignment and key contracts in place?",
+        "q_board_governance": "Do you have a board or advisory structure in place?"
+      },
+      "revenueConsistency": {
+        "recurring": "Mostly recurring",
+        "mixed": "A mix of both",
+        "one_off": "Mostly one-off"
+      },
+      "evidenceSource": {
+        "digital_twin": "Your Digital Twin",
+        "assessment_answer": "Your assessment answer",
+        "document": "A document",
+        "founder_declaration": "Founder declaration",
+        "expert_review": "Expert review",
+        "verified_external_data": "Externally verified data"
+      },
+      "verification": {
+        "unverified": "Unverified",
+        "founder_declared": "Founder-declared",
+        "documented": "Documented",
+        "expert_verified": "Expert-verified",
+        "externally_verified": "Externally verified"
+      }
+    },
+    "nextBestAction": {
+      "eyebrow": "NEXT BEST ACTION",
+      "effortLabel": "Estimated effort",
+      "impactLabel": "Potential impact",
+      "minutes": "{minutes} min",
+      "impactPoints": "+{points} readiness points",
+      "cta": "Start action"
+    },
+    "thisWeek": {
+      "title": "This Week",
+      "cta": "View roadmap",
+      "emptyTitle": "No tasks this week",
+      "emptyBody": "New priority tasks will appear here.",
+      "status": {
+        "todo": "To do",
+        "in_progress": "In progress",
+        "done": "Done",
+        "blocked": "Blocked",
+        "cancelled": "Dismissed"
+      }
+    },
+    "roadmapProgress": {
+      "title": "Roadmap Progress",
+      "cta": "Open roadmap",
+      "completed": "{count} completed",
+      "inProgress": "{count} in progress",
+      "remaining": "{count} remaining",
+      "emptyTitle": "No roadmap yet",
+      "emptyBody": "Generate your personalized roadmap to see progress here."
+    },
+    "recentActivity": {
+      "title": "Recent Progress",
+      "emptyTitle": "No recent activity",
+      "emptyBody": "Updates to your startup will show up here."
+    },
+    "upcoming": {
+      "title": "Upcoming",
+      "emptyTitle": "Nothing scheduled",
+      "emptyBody": "Your next deadlines and sessions will appear here.",
+      "kinds": {
+        "task": "Task",
+        "expert_session": "Expert session",
+        "pitch_live": "Pitch Live",
+        "application_deadline": "Application deadline",
+        "investor_meeting": "Investor meeting"
+      }
+    },
+    "opportunity": {
+      "title": "Recommended Opportunity",
+      "match": "Match",
+      "deadline": "Deadline",
+      "missing": "Missing requirement",
+      "cta": "View opportunity",
+      "emptyTitle": "No opportunities yet",
+      "emptyBody": "Matching opportunities will appear here once available."
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "updateStartup": "Update startup",
+      "uploadDocument": "Upload document",
+      "addMetric": "Add metric",
+      "askExpertReview": "Ask for expert review",
+      "preparePitch": "Prepare pitch"
+    },
+    "module": {
+      "startup": {
+        "title": "My Startup",
+        "description": "Your startup's identity, team, product and market — all in one place."
+      },
+      "readiness": {
+        "title": "Readiness",
+        "description": "Your full AFF readiness assessment across all 10 dimensions."
+      },
+      "roadmap": {
+        "title": "Roadmap",
+        "description": "Track milestones and progress toward your next stage."
+      },
+      "tasks": {
+        "title": "Tasks",
+        "description": "Every action recommended to improve your readiness, in one list."
+      },
+      "pitch": {
+        "title": "Pitch Lab",
+        "description": "Analyze, improve and prepare your investor pitch."
+      },
+      "financials": {
+        "title": "Financials",
+        "description": "Model your forecasts and track your key financial metrics."
+      },
+      "dataRoom": {
+        "title": "Data Room",
+        "description": "Securely organize the documents investors and experts will request."
+      },
+      "experts": {
+        "title": "Experts & Mentors",
+        "description": "Request feedback and book sessions with AFF experts."
+      },
+      "investors": {
+        "title": "Investor Connect",
+        "description": "Discover and connect with investors matched to your startup."
+      },
+      "pitchLive": {
+        "title": "Pitch Live",
+        "description": "Prepare for and track your upcoming AFF Pitch Live sessions."
+      },
+      "community": {
+        "title": "Community",
+        "description": "Connect with other founders building across Africa."
+      },
+      "resources": {
+        "title": "Resources",
+        "description": "Guides, templates and frameworks tailored to your stage."
+      },
+      "opportunities": {
+        "title": "Opportunities",
+        "description": "Programs, grants and challenges matched to your startup."
+      },
+      "messages": {
+        "title": "Messages",
+        "description": "Conversations with your team, experts and AFF operations."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "description": "Deeper insight into your startup's traction and readiness over time."
+      },
+      "settings": {
+        "title": "Settings",
+        "description": "Manage your account, workspace and preferences."
+      },
+      "help": {
+        "title": "Help",
+        "description": "Guides and support for using the AFF platform."
+      }
+    },
+    "profileCompletion": {
+      "eyebrow": "PROFILE COMPLETION",
+      "label": "Profile completion",
+      "disclaimer": "Measures whether your startup profile is filled in — separate from your AFF Readiness score.",
+      "cta": "Complete profile",
+      "missingTitle": "Missing information",
+      "missingCount": "{count} important items missing",
+      "missingEmpty": "Your profile has no missing required information."
+    },
+    "digitalTwin": {
+      "fields": {
+        "identityName": "Startup name",
+        "identityTagline": "Tagline",
+        "identityShortDescription": "Short description",
+        "identityWebsite": "Website",
+        "identityCountry": "Country",
+        "identityIndustry": "Industry",
+        "identityFoundedYear": "Founding year",
+        "identityRegistration": "Legal registration status",
+        "identityCurrency": "Preferred currency",
+        "foundersAtLeastOne": "At least one founder",
+        "foundersPrimaryContact": "A primary contact founder",
+        "teamAtLeastOne": "At least one team member",
+        "problemStatement": "Problem statement",
+        "problemTargetCustomer": "Target customer",
+        "problemAlternatives": "Current alternatives",
+        "problemEvidence": "Evidence or validation",
+        "problemWhyNow": "Why now",
+        "productName": "Product name",
+        "productDescription": "Product description",
+        "productValueProposition": "Value proposition",
+        "productDevelopmentStage": "Development stage",
+        "productCoreFeatures": "Core features",
+        "marketCustomerSegments": "Customer segments",
+        "marketGeographies": "Target geographies",
+        "marketSizingMethodology": "Market sizing methodology",
+        "marketCompetitors": "Competitors",
+        "marketCompetitiveAdvantage": "Competitive advantage",
+        "businessModelType": "Business model type",
+        "businessRevenueStreams": "Revenue streams",
+        "businessPricingModel": "Pricing model",
+        "businessSalesChannels": "Sales channels",
+        "tractionAtLeastOneMetric": "At least one traction metric",
+        "tractionNarrative": "Traction narrative",
+        "tractionCommercialEvidence": "Commercial evidence",
+        "financialsMonthlyRevenue": "Monthly revenue",
+        "financialsMonthlyBurn": "Monthly burn",
+        "financialsCashBalance": "Cash balance",
+        "financialsRunway": "Runway (months)",
+        "fundingStatus": "Fundraising status",
+        "fundingInstrument": "Funding instrument",
+        "fundingUseOfFunds": "Use of funds",
+        "impactDecision": "Impact tracking decision",
+        "impactThesis": "Impact thesis",
+        "impactSdgs": "SDGs",
+        "impactBeneficiaries": "Beneficiaries",
+        "goalsAtLeastOne": "At least one goal",
+        "risksAtLeastOne": "At least one identified risk",
+        "milestonesAtLeastOne": "At least one milestone"
+      },
+      "enums": {
+        "registrationStatus": {
+          "not_registered": "Not registered",
+          "in_progress": "In progress",
+          "registered": "Registered"
+        },
+        "painSeverity": {
+          "low": "Low",
+          "medium": "Medium",
+          "high": "High",
+          "critical": "Critical"
+        },
+        "productType": {
+          "software": "Software",
+          "hardware": "Hardware",
+          "marketplace": "Marketplace",
+          "service": "Service",
+          "hybrid": "Hybrid",
+          "other": "Other"
+        },
+        "developmentStage": {
+          "concept": "Concept",
+          "prototype": "Prototype",
+          "mvp": "MVP",
+          "live": "Live",
+          "scaling": "Scaling"
+        },
+        "businessModelType": {
+          "b2b": "B2B",
+          "b2c": "B2C",
+          "b2b2c": "B2B2C",
+          "marketplace": "Marketplace",
+          "saas": "SaaS",
+          "subscription": "Subscription",
+          "transactional": "Transactional",
+          "licensing": "Licensing",
+          "other": "Other"
+        },
+        "fundingStatus": {
+          "not_raising": "Not raising",
+          "raising": "Raising",
+          "closed": "Closed"
+        },
+        "fundingInstrument": {
+          "equity": "Equity",
+          "safe": "SAFE",
+          "convertible_note": "Convertible note",
+          "debt": "Debt",
+          "grant": "Grant",
+          "revenue_based_financing": "Revenue-based financing",
+          "other": "Other"
+        },
+        "founderStatus": {
+          "active": "Active",
+          "advisor": "Advisor",
+          "departed": "Departed"
+        },
+        "engagementType": {
+          "full_time": "Full-time",
+          "part_time": "Part-time"
+        },
+        "tractionMetricType": {
+          "customers": "Customers",
+          "active_customers": "Active customers",
+          "users": "Users",
+          "active_users": "Active users",
+          "mrr": "MRR",
+          "arr": "ARR",
+          "revenue": "Revenue",
+          "revenue_growth": "Revenue growth",
+          "gmv": "GMV",
+          "contracts": "Contracts",
+          "pilots": "Pilots",
+          "partnerships": "Partnerships",
+          "retention": "Retention",
+          "churn": "Churn",
+          "cac": "CAC",
+          "ltv": "LTV",
+          "custom": "Custom metric"
+        },
+        "goalCategory": {
+          "growth": "Growth",
+          "product": "Product",
+          "fundraising": "Fundraising",
+          "market": "Market",
+          "team": "Team",
+          "other": "Other"
+        },
+        "goalStatus": {
+          "not_started": "Not started",
+          "in_progress": "In progress",
+          "achieved": "Achieved",
+          "missed": "Missed"
+        },
+        "riskCategory": {
+          "market": "Market",
+          "product": "Product",
+          "technology": "Technology",
+          "financial": "Financial",
+          "legal": "Legal",
+          "team": "Team",
+          "operations": "Operations",
+          "fundraising": "Fundraising",
+          "regulatory": "Regulatory",
+          "other": "Other"
+        },
+        "riskLevel": {
+          "low": "Low",
+          "medium": "Medium",
+          "high": "High"
+        },
+        "riskStatus": {
+          "open": "Open",
+          "mitigated": "Mitigated",
+          "accepted": "Accepted",
+          "closed": "Closed"
+        },
+        "milestoneCategory": {
+          "company": "Company",
+          "product": "Product",
+          "traction": "Traction",
+          "funding": "Funding",
+          "team": "Team",
+          "legal": "Legal",
+          "other": "Other"
+        },
+        "milestoneStatus": {
+          "planned": "Planned",
+          "achieved": "Achieved"
+        }
+      }
+    },
+    "myStartup": {
+      "tabs": {
+        "overview": "Overview",
+        "team": "Team",
+        "product": "Product",
+        "market": "Market",
+        "business": "Business",
+        "traction": "Traction",
+        "financials": "Financials",
+        "funding": "Funding",
+        "impact": "Impact",
+        "goalsRisks": "Goals & Risks",
+        "milestones": "Milestones"
+      },
+      "common": {
+        "edit": "Edit",
+        "remove": "Remove",
+        "notFoundTitle": "Startup not found",
+        "notFoundBody": "We couldn't load this startup's profile."
+      },
+      "resumeOnboarding": "Your startup profile isn't finished yet.",
+      "continueOnboarding": "Continue setup",
+      "overview": {
+        "identityTitle": "Identity",
+        "editProfile": "Edit profile",
+        "noDescription": "No description yet.",
+        "stageLabel": "Stage",
+        "industryLabel": "Industry",
+        "locationLabel": "Location",
+        "operatingMarketsLabel": "Operating markets",
+        "websiteLabel": "Website",
+        "completionTitle": "Profile Completion",
+        "completionLabel": "Overall completion",
+        "missingTitle": "Missing Information",
+        "missingCount": "{count} important items missing",
+        "missingEmpty": "Nothing missing — great work.",
+        "commaSeparated": "Comma-separated",
+        "field": {
+          "name": "Startup name",
+          "tagline": "Tagline",
+          "shortDescription": "Short description",
+          "longDescription": "Long description",
+          "website": "Website",
+          "foundedYear": "Founding year",
+          "country": "Country",
+          "city": "City",
+          "operatingCountries": "Operating countries",
+          "industry": "Industry",
+          "subIndustry": "Sub-industry",
+          "stage": "Stage",
+          "preferredCurrency": "Preferred currency",
+          "registrationStatus": "Legal registration status"
+        }
+      },
+      "problem": {
+        "title": "Problem",
+        "edit": "Edit",
+        "field": {
+          "statement": "Problem statement",
+          "targetCustomer": "Target customer",
+          "currentAlternatives": "Current alternatives",
+          "painSeverity": "Pain severity",
+          "evidence": "Evidence / validation",
+          "whyNow": "Why now"
+        }
+      },
+      "product": {
+        "title": "Product",
+        "edit": "Edit",
+        "noDescription": "No product description yet.",
+        "commaSeparated": "Comma-separated",
+        "yes": "Yes",
+        "no": "No",
+        "field": {
+          "name": "Product name",
+          "type": "Product type",
+          "description": "Description",
+          "developmentStage": "Development stage",
+          "valueProposition": "Value proposition",
+          "coreFeatures": "Core features",
+          "technology": "Technology",
+          "launched": "Launched",
+          "launchDate": "Launch date",
+          "demoUrl": "Demo URL"
+        }
+      },
+      "market": {
+        "title": "Market",
+        "edit": "Edit",
+        "commaSeparated": "Comma-separated",
+        "field": {
+          "customerSegments": "Customer segments",
+          "geographies": "Target geographies",
+          "tam": "TAM",
+          "sam": "SAM",
+          "som": "SOM",
+          "currency": "Currency",
+          "methodology": "Methodology / source",
+          "trends": "Market trends",
+          "competitors": "Competitors",
+          "competitiveAdvantage": "Competitive advantage"
+        }
+      },
+      "business": {
+        "title": "Business Model",
+        "edit": "Edit",
+        "commaSeparated": "Comma-separated",
+        "field": {
+          "types": "Business model type",
+          "revenueStreams": "Revenue streams",
+          "pricingModel": "Pricing model",
+          "salesChannels": "Sales channels",
+          "salesCycle": "Sales cycle",
+          "distributionModel": "Distribution model",
+          "keyPartnerships": "Key partnerships"
+        }
+      },
+      "traction": {
+        "metricsTitle": "Traction Metrics",
+        "addMetric": "Add metric",
+        "editMetric": "Edit metric",
+        "noMetrics": "No traction metrics yet.",
+        "noMetricsBody": "Add your first metric so investors and experts can see real progress.",
+        "verified": "Verified",
+        "detailsTitle": "Traction Details",
+        "field": {
+          "type": "Metric type",
+          "label": "Label",
+          "value": "Value",
+          "unit": "Unit",
+          "currency": "Currency",
+          "period": "Period",
+          "date": "Date",
+          "source": "Source",
+          "verified": "Verified",
+          "narrative": "Traction narrative",
+          "majorCustomers": "Major customers / partners",
+          "commercialEvidence": "Commercial evidence"
+        }
+      },
+      "financials": {
+        "title": "Financials",
+        "edit": "Edit",
+        "months": "months",
+        "unknown": "Don't know yet",
+        "yes": "Yes",
+        "no": "No",
+        "dontKnowYet": "Don't know yet",
+        "field": {
+          "currency": "Currency",
+          "annualRevenue": "Annual revenue",
+          "monthlyRevenue": "Monthly revenue",
+          "monthlyExpenses": "Monthly expenses",
+          "monthlyBurn": "Monthly burn",
+          "cashBalance": "Cash balance",
+          "runwayMonths": "Runway (months)",
+          "profitable": "Profitable",
+          "financialYear": "Financial year",
+          "notes": "Notes"
+        }
+      },
+      "funding": {
+        "title": "Funding",
+        "edit": "Edit",
+        "previousRounds": "Previous rounds",
+        "field": {
+          "status": "Fundraising status",
+          "totalRaised": "Total raised",
+          "currentRound": "Current round",
+          "targetRaise": "Target raise",
+          "minimumTicket": "Minimum ticket",
+          "maximumTicket": "Maximum ticket",
+          "valuation": "Valuation",
+          "instrument": "Instrument",
+          "useOfFunds": "Use of funds",
+          "currency": "Currency"
+        }
+      },
+      "impact": {
+        "title": "Impact",
+        "edit": "Edit",
+        "notTracked": "Impact is not currently part of our reporting.",
+        "trackImpact": "We track impact",
+        "notTrackedHint": "You can turn this on any time once you start tracking impact.",
+        "field": {
+          "thesis": "Impact thesis",
+          "sdgs": "SDGs",
+          "beneficiaries": "Beneficiaries",
+          "jobsCreated": "Jobs created",
+          "womenBeneficiariesPct": "Women beneficiaries (%)",
+          "youthBeneficiariesPct": "Youth beneficiaries (%)",
+          "environmentalImpact": "Environmental impact",
+          "socialImpact": "Social impact"
+        }
+      },
+      "team": {
+        "foundersTitle": "Founders",
+        "addFounder": "Add founder",
+        "editFounder": "Edit founder",
+        "primaryContact": "Primary contact",
+        "noFounders": "No founders added yet.",
+        "noFoundersBody": "Add at least one founder to complete this section.",
+        "teamTitle": "Team",
+        "addMember": "Add member",
+        "editMember": "Edit member",
+        "noTeam": "No team members added yet.",
+        "noTeamBody": "Add key team members and their expertise.",
+        "commaSeparated": "Comma-separated",
+        "field": {
+          "firstName": "First name",
+          "lastName": "Last name",
+          "role": "Role",
+          "email": "Email",
+          "phone": "Phone",
+          "linkedin": "LinkedIn",
+          "country": "Country",
+          "bio": "Bio",
+          "status": "Status",
+          "engagement": "Engagement",
+          "ownershipPct": "Ownership (%)",
+          "isPrimaryContact": "Primary contact",
+          "name": "Name",
+          "department": "Department",
+          "startDate": "Start date",
+          "expertise": "Key expertise"
+        }
+      },
+      "goalsRisks": {
+        "goalsTitle": "Goals",
+        "addGoal": "Add goal",
+        "editGoal": "Edit goal",
+        "noGoals": "No goals defined yet.",
+        "noGoalsBody": "Add a goal to track progress toward your next milestone.",
+        "risksTitle": "Risks",
+        "addRisk": "Add risk",
+        "editRisk": "Edit risk",
+        "noRisks": "No risks identified yet.",
+        "noRisksBody": "Identifying risks early helps you and AFF experts plan mitigation.",
+        "probability": "Probability",
+        "impact": "Impact",
+        "field": {
+          "title": "Title",
+          "description": "Description",
+          "category": "Category",
+          "targetDate": "Target date",
+          "status": "Status",
+          "progressPct": "Progress (%)",
+          "targetValue": "Target value",
+          "currentValue": "Current value",
+          "unit": "Unit",
+          "mitigation": "Mitigation"
+        }
+      },
+      "milestones": {
+        "title": "Milestones",
+        "addMilestone": "Add milestone",
+        "editMilestone": "Edit milestone",
+        "noMilestones": "No milestones recorded yet.",
+        "noMilestonesBody": "Record key milestones to build your startup's timeline.",
+        "field": {
+          "title": "Title",
+          "description": "Description",
+          "date": "Date",
+          "category": "Category",
+          "status": "Status",
+          "evidenceUrl": "Evidence link"
+        }
+      }
+    },
+    "onboarding": {
+      "metaTitle": "Startup Setup",
+      "stepLabel": "Step",
+      "step1Title": "Your Startup",
+      "step2Title": "The Problem",
+      "step3Title": "Your Solution",
+      "step4Title": "Market",
+      "step5Title": "Business Model",
+      "step6Title": "Traction",
+      "step7Title": "Team",
+      "step8Title": "Financial Snapshot",
+      "step9Title": "Funding",
+      "step10Title": "Impact",
+      "step11Title": "Goals",
+      "step12Title": "Review",
+      "saveAndExit": "Save and exit",
+      "complete": "Complete Startup Profile",
+      "successTitle": "Startup profile completed.",
+      "successBody": "Your Digital Twin is ready — you can keep refining it any time from My Startup.",
+      "goToMyStartup": "Go to My Startup",
+      "commaSeparated": "Comma-separated",
+      "marketSizingHint": "You can add TAM/SAM/SOM later from My Startup — this step is optional.",
+      "tractionHint": "Select the metrics that are relevant to your startup, then enter their current value.",
+      "teamHint": "Founders and team members are managed from My Startup — add or edit them there.",
+      "teamEditHint": "You can add or edit founders and team members after finishing setup, from My Startup → Team.",
+      "noFoundersWarning": "Add at least one founder from My Startup → Team before completing your profile.",
+      "dontKnowHint": "Leave any field blank if you don't know yet — you can fill it in later.",
+      "trackImpact": "We track impact",
+      "impactNotTracked": "Impact is not currently part of our reporting.",
+      "goalsHint": "What are your 3 most important objectives for the next 6–12 months?",
+      "goalLabel": "Objective {n}",
+      "notRaising": "Not currently raising",
+      "currentlyRaising": "Currently raising",
+      "closed": "Round closed",
+      "field": {
+        "name": "Startup name",
+        "tagline": "Tagline",
+        "website": "Website",
+        "country": "Country",
+        "city": "City",
+        "industry": "Industry",
+        "stage": "Stage",
+        "problemStatement": "Problem statement",
+        "targetCustomer": "Target customer",
+        "currentAlternatives": "Current alternatives",
+        "evidence": "Evidence / validation",
+        "productName": "Product name",
+        "valueProposition": "Value proposition",
+        "developmentStage": "Development stage",
+        "coreFeatures": "Core features",
+        "customerSegments": "Customer segments",
+        "geographies": "Target geographies",
+        "competitors": "Competitors",
+        "businessModelType": "Revenue model",
+        "pricingModel": "Pricing",
+        "revenueStreams": "Revenue streams",
+        "salesChannels": "Channels",
+        "value": "Value",
+        "monthlyRevenue": "Monthly revenue",
+        "monthlyExpenses": "Monthly expenses",
+        "monthlyBurn": "Monthly burn",
+        "cashBalance": "Cash balance",
+        "totalRaisedAmount": "Amount raised so far",
+        "fundraisingStatus": "Are you currently fundraising?",
+        "targetRaiseAmount": "Target raise amount",
+        "instrument": "Instrument",
+        "thesis": "Impact thesis"
+      }
+    },
+    "roadmap": {
+      "pageTitle": "Roadmap",
+      "pageSubtitle": "Your personalized path forward, built from your Readiness gaps and your goals.",
+      "versionLabel": "Version {version}",
+      "basedOnAssessment": "Based on Assessment #{version}",
+      "lastUpdated": "Last updated {date}",
+      "generateButton": "Generate your roadmap",
+      "regenerateButton": "Regenerate roadmap",
+      "noRoadmapTitle": "No roadmap yet",
+      "noRoadmapBody": "Generate a personalized roadmap from your latest Readiness Assessment and Digital Twin goals.",
+      "needsAssessmentTitle": "Complete your Readiness Assessment first",
+      "needsAssessmentBody": "Your roadmap is built from your Readiness gaps — complete an assessment to generate one.",
+      "needsAssessmentCta": "Start Readiness Assessment",
+      "progress": {
+        "completed": "{count} completed",
+        "inProgress": "{count} in progress",
+        "remaining": "{count} remaining"
+      },
+      "priorities": {
+        "title": "Your Priorities",
+        "empty": "No priority actions right now — nice work.",
+        "startCta": "Start",
+        "viewCta": "View details"
+      },
+      "quickWins": {
+        "title": "Quick Wins",
+        "subtitle": "High or medium impact, low effort — the fastest ways to move forward.",
+        "empty": "No quick wins available right now.",
+        "badge": "Quick win"
+      },
+      "allActions": {
+        "title": "All Actions",
+        "empty": "No actions match these filters.",
+        "filters": {
+          "all": "All",
+          "critical": "Critical",
+          "high": "High",
+          "inProgress": "In progress",
+          "completed": "Completed",
+          "dimension": "Dimension",
+          "allDimensions": "All dimensions"
+        }
+      },
+      "priority": {
+        "critical": "Critical",
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low"
+      },
+      "impact": {
+        "high": "High impact",
+        "medium": "Medium impact",
+        "low": "Low impact"
+      },
+      "effort": {
+        "quick": "Quick",
+        "short": "Short",
+        "medium": "Medium",
+        "long": "Long"
+      },
+      "sourceLabels": {
+        "READINESS_GAP": "From your Readiness Assessment",
+        "FOUNDER_GOAL": "Supports one of your goals",
+        "PROFILE_COMPLETION": "From your Digital Twin profile",
+        "FOUNDER_CREATED": "Added by you",
+        "AFF_PROGRAM": "Recommended by AFF",
+        "EXPERT_RECOMMENDATION": "Recommended by an expert",
+        "PITCH_IMPROVEMENT": "From Pitch Lab"
+      },
+      "detail": {
+        "title": "Action detail",
+        "back": "Back to roadmap",
+        "whyThisMatters": "Why this matters",
+        "source": "Source",
+        "dimension": "Readiness dimension",
+        "criterion": "Readiness criterion",
+        "expectedOutcome": "Expected outcome",
+        "effort": "Effort",
+        "estimatedDuration": "Estimated duration",
+        "dueDate": "Due date",
+        "dependencies": "Dependencies",
+        "blockedBy": "Blocked by",
+        "noDependencies": "No dependencies",
+        "tasksChecklist": "Tasks",
+        "noTasks": "No tasks linked yet",
+        "evidenceExpected": "Evidence expected",
+        "markComplete": "Mark complete",
+        "readyToComplete": "All tasks are done — you can mark this complete.",
+        "dismiss": "Dismiss",
+        "reopenAction": "Reopen",
+        "startAction": "Start"
+      },
+      "reasons": {
+        "stageImportanceCritical": "Critical at your current stage",
+        "stageImportanceHigh": "Important at your current stage",
+        "stageImportanceMedium": "Moderately important at your current stage",
+        "criterionWeak": "This area currently scores as weak",
+        "criterionInsufficientEvidence": "Not enough evidence yet to score this",
+        "criterionDeveloping": "This area is still developing",
+        "highWeightCriterion": "Carries significant weight in your overall score",
+        "lowConfidenceEvidence": "Current evidence has low confidence",
+        "supportsGoal": "Supports one of your active goals",
+        "dueSoon": "Due within the next week",
+        "dueThisMonth": "Due within the next month",
+        "blockedByDependency": "Currently blocked by another action",
+        "lowEffort": "Quick to complete"
+      },
+      "generateCta": {
+        "title": "Generate your personalized roadmap",
+        "description": "Turn your Readiness gaps and goals into a concrete, prioritized action plan.",
+        "button": "Generate roadmap"
+      },
+      "reassessBanner": {
+        "title": "Ready to reassess?",
+        "body": "You've completed {count} readiness-related actions since your last assessment — a new assessment may reflect your progress.",
+        "cta": "Reassess now"
+      },
+      "addToRoadmap": "Add to roadmap",
+      "alreadyInRoadmap": "Already in roadmap",
+      "newFounderItem": {
+        "cta": "Add your own action",
+        "titleLabel": "Title",
+        "titlePlaceholder": "What do you want to work on?",
+        "descriptionLabel": "Description (optional)",
+        "dueDateLabel": "Due date (optional)",
+        "priorityLabel": "Priority",
+        "save": "Add to roadmap",
+        "cancel": "Cancel"
+      },
+      "catalog": {
+        "validate_market_evidence": {
+          "title": "Validate your market with real evidence",
+          "description": "Gather concrete evidence — customer interviews, survey data, or market research — that confirms the problem you're solving is real and widespread.",
+          "evidenceRequirement": "At least 10 documented customer interviews or a market study with sourced data.",
+          "task1": "Interview 10 target customers about the problem",
+          "task2": "Summarize findings into a one-page market evidence brief"
+        },
+        "competitive_landscape_map": {
+          "title": "Map your competitive landscape",
+          "description": "Identify direct and indirect competitors and articulate how your approach compares.",
+          "evidenceRequirement": "A competitor comparison covering at least 3 alternatives.",
+          "task1": "Build a competitor comparison table"
+        },
+        "run_product_validation": {
+          "title": "Run a structured product validation",
+          "description": "Test your current product with real users and capture structured feedback before investing further in build.",
+          "evidenceRequirement": "Documented usability/validation sessions with at least 5 users.",
+          "task1": "Run validation sessions with 5 target users",
+          "task2": "Document key findings and next steps"
+        },
+        "clarify_differentiation": {
+          "title": "Clarify your differentiation",
+          "description": "Write a clear, specific statement of what makes your product different from alternatives, and why that matters to customers.",
+          "evidenceRequirement": "A one-paragraph differentiation statement reviewed by a founder.",
+          "task1": "Draft a one-paragraph differentiation statement"
+        },
+        "define_unit_economics": {
+          "title": "Define your unit economics",
+          "description": "Calculate the core unit economics of your business — cost to acquire, cost to serve, and revenue per unit — so profitability is measurable.",
+          "evidenceRequirement": "A documented unit economics model (CAC, margin, LTV where applicable).",
+          "task1": "Calculate cost to acquire and cost to serve per unit",
+          "task2": "Document the unit economics model"
+        },
+        "define_pricing": {
+          "title": "Define your pricing",
+          "description": "Set a clear, documented pricing structure aligned to the value you deliver.",
+          "evidenceRequirement": "A documented pricing structure with at least one tier.",
+          "task1": "Draft and document your pricing structure"
+        },
+        "measure_retention": {
+          "title": "Start measuring retention",
+          "description": "Put a simple, repeatable retention measurement in place so you know whether customers keep using or buying from you.",
+          "evidenceRequirement": "At least one retention metric (e.g. month-2 retention) tracked over two periods.",
+          "task1": "Define and start tracking a retention metric",
+          "task2": "Review retention after the first measurement period"
+        },
+        "track_growth_metrics": {
+          "title": "Track your growth metrics",
+          "description": "Put a lightweight dashboard in place tracking your core growth metric period over period.",
+          "evidenceRequirement": "A growth metric tracked for at least two consecutive periods.",
+          "task1": "Set up a simple growth metrics tracker"
+        },
+        "fill_key_roles": {
+          "title": "Fill your key missing roles",
+          "description": "Identify the roles most critical to your next milestone that are currently unfilled, and build a plan to fill them.",
+          "evidenceRequirement": "A documented org plan naming the key roles and a hiring or co-founder plan.",
+          "task1": "List the key roles missing from your team",
+          "task2": "Draft a plan to fill the highest-priority role"
+        },
+        "formalize_governance": {
+          "title": "Formalize your governance structure",
+          "description": "Put basic governance practices in place — regular founder/board check-ins and documented decision rights.",
+          "evidenceRequirement": "Documented governance cadence and decision-making process.",
+          "task1": "Document your governance cadence and decision rights"
+        },
+        "build_financial_forecast": {
+          "title": "Build a 12-month financial forecast",
+          "description": "Create a 12-month forecast covering revenue, costs, and cash position so you can plan runway and fundraising with confidence.",
+          "evidenceRequirement": "A documented 12-month financial forecast.",
+          "task1": "Build a 12-month revenue and cost forecast",
+          "task2": "Review the forecast against actuals monthly"
+        },
+        "improve_burn_control": {
+          "title": "Improve burn control",
+          "description": "Review your monthly burn rate and put a lightweight process in place to keep it aligned with your runway target.",
+          "evidenceRequirement": "A documented monthly burn review process.",
+          "task1": "Review last 3 months of burn against runway target"
+        },
+        "clarify_use_of_funds": {
+          "title": "Clarify your use of funds",
+          "description": "Write a clear, specific breakdown of how you would deploy new funding across the next 12-18 months.",
+          "evidenceRequirement": "A documented use-of-funds breakdown by category.",
+          "task1": "Draft a use-of-funds breakdown"
+        },
+        "prepare_investor_materials": {
+          "title": "Prepare your investor materials",
+          "description": "Assemble the core materials investors expect — a pitch deck and a data room — so you're ready to engage when the time comes.",
+          "evidenceRequirement": "A pitch deck and a data room with core documents uploaded.",
+          "task1": "Draft or update your pitch deck",
+          "task2": "Assemble your data room's core documents"
+        },
+        "adopt_core_tooling": {
+          "title": "Adopt core operating tooling",
+          "description": "Put the essential tools in place (e.g. CRM, project tracking, accounting) to run your operations reliably as you grow.",
+          "evidenceRequirement": "Core operating tools identified and adopted.",
+          "task1": "Identify and adopt your core operating tools"
+        },
+        "plan_scalability": {
+          "title": "Plan for scalability",
+          "description": "Identify the operational bottlenecks that would break under 5-10x growth, and outline how you'd address them.",
+          "evidenceRequirement": "A documented list of scaling bottlenecks and mitigation plan.",
+          "task1": "List your top scaling bottlenecks and mitigations"
+        },
+        "formalize_legal_entity": {
+          "title": "Formalize your legal entity",
+          "description": "Confirm your legal entity is properly formed and structured for your current stage and jurisdiction.",
+          "evidenceRequirement": "Documented proof of legal incorporation.",
+          "task1": "Confirm or complete legal entity formation"
+        },
+        "standardize_contracts": {
+          "title": "Standardize your contracts and agreements",
+          "description": "Put standard templates in place for the agreements you use most (customer, vendor, employment/contractor).",
+          "evidenceRequirement": "Standard contract templates in place for your most common agreement types.",
+          "task1": "Adopt standard templates for your most common agreements"
+        },
+        "track_impact_metrics": {
+          "title": "Start tracking impact metrics",
+          "description": "Define and start tracking the 2-3 metrics that best represent the impact you aim to create.",
+          "evidenceRequirement": "At least one impact metric tracked over one reporting period.",
+          "task1": "Define and start tracking your core impact metric"
+        },
+        "collect_beneficiary_evidence": {
+          "title": "Collect beneficiary evidence",
+          "description": "Gather direct evidence — testimonials, surveys, or data — from the people your product is meant to benefit.",
+          "evidenceRequirement": "At least 5 documented pieces of beneficiary feedback or evidence.",
+          "task1": "Collect feedback or evidence from 5 beneficiaries",
+          "task2": "Summarize the evidence collected"
+        }
+      }
+    },
+    "tasks": {
+      "pageTitle": "Tasks",
+      "pageSubtitle": "Every task recommended by your roadmap, plus anything you've added yourself.",
+      "summary": {
+        "todo": "{count} to do",
+        "inProgress": "{count} in progress",
+        "blocked": "{count} blocked",
+        "done": "{count} done"
+      },
+      "views": {
+        "today": "Today",
+        "thisWeek": "This Week",
+        "upcoming": "Upcoming",
+        "all": "All"
+      },
+      "filters": {
+        "status": "Status",
+        "priority": "Priority",
+        "category": "Category",
+        "origin": "Origin",
+        "allStatuses": "All statuses",
+        "allPriorities": "All priorities",
+        "allCategories": "All categories",
+        "roadmapLinked": "From roadmap",
+        "founderCreated": "Added by me",
+        "all": "All"
+      },
+      "newTask": {
+        "cta": "New task",
+        "title": "New task",
+        "titleLabel": "Title",
+        "titlePlaceholder": "What needs to get done?",
+        "descriptionLabel": "Description (optional)",
+        "descriptionPlaceholder": "Add any details",
+        "dueDateLabel": "Due date (optional)",
+        "priorityLabel": "Priority",
+        "save": "Add task",
+        "cancel": "Cancel"
+      },
+      "card": {
+        "due": "Due {date}",
+        "noDue": "No due date",
+        "linkedAction": "From: {title}",
+        "start": "Start",
+        "complete": "Complete",
+        "reopen": "Reopen",
+        "delete": "Delete"
+      },
+      "empty": {
+        "title": "No tasks here",
+        "body": "Tasks from your roadmap and anything you add will show up here."
+      }
+    },
+    "pitch": {
+      "pageTitle": "Pitch Lab",
+      "pageSubtitle": "Build, test and improve your startup story.",
+      "demoDisclaimer": "Expert feedback shown here is illustrative demo data, not a real AFF expert review.",
+      "overview": {
+        "activePitch": "Active pitch",
+        "versionLabel": "Version {version}",
+        "readinessLabel": "Pitch Readiness",
+        "sectionsComplete": "{done}/{total} sections complete",
+        "unresolvedFeedback": "{count} unresolved feedback",
+        "lastUpdated": "Last updated {date}",
+        "continueEditing": "Continue editing",
+        "practicePitch": "Practice pitch",
+        "requestReview": "Request review",
+        "requestReviewComingSoon": "Real AFF expert matching is coming in a future release — no request is sent yet.",
+        "startPitchLab": "Start Pitch Lab",
+        "noPitchTitle": "Prepare your pitch",
+        "noPitchBody": "Create your Pitch Lab workspace to structure your investment story.",
+        "setupTitle": "Set up your pitch",
+        "objectiveLabel": "Objective",
+        "audienceLabel": "Audience",
+        "pitchTypeLabel": "Pitch type",
+        "createCta": "Create Pitch Lab workspace"
+      },
+      "objectives": {
+        "fundraising": "Fundraising",
+        "customer": "Customer",
+        "partnership": "Partnership",
+        "grant": "Grant",
+        "accelerator": "Accelerator",
+        "competition": "Competition",
+        "pitch_live": "Pitch Live",
+        "general": "General"
+      },
+      "audiences": {
+        "investors": "Investors",
+        "customers": "Customers",
+        "corporates": "Corporates",
+        "government": "Government",
+        "donors": "Donors",
+        "accelerators": "Accelerators",
+        "general_public": "General public"
+      },
+      "pitchTypes": {
+        "elevator": "Elevator pitch",
+        "one_minute": "1 minute",
+        "three_minute": "3 minutes",
+        "five_minute": "5 minutes",
+        "investor_deck": "Investor deck",
+        "custom": "Custom"
+      },
+      "sections": {
+        "hook": {
+          "title": "Hook / Intro",
+          "guidance": "Open with one sharp sentence that makes the audience lean in — the stakes, not the company history."
+        },
+        "problem": {
+          "title": "Problem",
+          "guidance": "Explain who suffers, how badly, and why existing alternatives fail them. Evidence beats adjectives."
+        },
+        "solution": {
+          "title": "Solution",
+          "guidance": "State what you built and why it solves the problem better than alternatives — one clear idea, not a feature list."
+        },
+        "product": {
+          "title": "Product",
+          "guidance": "Describe how the product actually works and what stage it's at (concept, MVP, live)."
+        },
+        "market": {
+          "title": "Market",
+          "guidance": "Size the opportunity and name the customer segments you're targeting — grounded numbers, not \"huge market\" claims."
+        },
+        "business_model": {
+          "title": "Business Model",
+          "guidance": "Explain how you make money: pricing, revenue streams, and who pays."
+        },
+        "traction": {
+          "title": "Traction",
+          "guidance": "Show real evidence of progress — metrics with sources, not general claims of momentum."
+        },
+        "competition": {
+          "title": "Competition",
+          "guidance": "Name real alternatives and explain your durable advantage, not just a feature comparison."
+        },
+        "go_to_market": {
+          "title": "Go-to-Market",
+          "guidance": "Explain how you'll reach and acquire customers at scale."
+        },
+        "team": {
+          "title": "Team",
+          "guidance": "Show why this team is the right one to execute — relevant experience, not just titles."
+        },
+        "financials": {
+          "title": "Financials",
+          "guidance": "Summarize revenue, burn and runway — the numbers investors will ask for anyway."
+        },
+        "fundraising_ask": {
+          "title": "Fundraising / Ask",
+          "guidance": "State the amount, instrument and what it unlocks — a specific, answerable ask."
+        },
+        "vision_impact": {
+          "title": "Vision / Impact",
+          "guidance": "Paint where this goes in 5 years, and the impact it creates beyond revenue."
+        },
+        "closing": {
+          "title": "Closing",
+          "guidance": "End with a clear, memorable call to action."
+        }
+      },
+      "sourceFields": {
+        "problemStatement": "Startup Profile → Problem → Statement",
+        "targetCustomer": "Startup Profile → Problem → Target customer",
+        "problemEvidence": "Startup Profile → Problem → Evidence",
+        "valueProposition": "Startup Profile → Product → Value proposition",
+        "productDescription": "Startup Profile → Product → Description",
+        "coreFeatures": "Startup Profile → Product → Core features",
+        "primaryMarket": "Startup Profile → Market → Primary market",
+        "marketSizing": "Startup Profile → Market → TAM/SAM/SOM",
+        "marketTrends": "Startup Profile → Market → Trends",
+        "businessModelTypes": "Startup Profile → Business Model → Type",
+        "pricingModel": "Startup Profile → Business Model → Pricing",
+        "tractionNarrative": "Startup Profile → Traction → Narrative",
+        "tractionMetrics": "Startup Profile → Traction → Metrics",
+        "competitors": "Startup Profile → Market → Competitors",
+        "competitiveAdvantage": "Startup Profile → Market → Competitive advantage",
+        "founders": "Startup Profile → Founders",
+        "team": "Startup Profile → Team",
+        "financialsSummary": "Startup Profile → Financials",
+        "fundingAsk": "Startup Profile → Funding",
+        "impactThesis": "Startup Profile → Impact → Thesis"
+      },
+      "sourceTraceability": {
+        "badge": "Source: Startup Profile",
+        "updatedBanner": "Your startup profile contains newer data.",
+        "reviewUpdate": "Review update",
+        "importCta": "Import / refresh from profile"
+      },
+      "editor": {
+        "pageTitle": "Pitch Editor",
+        "sectionsNav": "Sections",
+        "keyPointsTitle": "Key points",
+        "addKeyPoint": "+ Add key point",
+        "guidanceTitle": "Guidance",
+        "sourceTitle": "Source from startup profile",
+        "required": "Required for this format",
+        "optional": "Optional for this format",
+        "statusLabel": "Status",
+        "markComplete": "Mark complete",
+        "markNeedsWork": "Mark needs work",
+        "save": "Save",
+        "readOnlyFinal": "This version is finalized and can no longer be edited. Create a new version to keep editing."
+      },
+      "status": {
+        "empty": "Empty",
+        "draft": "Draft",
+        "complete": "Complete",
+        "needs_work": "Needs work"
+      },
+      "versions": {
+        "title": "Versions",
+        "current": "Current",
+        "statusLabels": {
+          "draft": "Draft",
+          "in_review": "In review",
+          "final": "Final",
+          "archived": "Archived"
+        },
+        "newVersion": "New version",
+        "duplicate": "Duplicate",
+        "rename": "Rename",
+        "finalize": "Finalize",
+        "archive": "Archive",
+        "switchTo": "Switch to this version"
+      },
+      "readiness": {
+        "title": "Pitch Readiness",
+        "scoreSuffix": "/100",
+        "confidenceLabel": "Confidence",
+        "forLabel": "For: {title}",
+        "confidenceDisclaimer": "Confidence reflects structure and evidence coverage only — it never assesses persuasiveness, storytelling quality, semantic consistency, language quality, or investor objections.",
+        "notInvestmentJudgment": "Pitch Readiness measures pitch preparation — never investment quality or fundraising probability.",
+        "dimensions": {
+          "narrative_clarity": "Narrative Clarity",
+          "problem_evidence": "Problem Evidence",
+          "solution_clarity": "Solution Clarity",
+          "market_story": "Market Story",
+          "business_model": "Business Model",
+          "traction_story": "Traction Story",
+          "differentiation": "Differentiation",
+          "team_story": "Team Story",
+          "financial_funding_clarity": "Financial / Funding Clarity",
+          "ask_clarity": "Ask Clarity",
+          "evidence_coverage": "Evidence Coverage",
+          "pitch_completeness": "Pitch Completeness"
+        }
+      },
+      "checklist": {
+        "title": "Checklist",
+        "problem_defined": "Problem clearly defined",
+        "solution_defined": "Solution clearly defined",
+        "traction_evidence": "Traction evidence",
+        "team_present": "Team presented",
+        "ask_clear": "Ask is clear",
+        "required_sections_complete": "Required sections complete"
+      },
+      "practice": {
+        "pageTitle": "Practice Workspace",
+        "pageSubtitle": "Practice your pitch with a timer and a recommended structure. No audio or video recording.",
+        "formats": {
+          "30s": "30s",
+          "1min": "1 min",
+          "3min": "3 min",
+          "5min": "5 min"
+        },
+        "start": "Start",
+        "stop": "Stop",
+        "structureTitle": "Recommended structure",
+        "scriptTitle": "Pitch script",
+        "selfAssessmentTitle": "SELF-ASSESSMENT",
+        "selfAssessmentDisclaimer": "This is your own rating, not an AFF evaluation — it never affects your Pitch Readiness score.",
+        "ratings": {
+          "clarity": "Clarity",
+          "confidence": "Confidence",
+          "timing": "Timing",
+          "storytelling": "Storytelling"
+        },
+        "notesLabel": "Notes",
+        "saveAttempt": "Save attempt",
+        "historyTitle": "Attempt history",
+        "empty": "No attempts yet."
+      },
+      "qna": {
+        "pageTitle": "Investor Q&A Preparation",
+        "pageSubtitle": "Questions selected based on your startup's profile — no AI generation.",
+        "categories": {
+          "problem": "Problem",
+          "market": "Market",
+          "product": "Product",
+          "competition": "Competition",
+          "business_model": "Business Model",
+          "traction": "Traction",
+          "team": "Team",
+          "financials": "Financials",
+          "fundraising": "Fundraising",
+          "risks": "Risks",
+          "vision": "Vision"
+        },
+        "prepareAnswer": "Prepare answer",
+        "editAnswer": "Edit answer",
+        "markPrepared": "Mark prepared",
+        "markNeedsWork": "Mark needs work",
+        "statusLabels": {
+          "not_started": "Not started",
+          "drafted": "Drafted",
+          "prepared": "Prepared",
+          "needs_work": "Needs work"
+        },
+        "catalog": {
+          "problem_why_matters": "Why does this problem matter now, and to whom specifically?",
+          "problem_evidence": "What evidence do you have that this problem is real and painful?",
+          "market_size": "How did you size this market, and what's your source?",
+          "market_why_now": "Why is now the right time for this market?",
+          "product_defensibility": "What stops a competitor from copying this in six months?",
+          "product_roadmap": "What's on your product roadmap for the next 12 months?",
+          "competition_who_else": "Who else is solving this problem, directly or indirectly?",
+          "competition_moat": "What is your durable, structural advantage?",
+          "business_model_pricing": "How did you arrive at this pricing?",
+          "business_model_marketplace_dynamics": "How do you solve the chicken-and-egg problem between supply and demand?",
+          "traction_mrr_growth": "What has your month-over-month revenue growth looked like?",
+          "traction_monetization_timing": "You're pre-revenue — when do you expect to start monetizing, and why then?",
+          "traction_retention": "What does customer retention look like so far?",
+          "team_gaps": "What critical role is still missing from your team?",
+          "team_why_you": "Why is this specific team the right one to execute on this?",
+          "financials_burn_runway": "What's your current monthly burn and runway?",
+          "financials_path_to_profitability": "What's your path to profitability?",
+          "fundraising_use_of_funds": "Exactly how will you use the funds you're raising?",
+          "fundraising_valuation": "How did you arrive at your valuation?",
+          "risks_biggest": "What is the single biggest risk to this business?",
+          "risks_regulatory": "What regulatory risks could affect this business?",
+          "vision_five_years": "Where is this company in five years?",
+          "vision_exit": "What does a realistic exit look like?"
+        }
+      },
+      "review": {
+        "pageTitle": "Expert Feedback",
+        "pageSubtitle": "Expert review foundation — no real expert review workflow exists yet.",
+        "unresolvedCount": "{count} unresolved",
+        "demoLabel": "Demo / illustrative",
+        "types": {
+          "comment": "Comment",
+          "question": "Question",
+          "suggestion": "Suggestion",
+          "critical_issue": "Critical issue"
+        },
+        "statusLabels": {
+          "open": "Open",
+          "resolved": "Resolved",
+          "dismissed": "Dismissed"
+        },
+        "resolve": "Resolve",
+        "dismiss": "Dismiss",
+        "createTask": "Create task",
+        "taskCreated": "Task created",
+        "empty": "No feedback yet."
+      },
+      "live": {
+        "pageTitle": "Pitch Live",
+        "pageSubtitle": "Preparation foundation for AFF Pitch Live.",
+        "disclaimer": "These are PRODUCT PREPARATION requirements, not a judgment that your startup deserves investment.",
+        "requirements": {
+          "versionFinalized": "Pitch version finalized",
+          "requiredSectionsComplete": "Required sections complete",
+          "noCriticalUnresolvedIssue": "No critical unresolved issue",
+          "hasPracticeAttempt": "At least one practice attempt"
+        },
+        "readyTitle": "Ready to apply",
+        "notReadyTitle": "Preparation incomplete",
+        "applyCta": "Apply to Pitch Live",
+        "applyComingSoon": "Pitch Live application is coming soon — nothing is submitted from this page yet.",
+        "noPitchTitle": "No pitch yet",
+        "noPitchBody": "Create your pitch in the Pitch Lab before preparing for Pitch Live."
+      },
+      "commandCenter": {
+        "title": "PITCH PREPARATION",
+        "sectionsNeedAttention": "{count} sections need attention",
+        "continueCta": "Continue Pitch",
+        "startCta": "Start Pitch Lab",
+        "noPitchBody": "Prepare your pitch"
+      }
+    }
   }
 }
