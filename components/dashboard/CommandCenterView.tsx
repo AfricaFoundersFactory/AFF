@@ -39,6 +39,7 @@ export function CommandCenterView({
   const tDim = useTranslations("dashboard.readiness.dimensions");
   const tFields = useTranslations("dashboard.digitalTwin.fields");
   const tPitch = useTranslations("dashboard.pitch");
+  const tFinancials = useTranslations("dashboard.financials");
   const format = useFormatter();
 
   if (!data) {
@@ -56,6 +57,7 @@ export function CommandCenterView({
     recentActivity,
     upcomingEvents,
     pitch,
+    financials,
   } = data;
 
   const formatDate = (iso: string) =>
@@ -305,6 +307,57 @@ export function CommandCenterView({
             <p className="text-[13.5px] text-aff-muted">{tPitch("commandCenter.noPitchBody")}</p>
             <ButtonLink href="/dashboard/pitch" className="px-4 py-2.5 text-[13px]">
               {tPitch("commandCenter.startCta")}
+            </ButtonLink>
+          </div>
+        )}
+      </DashboardSection>
+
+      {/* Financial Snapshot + Data Room Readiness widget (AFF-DASH-06 part
+          M) — a separate summary from AFF Readiness/profile completion/
+          roadmap progress above; only shown once financial or data-room
+          data has been entered. */}
+      <DashboardSection title={tFinancials("commandCenter.title")}>
+        {financials ? (
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <div>
+                <div className="text-[11.5px] font-semibold tracking-[0.06em] text-aff-muted">
+                  {tFinancials("commandCenter.runwayLabel").toUpperCase()}
+                </div>
+                <div className="mt-1 text-[14.5px] font-semibold text-aff-text">
+                  {financials.runway.status === "calculated"
+                    ? tFinancials("metrics.runwayMonths", { months: Math.round(financials.runway.months * 10) / 10 })
+                    : financials.runway.status === "sustainable"
+                      ? tFinancials("metrics.runwaySustainable")
+                      : "—"}
+                </div>
+              </div>
+              <div>
+                <div className="text-[11.5px] font-semibold tracking-[0.06em] text-aff-muted">
+                  {tFinancials("commandCenter.lastUpdatedLabel").toUpperCase()}
+                </div>
+                <div className="mt-1 text-[14.5px] font-semibold text-aff-text">
+                  {financials.lastUpdatedAt ? formatDate(financials.lastUpdatedAt) : "—"}
+                </div>
+              </div>
+              <div>
+                <div className="text-[11.5px] font-semibold tracking-[0.06em] text-aff-muted">
+                  {tFinancials("commandCenter.dataRoomLabel").toUpperCase()}
+                </div>
+                <div className="mt-1 text-[14.5px] font-semibold text-aff-text">
+                  {Math.round(financials.dataRoomCompletionPct * financials.dataRoomRequiredTotal)}/{financials.dataRoomRequiredTotal}
+                </div>
+              </div>
+            </div>
+            <ButtonLink href="/dashboard/financials" variant="secondary" className="px-4 py-2.5 text-[13px]">
+              {tFinancials("commandCenter.viewCta")}
+            </ButtonLink>
+          </div>
+        ) : (
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <p className="text-[13.5px] text-aff-muted">{tFinancials("commandCenter.noDataBody")}</p>
+            <ButtonLink href="/dashboard/financials" className="px-4 py-2.5 text-[13px]">
+              {tFinancials("commandCenter.startCta")}
             </ButtonLink>
           </div>
         )}

@@ -2592,6 +2592,218 @@
         "startCta": "Démarrer le Pitch Lab",
         "noPitchBody": "Préparez votre pitch"
       }
+    },
+    "financials": {
+      "pageTitle": "Finances",
+      "pageSubtitle": "Votre centre de pilotage financier pour la trésorerie, les dépenses, l'autonomie et la levée de fonds — pas un logiciel de comptabilité.",
+      "emptyTitle": "Aucun espace financier pour le moment",
+      "emptyBody": "Sélectionnez une startup pour voir son centre financier.",
+      "metrics": {
+        "cashBalance": "Trésorerie",
+        "cashBalanceUnavailable": "Ajoutez votre solde de trésorerie actuel",
+        "monthlyRevenue": "Revenu mensuel",
+        "monthlyExpenses": "Dépenses mensuelles",
+        "noHistoryYet": "Aucun historique financier pour le moment",
+        "netBurn": "Consommation nette",
+        "runway": "Autonomie financière",
+        "runwayMonths": "{months} mois",
+        "runwaySustainable": "Pas de consommation de trésorerie",
+        "runwayUnavailable": {
+          "missing_cash": "Autonomie indisponible — ajoutez votre solde de trésorerie actuel.",
+          "missing_burn": "Autonomie indisponible — ajoutez vos revenus et dépenses mensuels."
+        }
+      },
+      "signals": {
+        "title": "Ce qui mérite votre attention",
+        "empty": "Rien ne nécessite une attention urgente d'après vos données financières actuelles.",
+        "disclaimer": "Ces signaux sont uniquement informatifs — ils ne constituent pas des recommandations d'investissement, des valorisations, des scores de crédit, ni des modifications du score AFF Readiness.",
+        "messages": {
+          "revenue_declining": "Votre revenu a diminué de {growthPct}% d'un mois sur l'autre.",
+          "expenses_outpacing_revenue": "Vos dépenses augmentent plus vite ({expenseGrowthPct}%) que votre revenu ({revenueGrowthPct}%).",
+          "runway_below_3_months": "Votre autonomie estimée est de {months} mois, sur la base de votre trésorerie actuelle et de votre consommation mensuelle nette.",
+          "runway_below_6_months": "Votre autonomie estimée est de {months} mois — anticipez vos prochaines étapes avant que cela ne devienne critique.",
+          "stale_financial_update": "Votre dernière mise à jour financière date de {lastUpdatedMonth} (il y a {daysSinceUpdate} jours) — actualisez-la pour des signaux fiables.",
+          "no_forecast": "Vous n'avez pas encore de prévisions financières — ajoutez-en pour anticiper.",
+          "funding_exceeds_forecast_need": "Votre demande de financement ({amountSought}) dépasse largement votre besoin prévisionnel ({forecastedNeed}) — vérifiez vos hypothèses.",
+          "positive_operating_trend": "Tendance positive : votre résultat d'exploitation est de {operatingResult} avec une croissance de revenu de {growthPct}%."
+        }
+      },
+      "history": {
+        "title": "Historique financier",
+        "addPeriod": "Ajouter un mois",
+        "emptyTitle": "Aucun historique financier",
+        "emptyBody": "Ajoutez votre premier mois pour suivre revenus, dépenses et trésorerie.",
+        "columns": {
+          "month": "Mois",
+          "revenue": "Revenu",
+          "expenses": "Dépenses",
+          "cash": "Trésorerie"
+        },
+        "expenseCategories": {
+          "direct_costs": "Coûts directs",
+          "payroll": "Salaires",
+          "marketing": "Marketing",
+          "operations": "Opérations",
+          "other": "Autre"
+        }
+      },
+      "forecast": {
+        "title": "Prévisions sur 12 mois",
+        "addMonth": "Ajouter un mois",
+        "emptyTitle": "Aucune prévision",
+        "emptyBody": "Construisez une prévision mois par mois à partir de vos propres chiffres.",
+        "columns": {
+          "projectedRevenue": "Revenu prévu",
+          "projectedExpenses": "Dépenses prévues",
+          "projectedCash": "Trésorerie prévue",
+          "assumptions": "Hypothèses"
+        },
+        "disclaimer": "Tous les chiffres proviennent de vos propres saisies ou de calculs déterministes — jamais générés par IA.",
+        "assumptionsLabel": "Hypothèses (séparées par des virgules)",
+        "assumptionsPlaceholder": "ex. Recruter un responsable commercial en mars"
+      },
+      "fundingRequirement": {
+        "title": "Besoin de financement",
+        "define": "Définir le besoin de financement",
+        "emptyTitle": "Aucun besoin de financement défini",
+        "emptyBody": "Définissez le montant recherché, son usage, et l'allongement d'autonomie qu'il apporte.",
+        "amountSought": "Montant recherché",
+        "instrumentLabel": "Instrument",
+        "statusLabel": "Statut",
+        "runwayExtensionLabel": "Extension d'autonomie",
+        "targetDateLabel": "Date cible",
+        "allocationTitle": "Utilisation des fonds",
+        "allocationHint": "pourcentages",
+        "categories": {
+          "product": "Produit",
+          "hiring": "Recrutement",
+          "sales": "Ventes",
+          "marketing": "Marketing",
+          "operations": "Opérations",
+          "expansion": "Expansion",
+          "equipment": "Équipement",
+          "regulatory": "Réglementaire",
+          "working_capital": "Fonds de roulement",
+          "other": "Autre"
+        },
+        "validation": {
+          "empty": "Ajoutez au moins une catégorie d'utilisation des fonds.",
+          "mixed_modes": "Ne mélangez pas pourcentages et montants dans la même répartition.",
+          "percentage_mismatch": "Les pourcentages doivent totaliser 100 %.",
+          "amount_mismatch": "Les montants doivent correspondre au montant recherché."
+        }
+      },
+      "cashPosition": {
+        "title": "Solde de trésorerie actuel",
+        "description": "Il s'agit de votre trésorerie actuelle — utilisée pour calculer votre autonomie."
+      },
+      "form": {
+        "save": "Enregistrer",
+        "cancel": "Annuler",
+        "edit": "Modifier"
+      },
+      "commandCenter": {
+        "title": "Aperçu financier",
+        "runwayLabel": "Autonomie",
+        "lastUpdatedLabel": "Dernière mise à jour",
+        "dataRoomLabel": "Data room",
+        "viewCta": "Ouvrir Finances",
+        "noDataBody": "Ajoutez votre trésorerie et vos chiffres mensuels pour voir votre autonomie ici.",
+        "startCta": "Configurer les finances"
+      }
+    },
+    "dataRoom": {
+      "pageTitle": "Data Room",
+      "pageSubtitle": "Préparez votre due diligence — organisez ce que les investisseurs et experts demanderont.",
+      "emptyTitle": "Aucune data room pour le moment",
+      "emptyBody": "Sélectionnez une startup pour voir sa data room.",
+      "completion": {
+        "title": "Complétude de la Data Room",
+        "label": "documents prêts",
+        "available": "Disponibles",
+        "outdated": "Obsolètes",
+        "missing": "Manquants",
+        "disclaimer": "Ce pourcentage de complétude est distinct de votre score AFF Readiness, et n'y est jamais fusionné."
+      },
+      "noStorage": {
+        "title": "À propos du stockage de fichiers",
+        "body": "Cet espace est pour l'instant uniquement basé sur les métadonnées — il n'y a pas encore de téléversement réel ni de stockage cloud. Vous pouvez suivre ce qui existe et son statut, mais les fichiers eux-mêmes ne sont pas stockés ici."
+      },
+      "checklist": {
+        "title": "Checklist adaptée à votre stade",
+        "stageNote": "Affiche les documents pertinents pour votre stade actuel ({stage}) — vous ne verrez pas de documents qui ne s'appliquent pas encore.",
+        "startDocument": "Démarrer ce document"
+      },
+      "categories": {
+        "corporate": "Corporate",
+        "legal": "Juridique",
+        "finance": "Finance",
+        "fundraising": "Levée de fonds",
+        "product": "Produit",
+        "commercial": "Commercial",
+        "team": "Équipe",
+        "ip": "Propriété intellectuelle",
+        "compliance": "Conformité",
+        "impact_esg": "Impact / ESG",
+        "other": "Autre"
+      },
+      "requirements": {
+        "certificateOfIncorporation": "Certificat d'immatriculation",
+        "capTable": "Table de capitalisation",
+        "bylaws": "Statuts",
+        "historicalFinancials": "Historique financier",
+        "forecast": "Prévisions financières",
+        "bankCashEvidence": "Justificatifs bancaires",
+        "pitchDeck": "Pitch deck",
+        "fundingRequirement": "Besoin de financement",
+        "previousInvestmentDocs": "Documents d'investissement antérieurs",
+        "customerContracts": "Contrats clients significatifs",
+        "tractionEvidence": "Preuves de traction",
+        "founderInfo": "Informations sur les fondateurs",
+        "keyEmploymentInfo": "Informations clés sur l'emploi",
+        "ipOwnershipEvidence": "Preuves de propriété intellectuelle"
+      },
+      "status": {
+        "missing": "Manquant",
+        "draft": "Brouillon",
+        "available": "Disponible",
+        "outdated": "Obsolète",
+        "needs_review": "À vérifier",
+        "verified": "Vérifié"
+      },
+      "visibility": {
+        "private": "Privé",
+        "aff_team": "Équipe AFF",
+        "experts": "Experts",
+        "investors": "Investisseurs",
+        "public": "Public"
+      },
+      "documents": {
+        "title": "Documents",
+        "add": "Ajouter un document",
+        "emptyTitle": "Aucun document pour le moment",
+        "emptyBody": "Ajoutez votre premier document pour commencer votre data room.",
+        "titleLabel": "Titre",
+        "categoryLabel": "Catégorie",
+        "visibilityLabel": "Visibilité",
+        "descriptionLabel": "Description",
+        "versionsCount": "{count} versions",
+        "recordVersion": "Enregistrer une version",
+        "markVerified": "Marquer comme vérifié",
+        "remove": "Supprimer",
+        "metadataOnlyDisclaimer": "« Enregistrer une version » ne sauvegarde que les métadonnées (nom, type, taille) — aucun fichier n'est réellement téléversé ou stocké."
+      },
+      "form": {
+        "save": "Enregistrer",
+        "cancel": "Annuler",
+        "edit": "Modifier"
+      },
+      "commandCenter": {
+        "title": "Préparation de la Data Room",
+        "viewCta": "Ouvrir la Data Room",
+        "noDataBody": "Démarrez votre data room pour suivre l'état de vos documents.",
+        "startCta": "Configurer la Data Room"
+      }
     }
   }
 }

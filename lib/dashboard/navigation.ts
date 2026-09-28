@@ -63,4 +63,6 @@ export const implementedDashboardRoutes = new Set([
   "/dashboard/pitch/qna",
   "/dashboard/pitch/review",
   "/dashboard/pitch-live",
+  "/dashboard/financials",
+  "/dashboard/data-room",
 ]);

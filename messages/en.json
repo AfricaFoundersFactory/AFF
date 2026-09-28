@@ -2592,6 +2592,218 @@
         "startCta": "Start Pitch Lab",
         "noPitchBody": "Prepare your pitch"
       }
+    },
+    "financials": {
+      "pageTitle": "Financials",
+      "pageSubtitle": "Your founder command center for cash, spend, runway and fundraising — not accounting software.",
+      "emptyTitle": "No financial workspace yet",
+      "emptyBody": "Select a startup to view its financial command center.",
+      "metrics": {
+        "cashBalance": "Cash balance",
+        "cashBalanceUnavailable": "Add your current cash balance",
+        "monthlyRevenue": "Monthly revenue",
+        "monthlyExpenses": "Monthly expenses",
+        "noHistoryYet": "No financial history yet",
+        "netBurn": "Net burn",
+        "runway": "Runway",
+        "runwayMonths": "{months} months",
+        "runwaySustainable": "Not burning cash",
+        "runwayUnavailable": {
+          "missing_cash": "Runway unavailable — add your current cash balance.",
+          "missing_burn": "Runway unavailable — add your monthly revenue and expenses."
+        }
+      },
+      "signals": {
+        "title": "What needs your attention",
+        "empty": "Nothing needs urgent attention based on your current financial data.",
+        "disclaimer": "These are informational signals only — not investment recommendations, valuations, credit scores, or AFF Readiness changes.",
+        "messages": {
+          "revenue_declining": "Your revenue declined {growthPct}% month over month.",
+          "expenses_outpacing_revenue": "Your expenses are growing faster ({expenseGrowthPct}%) than your revenue ({revenueGrowthPct}%).",
+          "runway_below_3_months": "Your estimated runway is {months} months based on your latest cash balance and net monthly burn.",
+          "runway_below_6_months": "Your estimated runway is {months} months — plan your next steps before it gets critical.",
+          "stale_financial_update": "Your last financial update was {lastUpdatedMonth} ({daysSinceUpdate} days ago) — keep it current for accurate signals.",
+          "no_forecast": "You don't have a financial forecast yet — add one to plan ahead.",
+          "funding_exceeds_forecast_need": "Your funding ask ({amountSought}) is well above your forecasted need ({forecastedNeed}) — double check your assumptions.",
+          "positive_operating_trend": "Positive trend: your operating result is {operatingResult} with {growthPct}% revenue growth."
+        }
+      },
+      "history": {
+        "title": "Financial history",
+        "addPeriod": "Add month",
+        "emptyTitle": "No financial history yet",
+        "emptyBody": "Add your first month to start tracking revenue, expenses and cash.",
+        "columns": {
+          "month": "Month",
+          "revenue": "Revenue",
+          "expenses": "Expenses",
+          "cash": "Cash"
+        },
+        "expenseCategories": {
+          "direct_costs": "Direct costs",
+          "payroll": "Payroll",
+          "marketing": "Marketing",
+          "operations": "Operations",
+          "other": "Other"
+        }
+      },
+      "forecast": {
+        "title": "12-month forecast",
+        "addMonth": "Add month",
+        "emptyTitle": "No forecast yet",
+        "emptyBody": "Build a simple month-by-month forecast from your own numbers.",
+        "columns": {
+          "projectedRevenue": "Projected revenue",
+          "projectedExpenses": "Projected expenses",
+          "projectedCash": "Projected cash",
+          "assumptions": "Assumptions"
+        },
+        "disclaimer": "All numbers come from your own inputs or deterministic calculations — never AI-generated.",
+        "assumptionsLabel": "Assumptions (comma-separated)",
+        "assumptionsPlaceholder": "e.g. Hire a sales manager in March"
+      },
+      "fundingRequirement": {
+        "title": "Funding requirement",
+        "define": "Define funding requirement",
+        "emptyTitle": "No funding requirement defined",
+        "emptyBody": "Define how much you're raising, for what, and how it extends your runway.",
+        "amountSought": "Amount sought",
+        "instrumentLabel": "Instrument",
+        "statusLabel": "Status",
+        "runwayExtensionLabel": "Runway extension",
+        "targetDateLabel": "Target date",
+        "allocationTitle": "Use of funds",
+        "allocationHint": "percentages",
+        "categories": {
+          "product": "Product",
+          "hiring": "Hiring",
+          "sales": "Sales",
+          "marketing": "Marketing",
+          "operations": "Operations",
+          "expansion": "Expansion",
+          "equipment": "Equipment",
+          "regulatory": "Regulatory",
+          "working_capital": "Working capital",
+          "other": "Other"
+        },
+        "validation": {
+          "empty": "Add at least one use-of-funds category.",
+          "mixed_modes": "Don't mix percentages and amounts in the same allocation.",
+          "percentage_mismatch": "Percentages must add up to 100%.",
+          "amount_mismatch": "Amounts must add up to the amount sought."
+        }
+      },
+      "cashPosition": {
+        "title": "Current cash balance",
+        "description": "This is the cash you have right now — used to calculate your runway."
+      },
+      "form": {
+        "save": "Save",
+        "cancel": "Cancel",
+        "edit": "Edit"
+      },
+      "commandCenter": {
+        "title": "Financial Snapshot",
+        "runwayLabel": "Runway",
+        "lastUpdatedLabel": "Last updated",
+        "dataRoomLabel": "Data room",
+        "viewCta": "Open Financials",
+        "noDataBody": "Add your cash balance and monthly numbers to see your runway here.",
+        "startCta": "Set up Financials"
+      }
+    },
+    "dataRoom": {
+      "pageTitle": "Data Room",
+      "pageSubtitle": "Get due-diligence ready — organize what investors and experts will ask for.",
+      "emptyTitle": "No data room yet",
+      "emptyBody": "Select a startup to view its data room.",
+      "completion": {
+        "title": "Data Room Completion",
+        "label": "documents ready",
+        "available": "Available",
+        "outdated": "Outdated",
+        "missing": "Missing",
+        "disclaimer": "This completion percentage is separate from — and never merged into — your AFF Readiness score."
+      },
+      "noStorage": {
+        "title": "About file storage",
+        "body": "This is a metadata-only workspace for now — there is no real file upload or cloud storage yet. You can track what exists and its status, but files themselves aren't stored here."
+      },
+      "checklist": {
+        "title": "Stage-aware checklist",
+        "stageNote": "Showing documents relevant to your current stage ({stage}) — you won't be asked for documents that don't apply yet.",
+        "startDocument": "Start this document"
+      },
+      "categories": {
+        "corporate": "Corporate",
+        "legal": "Legal",
+        "finance": "Finance",
+        "fundraising": "Fundraising",
+        "product": "Product",
+        "commercial": "Commercial",
+        "team": "Team",
+        "ip": "IP",
+        "compliance": "Compliance",
+        "impact_esg": "Impact / ESG",
+        "other": "Other"
+      },
+      "requirements": {
+        "certificateOfIncorporation": "Certificate of Incorporation",
+        "capTable": "Cap table",
+        "bylaws": "Bylaws / Statutes",
+        "historicalFinancials": "Historical financials",
+        "forecast": "Financial forecast",
+        "bankCashEvidence": "Bank / cash evidence",
+        "pitchDeck": "Pitch deck",
+        "fundingRequirement": "Funding requirement",
+        "previousInvestmentDocs": "Previous investment documents",
+        "customerContracts": "Material customer contracts",
+        "tractionEvidence": "Traction evidence",
+        "founderInfo": "Founder information",
+        "keyEmploymentInfo": "Key employment information",
+        "ipOwnershipEvidence": "IP ownership evidence"
+      },
+      "status": {
+        "missing": "Missing",
+        "draft": "Draft",
+        "available": "Available",
+        "outdated": "Outdated",
+        "needs_review": "Needs review",
+        "verified": "Verified"
+      },
+      "visibility": {
+        "private": "Private",
+        "aff_team": "AFF team",
+        "experts": "Experts",
+        "investors": "Investors",
+        "public": "Public"
+      },
+      "documents": {
+        "title": "Documents",
+        "add": "Add document",
+        "emptyTitle": "No documents yet",
+        "emptyBody": "Add your first document to start building your data room.",
+        "titleLabel": "Title",
+        "categoryLabel": "Category",
+        "visibilityLabel": "Visibility",
+        "descriptionLabel": "Description",
+        "versionsCount": "{count} versions",
+        "recordVersion": "Record version",
+        "markVerified": "Mark verified",
+        "remove": "Remove",
+        "metadataOnlyDisclaimer": "\"Record version\" saves metadata only (file name, type, size) — no actual file is uploaded or stored."
+      },
+      "form": {
+        "save": "Save",
+        "cancel": "Cancel",
+        "edit": "Edit"
+      },
+      "commandCenter": {
+        "title": "Data Room Readiness",
+        "viewCta": "Open Data Room",
+        "noDataBody": "Start your data room to track document readiness.",
+        "startCta": "Set up Data Room"
+      }
     }
   }
 }

@@ -29,6 +29,9 @@ import { getLatestAssessment } from "@/lib/services/readiness";
 import { getCurrentRoadmap } from "@/lib/services/roadmap";
 import { getTasksForStartup } from "@/lib/services/tasks";
 import { getWorkspace, getActiveVersion } from "@/lib/services/pitch";
+import { getFinancialProfile, getFinancialSnapshot } from "@/lib/services/financials";
+import { getDataRoom, getCompletion } from "@/lib/services/data-room";
+import type { RunwayResult } from "@/lib/financials/calculations";
 
 // Pitch Lab summary for the Command Center widget (Part 25) — deliberately
 // minimal: title, Pitch Readiness %, and a count of sections needing
@@ -39,6 +42,19 @@ export type PitchSummary = {
   title: string;
   readinessScore: number | undefined;
   sectionsNeedingAttention: number;
+};
+
+// Financial Command Center + Data Room summary for the Command Center
+// widget (AFF-DASH-06 part M) — same conditional-rendering convention as
+// PitchSummary: undefined means "nothing entered yet", so the UI offers a
+// CTA rather than fabricating a runway or completion figure. Runway itself
+// stays a RunwayResult (never a bare number) so "unavailable"/"sustainable"
+// are never silently collapsed into a fake numeric value.
+export type FinancialCommandCenterSummary = {
+  runway: RunwayResult;
+  lastUpdatedAt: string | undefined;
+  dataRoomCompletionPct: number;
+  dataRoomRequiredTotal: number;
 };
 
 export type CommandCenterData = {
@@ -59,6 +75,10 @@ export type CommandCenterData = {
   // undefined means "no Pitch Lab workspace created yet" — the widget must
   // offer "Start Pitch Lab" rather than fabricate a pitch.
   pitch: PitchSummary | undefined;
+  // undefined means neither the Financial Command Center nor the Data Room
+  // has any founder-entered data yet — the widget must offer a CTA rather
+  // than a fabricated runway or completion figure.
+  financials: FinancialCommandCenterSummary | undefined;
 };
 
 function isDueThisWeek(dueDate: string | undefined, nowIso: string): boolean {
@@ -110,6 +130,25 @@ export async function getCommandCenterData(startupId: string): Promise<CommandCe
         }
       : undefined;
 
+  const financialProfile = getFinancialProfile(startupId, twin.identity.preferredCurrency);
+  const dataRoom = getDataRoom(startupId);
+  const hasFinancialData =
+    financialProfile.periods.length > 0 || financialProfile.cashPosition !== undefined || financialProfile.fundingRequirement !== undefined;
+  const hasDataRoomData = dataRoom.documents.length > 0;
+  const financials: FinancialCommandCenterSummary | undefined =
+    hasFinancialData || hasDataRoomData
+      ? (() => {
+          const snapshot = getFinancialSnapshot(startupId, nowIso);
+          const completion = getCompletion(startupId);
+          return {
+            runway: snapshot.runway,
+            lastUpdatedAt: snapshot.lastUpdatedAt,
+            dataRoomCompletionPct: completion.completionPct,
+            dataRoomRequiredTotal: completion.requiredTotal,
+          };
+        })()
+      : undefined;
+
   return {
     startup: { id: startupId, twin },
     readiness: getLatestAssessment(startupId),
@@ -121,5 +160,6 @@ export async function getCommandCenterData(startupId: string): Promise<CommandCe
     recentActivity: demoRecentActivityByStartup[startupId] ?? [],
     upcomingEvents: demoUpcomingEventsByStartup[startupId] ?? [],
     pitch,
+    financials,
   };
 }
