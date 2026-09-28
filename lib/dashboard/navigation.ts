@@ -50,21 +50,3 @@ export const dashboardBottomNavItems: DashboardNavItem[] = [
   { href: "/dashboard/settings", key: "settings" },
   { href: "/dashboard/help", key: "help" },
 ];
-
-// Every route above except the Command Center itself renders the shared
-// placeholder screen for this batch — see components/dashboard/ModulePlaceholder.tsx.
-export const implementedDashboardRoutes = new Set([
-  "/dashboard",
-  "/dashboard/roadmap",
-  "/dashboard/tasks",
-  "/dashboard/pitch",
-  "/dashboard/pitch/editor",
-  "/dashboard/pitch/practice",
-  "/dashboard/pitch/qna",
-  "/dashboard/pitch/review",
-  "/dashboard/pitch-live",
-  "/dashboard/financials",
-  "/dashboard/data-room",
-  "/dashboard/experts",
-  "/dashboard/experts/requests",
-]);

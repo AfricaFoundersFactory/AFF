@@ -25,7 +25,10 @@ export type SourceType =
   | "AFF_PROGRAM"
   | "EXPERT_RECOMMENDATION"
   // --- AFF-DASH-05 additions ---
-  | "PITCH_IMPROVEMENT";
+  | "PITCH_IMPROVEMENT"
+  // --- AFF-DASH-08 additions ---
+  | "OPPORTUNITY_PREPARATION"
+  | "RESOURCE_ACTION";
 
 export type Task = {
   id: string;

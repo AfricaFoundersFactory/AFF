@@ -41,6 +41,7 @@ export function CommandCenterView({
   const tPitch = useTranslations("dashboard.pitch");
   const tFinancials = useTranslations("dashboard.financials");
   const tExperts = useTranslations("dashboard.experts");
+  const tRoot = useTranslations();
   const format = useFormatter();
 
   if (!data) {
@@ -402,11 +403,10 @@ export function CommandCenterView({
         <DashboardSection title={t("opportunity.title")}>
           {opportunity ? (
             <OpportunityCard
-              opportunity={opportunity}
-              matchLabel={t("opportunity.match")}
+              match={opportunity}
+              reasonLabel={(key, data) => tRoot(key, data)}
               deadlineLabel={t("opportunity.deadline")}
-              deadlineFormatted={formatDate(opportunity.deadline)}
-              missingLabel={t("opportunity.missing")}
+              deadlineFormatted={opportunity.opportunity.deadline ? formatDate(opportunity.opportunity.deadline) : undefined}
               ctaLabel={t("opportunity.cta")}
               ctaHref="/dashboard/opportunities"
             />

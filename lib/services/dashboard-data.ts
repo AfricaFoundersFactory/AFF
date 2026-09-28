@@ -14,12 +14,11 @@ import type { Startup } from "@/types/domain";
 import type { NextBestAction } from "@/types/readiness";
 import type { ReadinessAssessment } from "@/types/readiness-engine";
 import type { Roadmap, Task } from "@/types/roadmap";
-import type { Opportunity } from "@/types/opportunity";
+import type { OpportunityMatch } from "@/types/opportunity";
 import type { Activity, UpcomingEvent } from "@/types/activity";
 import type { ProfileCompletion } from "@/types/profile-completion";
 import {
   demoNextBestActionByStartup,
-  demoOpportunityByStartup,
   demoRecentActivityByStartup,
   demoUpcomingEventsByStartup,
 } from "@/lib/demo";
@@ -28,6 +27,8 @@ import { computeProfileCompletion } from "@/lib/services/profile-completion";
 import { getLatestAssessment } from "@/lib/services/readiness";
 import { getCurrentRoadmap } from "@/lib/services/roadmap";
 import { getTasksForStartup } from "@/lib/services/tasks";
+import { listOpportunities } from "@/lib/services/opportunities";
+import { buildOpportunityMatchContext, matchOpportunities } from "@/lib/opportunities/matching";
 import { getWorkspace, getActiveVersion } from "@/lib/services/pitch";
 import { getFinancialProfile, getFinancialSnapshot } from "@/lib/services/financials";
 import { getDataRoom, getCompletion } from "@/lib/services/data-room";
@@ -80,7 +81,7 @@ export type CommandCenterData = {
   // assessment) — the UI must offer to generate one rather than fabricate
   // progress numbers.
   roadmap: Roadmap | undefined;
-  opportunity: Opportunity | undefined;
+  opportunity: OpportunityMatch | undefined;
   recentActivity: Activity[];
   upcomingEvents: UpcomingEvent[];
   // undefined means "no Pitch Lab workspace created yet" — the widget must
@@ -167,6 +168,13 @@ export async function getCommandCenterData(startupId: string): Promise<CommandCe
   const topCategories = Array.from(new Set(openNeeds.map((n) => n.category))).slice(0, 3);
   const expertSupport: ExpertSupportSummary = { openNeedsCount: openNeeds.length, topCategories };
 
+  const opportunityMatchCtx = buildOpportunityMatchContext(twin);
+  const rankedOpportunities = matchOpportunities(
+    listOpportunities().filter((o) => o.status !== "CLOSED"),
+    opportunityMatchCtx,
+  );
+  const opportunity = rankedOpportunities[0];
+
   return {
     startup: { id: startupId, twin },
     readiness: getLatestAssessment(startupId),
@@ -174,7 +182,7 @@ export async function getCommandCenterData(startupId: string): Promise<CommandCe
     nextBestAction,
     roadmap,
     weekTasks,
-    opportunity: demoOpportunityByStartup[startupId],
+    opportunity,
     recentActivity: demoRecentActivityByStartup[startupId] ?? [],
     upcomingEvents: demoUpcomingEventsByStartup[startupId] ?? [],
     pitch,

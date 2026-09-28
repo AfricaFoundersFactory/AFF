@@ -3,7 +3,6 @@ import { demoDigitalTwins } from "./digital-twin";
 import { demoNextBestActionByStartup } from "./readiness";
 import { demoRoadmapByStartup } from "./roadmap";
 import { demoWeekTasksByStartup } from "./tasks";
-import { demoOpportunityByStartup } from "./opportunities";
 import { demoRecentActivityByStartup, demoUpcomingEventsByStartup } from "./activity";
 
 export {
@@ -14,7 +13,6 @@ export {
   demoNextBestActionByStartup,
   demoRoadmapByStartup,
   demoWeekTasksByStartup,
-  demoOpportunityByStartup,
   demoRecentActivityByStartup,
   demoUpcomingEventsByStartup,
 };

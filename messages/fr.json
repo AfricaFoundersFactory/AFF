@@ -3043,6 +3043,150 @@
         "exploreCta": "Explorer le réseau d'experts",
         "noNeedsBody": "Aucun besoin spécifique n'a encore été détecté — explorez le réseau d'experts à tout moment."
       }
+    },
+    "messages": {
+      "pageTitle": "Messages",
+      "pageSubtitle": "Une boîte de réception structurée pour vos échanges avec les experts — pas une messagerie instantanée.",
+      "inboxTitle": "Boîte de réception",
+      "filters": { "all": "Tous", "unread": "Non lus", "experts": "Experts" },
+      "emptyTitle": "Aucune conversation pour le moment",
+      "emptyBody": "Les conversations apparaissent ici après l'envoi d'une demande de soutien à un expert.",
+      "noSubject": "(sans objet)",
+      "noMatchingConversations": "Aucune conversation ne correspond à ce filtre.",
+      "backToInbox": "Retour à la boîte de réception",
+      "threadType": { "expert": "Soutien expert", "system": "Système" },
+      "demoLabel": "Réponse de démonstration illustrative — pas une vraie personne",
+      "composerPlaceholder": "Écrire un message…",
+      "send": "Envoyer",
+      "selectConversation": "Sélectionnez une conversation pour l'afficher",
+      "demoDisclaimer": "Aucune livraison en temps réel, pièce jointe ou notification n'existe encore — les messages sont stockés uniquement dans AFF."
+    },
+    "opportunities": {
+      "pageTitle": "Opportunités",
+      "pageSubtitle": "Programmes, subventions et concours mis en correspondance avec votre startup — avec des raisons honnêtes et en langage clair.",
+      "demoDisclaimer": "Chaque programme listé est un contenu de démonstration fictif pour cet aperçu, pas une opportunité réelle actuellement ouverte.",
+      "tabs": { "recommended": "Recommandées", "all": "Toutes", "saved": "Enregistrées", "applications": "Candidatures" },
+      "filtersTitle": "Filtres",
+      "filters": { "search": "Recherche", "type": "Type", "any": "Tous", "country": "Pays", "industry": "Secteur" },
+      "types": {
+        "ACCELERATOR": "Accélérateur",
+        "INCUBATOR": "Incubateur",
+        "GRANT": "Subvention",
+        "COMPETITION": "Concours",
+        "PITCH_EVENT": "Événement de pitch",
+        "FUNDING_CALL": "Appel à financement",
+        "CORPORATE_PROGRAM": "Programme d'entreprise",
+        "PUBLIC_PROGRAM": "Programme public",
+        "TRAINING": "Formation",
+        "NETWORKING": "Réseautage",
+        "OTHER": "Autre"
+      },
+      "emptyTitle": "Aucune opportunité ne correspond pour le moment",
+      "emptyBody": "Essayez d'élargir vos filtres, ou revenez après avoir mis à jour le profil de votre startup.",
+      "saved": "Enregistrée",
+      "save": "Enregistrer",
+      "deadline": "Date limite",
+      "applicationStatus": "Statut de candidature",
+      "applicationStatuses": {
+        "INTERESTED": "Intéressé",
+        "PREPARING": "En préparation",
+        "APPLIED": "Candidaté",
+        "SHORTLISTED": "Présélectionné",
+        "ACCEPTED": "Accepté",
+        "REJECTED": "Rejeté",
+        "WITHDRAWN": "Retiré"
+      },
+      "addPrepTask": "Ajouter une tâche de préparation",
+      "prepTaskAdded": "Tâche de préparation ajoutée",
+      "selfReportedNotice": "Le statut est déclaré par vous-même — AFF n'a aucune connexion en direct avec ce programme.",
+      "requirements": { "incorporated": "Doit être une entreprise enregistrée", "saasModel": "Mieux adapté aux modèles économiques SaaS/abonnement" },
+      "matching": {
+        "reasons": {
+          "geographyOpen": "Ouvert à tous les pays",
+          "geographyMatch": "Disponible en {country}",
+          "geographyMismatch": "Ouvert uniquement à : {countries}",
+          "stageMatch": "Soutient les startups au stade {stage}",
+          "stageMismatch": "Ouvert uniquement à : {stages}",
+          "industryOpen": "Ouvert à tous les secteurs",
+          "industryMatch": "Axé sur {industry}",
+          "industryMismatch": "Axé sur : {industries}",
+          "businessModelMatch": "Correspond à votre modèle économique",
+          "businessModelMismatch": "Mieux adapté aux modèles économiques SaaS/abonnement"
+        }
+      }
+    },
+    "resources": {
+      "pageTitle": "Ressources",
+      "pageSubtitle": "Guides, modèles et cadres adaptés à votre stade et à vos lacunes actuelles.",
+      "tabs": { "recommended": "Recommandées", "all": "Toutes les ressources", "saved": "Enregistrées" },
+      "filtersTitle": "Filtres",
+      "filters": { "search": "Recherche", "category": "Catégorie", "format": "Format", "any": "Tous" },
+      "categories": {
+        "STARTUP_BASICS": "Bases de la startup",
+        "PROBLEM_VALIDATION": "Validation du problème",
+        "PRODUCT": "Produit",
+        "MARKET": "Marché",
+        "BUSINESS_MODEL": "Modèle économique",
+        "SALES": "Ventes",
+        "MARKETING": "Marketing",
+        "FINANCE": "Finance",
+        "FUNDRAISING": "Levée de fonds",
+        "PITCH": "Pitch",
+        "LEGAL": "Juridique",
+        "OPERATIONS": "Opérations",
+        "TEAM": "Équipe",
+        "IMPACT_ESG": "Impact et ESG"
+      },
+      "formats": {
+        "GUIDE": "Guide",
+        "CHECKLIST": "Liste de vérification",
+        "TEMPLATE": "Modèle",
+        "VIDEO": "Vidéo",
+        "ARTICLE": "Article",
+        "TOOL": "Outil",
+        "FRAMEWORK": "Cadre"
+      },
+      "emptyTitle": "Aucune ressource ne correspond pour le moment",
+      "emptyBody": "Essayez une catégorie, un format ou une recherche différente.",
+      "saved": "Enregistrée",
+      "save": "Enregistrer",
+      "origin": { "AFF_RESOURCE": "Ressource AFF", "EXTERNAL_RESOURCE": "Ressource externe" },
+      "recommendedBecause": "Recommandé car :",
+      "addToTasks": "Ajouter aux tâches",
+      "taskAdded": "Ajoutée aux tâches",
+      "recommendation": {
+        "reasons": {
+          "readinessGap": "{category} est l'un de vos axes d'amélioration actuels.",
+          "pitchGap": "Votre pitch présente une lacune liée à {category}.",
+          "financialSignal": "Un signal financier a signalé {category} comme méritant attention.",
+          "stage": "Pertinent pour les startups à votre stade."
+        }
+      }
+    },
+    "help": {
+      "pageTitle": "Centre d'aide",
+      "pageSubtitle": "Des guides sur le fonctionnement réel des modules AFF, ainsi qu'un moyen de contacter l'équipe.",
+      "relevantHereTitle": "Pertinent pour votre page actuelle",
+      "searchTitle": "Recherche",
+      "searchPlaceholder": "Rechercher dans l'aide…",
+      "allCategories": "Toutes les catégories",
+      "categories": {
+        "GETTING_STARTED": "Premiers pas",
+        "MY_STARTUP": "Ma startup",
+        "READINESS": "Préparation",
+        "ROADMAP_TASKS": "Feuille de route et tâches",
+        "PITCH": "Pitch",
+        "FINANCIALS": "Finances",
+        "DATA_ROOM": "Salle de données",
+        "EXPERTS": "Experts",
+        "OPPORTUNITIES": "Opportunités",
+        "ACCOUNT": "Compte"
+      },
+      "articlesTitle": "Articles",
+      "noResultsTitle": "Aucun article ne correspond à votre recherche",
+      "noResultsBody": "Essayez un autre mot-clé ou parcourez par catégorie.",
+      "contactTitle": "Besoin d'aide supplémentaire ?",
+      "contactHonestCopy": "AFF n'a pas encore de système de tickets de support automatisé — les messages envoyés ici sont transmis directement à l'e-mail de l'équipe."
     }
   }
 }
